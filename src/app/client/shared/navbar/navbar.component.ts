@@ -14,22 +14,32 @@ export class NavbarComponent  {
         this.items = [
 
             {
-                label: 'NOSOTROS',
+                label: 'Quiénes Somos',
                 icon: 'pi pi-desktop',
                 routerLink: 'nosotros'
             },
             {
-                label: 'PROYECTOS',
+                label: 'Proyectos',
                 icon: 'pi pi-desktop',
-                routerLink: 'proyectos'
+                items: [
+                  {
+                    label: 'S.AGER',
+                    icon: 'pi pi-desktop',
+                    routerLink: 'proyectos/s-ager'
+                  },
+                  {
+                    label: 'AXION',
+                    icon: 'pi pi-desktop'
+                  },
+                ]
             },
             {
-                label: 'SERVICIOS',
+                label: 'Servicios',
                 icon: 'pi pi-desktop',
                 routerLink: 'servicios'
             },
             {
-                label: 'CONTACTO',
+                label: 'Contacto',
                 icon: 'pi pi-desktop',
                 routerLink: 'contacto'
             },
