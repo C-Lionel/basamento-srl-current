@@ -30,7 +30,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeng/resources/themes/luna-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           },
@@ -65,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "basamento-srl-current:build:production"
+              "buildTarget": "basamento-srl-current:build:production"
             },
             "development": {
-              "browserTarget": "basamento-srl-current:build:development"
+              "buildTarget": "basamento-srl-current:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "basamento-srl-current:build"
+            "buildTarget": "basamento-srl-current:build"
           }
         },
         "test": {

@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Primeng Icons
+@import "primeicons/primeicons.css";
+
+// Reset de márgenes y padding
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+// Establecer el tamaño de fuente base
+body {
+  font-size: 1rem; // Puedes ajustar esto según tus preferencias
+}
+
+// Utilizar rem en lugar de px para obtener un escalado más fácil
+html {
+  font-size: 100%;
+}
+
+
+// ESTILOS GENERALES DE MI APLICACIÓN
+
+h1 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+//TODO: ESTILOS DE PRIMENG
+//TODO*: NAVBAR
+.p-menubar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
+  font-size: 1.3rem;
+}
+
+.p-menubar img {
+  margin-right: 1rem;
+}
+

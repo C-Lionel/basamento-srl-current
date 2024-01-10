@@ -11,6 +11,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { PrimengModule } from '../shared/primeng/primeng.module';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HeaderComponent } from './shared/header/header.component';
   ],
   imports: [
     CommonModule,
-    ClientRoutingModule
+    ClientRoutingModule,
+    PrimengModule
   ]
 })
 export class ClientModule { }
