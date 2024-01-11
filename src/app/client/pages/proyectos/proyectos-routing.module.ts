@@ -1,20 +1,23 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProyectosComponent } from './proyectos.component';
-import { SAgerComponent } from './pages/s-ager/s-ager.component';
 
-let dynamicRoutes: Routes = [
+
+const routes: Routes = [
   {
-    path: 's-ager',
-    component: SAgerComponent
-  }
+    path: '',
+    component: ProyectosComponent,
+  },
+  {
+    path: ':project', // :project es un parámetro dinámico en la ruta
+    component: ProyectosComponent,
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(dynamicRoutes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
-export class ProyectosRoutingModule {
+export class ProyectosRoutingModule {}
 
-
-}

@@ -9,7 +9,6 @@ import { ProyectosRoutingModule } from './proyectos-routing.module';
   imports: [
     CommonModule,
     ProyectosRoutingModule
-
   ]
 })
 export class ProyectosModule { }
