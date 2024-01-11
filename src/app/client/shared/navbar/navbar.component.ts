@@ -11,22 +11,28 @@ export class NavbarComponent {
 
    items: MenuItem[] | undefined;
 
-   constructor( private proyectosService: ProyectosService ) {}
+  //TODO: NO SE USÓ AL FINAL EL SERVICIO EN ESTE COMPONENTE!!
+  //  constructor( private proyectosService: ProyectosService ) {}
 
-   private selectProject(project: string) {
-    this.proyectosService.setSelectedProject(project);
-  }
+  //  private selectProject(project: string) {
+  //   this.proyectosService.setSelectedProject(project);
+  // }
 
     ngOnInit() {
         this.items = [
 
+            // {
+            //     label: 'Inicio',
+            //     icon: 'pi pi-desktop',
+            //     routerLink: '/'
+            // },
             {
                 label: 'Quiénes Somos',
                 icon: 'pi pi-desktop',
                 routerLink: 'nosotros'
             },
             {
-                label: 'Proyectos',
+                label: 'Nuestros Proyectos',
                 icon: 'pi pi-desktop',
                 items: [
                   {
@@ -48,7 +54,7 @@ export class NavbarComponent {
                 ]
             },
             {
-                label: 'Servicios',
+                label: 'Actividades y Servicios',
                 icon: 'pi pi-desktop',
                 routerLink: 'servicios'
             },
@@ -59,7 +65,4 @@ export class NavbarComponent {
             },
         ];
     }
-
-
-
 }
