@@ -1,6 +1,25 @@
+input {
+  font-size: 1.2rem;
+}
+
 img {
   cursor: pointer;
 }
+
+.error-message {
+  margin-top: 5px;  // Ajusta según sea necesario
+}
+
+.show-error {
+  color: red;
+}
+
+.search-term-found {
+  color: gray;
+}
+
+
+
 
 
 

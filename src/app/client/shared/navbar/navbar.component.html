@@ -1,23 +1,26 @@
 
-
-  <!-- <div>
+  <div class="card">
     <p-menubar [model]="items">
-      <ng-template pTemplate="end">
-        <img src="../../../../assets/Logo.svg" routerLink="/" height="45" />
-      </ng-template>
-    </p-menubar>
-  </div> -->
-
-<div class="card">
-  <p-menubar [model]="items">
       <ng-template pTemplate="start">
         <img src="../../../../assets/icon.ico" routerLink="/" height="45" />
       </ng-template>
       <ng-template pTemplate="end">
-          <input type="text" pInputText placeholder="Search" class="w-full" />
+        <input type="text" pInputText [(ngModel)]="searchTerm" placeholder="Explorar.." class="w-full" [ngClass]="{'error-input': searchTermError && !searchTermFound}" (keyup.enter)="search()" (keyup)="handleKeyUp()" />
+        <div class="error-message" [ngClass]="{'show-error': searchTermError && !searchTermFound}">
+          {{ searchTerm }}
+        </div>
       </ng-template>
-  </p-menubar>
-</div>
+    </p-menubar>
+  </div>
+
+
+
+
+
+
+
+
+
 
 
 
