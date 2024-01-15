@@ -34,6 +34,9 @@ h1 {
   // flex-direction: row-reverse;
   font-size: 1.4rem;
   height: 6rem;
+  .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
+    color: lightblue;
+  }
 }
 .p-menubar img {
   margin-right: 2rem;
