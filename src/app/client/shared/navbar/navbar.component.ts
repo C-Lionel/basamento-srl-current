@@ -46,8 +46,18 @@ export class NavbarComponent {
     if (!this.searchTerm) {
       this.searchTermError = false;
       this.searchTermFound = false;
+    } else {
+      const rutaEncontrada = this.encontrarRutaPorCoincidenciaParcial(this.searchTerm);
+      if (rutaEncontrada) {
+        this.searchTermError = false;
+        this.searchTermFound = true;
+      } else {
+        this.searchTermError = true;
+        this.searchTermFound = false;
+      }
     }
   }
+
 
   private encontrarRutaPorCoincidenciaParcial(termino: string): string | null {
     // Limpia el término de búsqueda: quita espacios y convierte a minúsculas
