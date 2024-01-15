@@ -31,11 +31,13 @@ h1 {
 //TODO: ESTILOS DE PRIMENG
 //TODO*: NAVBAR
 .p-menubar {
-  // flex-direction: row-reverse;
+  a {
+    margin-left: 1rem;
+  }
   font-size: 1.4rem;
   height: 6rem;
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
-    color: lightblue;
+    color: #6F84A3;
   }
 }
 .p-menubar img {
