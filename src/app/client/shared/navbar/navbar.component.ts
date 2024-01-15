@@ -88,39 +88,39 @@ export class NavbarComponent {
 
             {
                 label: 'Nosotros',
-                icon: 'pi pi-desktop',
+                icon: 'pi pi-users',
                 routerLink: 'nosotros'
             },
             {
                 label: 'Proyectos',
-                icon: 'pi pi-desktop',
+                icon: 'pi pi-wallet',
                 items: [
                   {
                     label: 'S.Ager',
-                    icon: 'pi pi-desktop',
+                    icon: 'pi pi-minus',
                     // command: () => this.selectProject('s-ager'),
                     routerLink: 'proyectos/s-ager'
                   },
                   {
                     label: 'Axion',
-                    icon: 'pi pi-desktop',
+                    icon: 'pi pi-minus',
                     routerLink: 'proyectos/axion'
                   },
                   {
                     label: 'Corralón Velez',
-                    icon: 'pi pi-desktop',
+                    icon: 'pi pi-minus',
                     routerLink: 'proyectos/corralon-velez'
                   },
                 ]
             },
             {
                 label: 'Servicios',
-                icon: 'pi pi-desktop',
+                icon: 'pi pi-shopping-bag',
                 routerLink: 'servicios'
             },
             {
                 label: 'Contacto',
-                icon: 'pi pi-desktop',
+                icon: 'pi pi-phone',
                 routerLink: 'contacto'
             },
         ];

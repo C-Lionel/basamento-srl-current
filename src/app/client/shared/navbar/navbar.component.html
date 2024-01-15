@@ -5,6 +5,7 @@
         <img src="../../../../assets/icon.ico" routerLink="/" height="45" />
       </ng-template>
       <ng-template pTemplate="end">
+        <span class="search material-symbols-outlined">search</span>
         <input type="text" pInputText [(ngModel)]="searchTerm" placeholder="Explorar.." class="w-full" [ngClass]="{'error-input': searchTermError && !searchTermFound}" (keyup.enter)="search()" (keyup)="handleKeyUp()" />
         <div class="error-message" [ngClass]="{'show-error': searchTermError && !searchTermFound}">
           {{ searchTerm }}

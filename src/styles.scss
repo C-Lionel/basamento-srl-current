@@ -32,10 +32,15 @@ h1 {
 //TODO*: NAVBAR
 .p-menubar {
   // flex-direction: row-reverse;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  height: 6rem;
 }
 .p-menubar img {
   margin-right: 2rem;
+}
+.p-menubar .search {
+font-size: 1.3rem;
+margin-right: 0.8rem;
 }
 
 
