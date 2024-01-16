@@ -1,3 +1,8 @@
+/* Colores */
+$color-background: #758D9A;
+$color-primary: #1e3846;
+$color-hover: #8A8A8A;
+
 /* You can add global styles to this file, and also import other style files */
 
 // Primeng Icons
@@ -12,13 +17,13 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 // Establecer el tamaño de fuente base
 body {
   font-size: 1rem; // Puedes ajustar esto según tus preferencias
+  background-color: $color-background;
 }
 
 // Utilizar rem en lugar de px para obtener un escalado más fácil
 html {
   font-size: 100%;
 }
-
 
 // ESTILOS GENERALES DE MI APLICACIÓN
 
@@ -28,26 +33,26 @@ h1 {
   justify-content: center;
 }
 
-//TODO: ESTILOS DE PRIMENG
-//TODO*: NAVBAR
+// ESTILOS DE PRIMENG
+// NAVBAR
 .p-menubar {
-  background-color: #1e3846;
+  background-color: $color-primary;
   a {
     margin-left: 1rem;
   }
   font-size: 1.7rem;
-  height: 7rem;
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
-    color: #8A8A8A;
+    color: $color-hover;
   }
 }
 .p-menubar img {
   margin-right: 2rem;
 }
 .p-menubar .search {
-font-size: 1.3rem;
-margin-right: 0.8rem;
+  font-size: 1.3rem;
+  margin-right: 0.8rem;
 }
+
 
 
 
