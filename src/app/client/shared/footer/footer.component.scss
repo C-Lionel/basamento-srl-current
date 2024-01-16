@@ -1,14 +1,75 @@
-.card {
-  width: 80%;
-  margin: auto;
+
+$color-background: #758D9A;
+$color-text: #fff;
+$transition-duration: 0.3s;
+
+.footer {
+  background-color: $color-background;
+  color: $color-text;
+  padding: 40px 0;
+  text-align: center;
+  // position: fixed;
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  transition: background-color $transition-duration;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+
+  .footer-section.contact p {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .footer-section.contact p:hover {
+    transform: scale(1.1);
+  }
 }
 
-.flex-container {
+.container {
+  a:hover i{
+    opacity: 0.7; // Reduce la opacidad para Facebook
+    transition: opacity 0.3s ease-in-out;
+  }
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.flex-item {
-  flex: 1;
-  padding: 10px;
+.footer-section {
+  width: 30%;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    transition: color $transition-duration;
+    &:hover {
+      color: lighten($color-text, 10%);
+    }
+  }
 }
+
+.footer:hover {
+  background-color: darken($color-background, 10%);
+}
+
+
+
+
 

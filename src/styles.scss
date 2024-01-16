@@ -1,9 +1,28 @@
 /* Colores */
-$color-background: #758D9A;
-$color-primary: #1e3846;
-$color-hover: #8A8A8A;
+:root {
+  --color-background: #8EA1AB;
+  --footer-backround:#758D9A;
+  --color-primary: #1e3846;
+  --color-hover: #8A8A8A;
+}
+
+// BORRADOR
+
+.prueba {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
 
 /* You can add global styles to this file, and also import other style files */
+
+.main-margen-inferior {
+  margin-top: 50px; // Ajusta según sea necesario
+}
+
+.main-margen-superior {
+  margin-bottom: 50px; // Ajusta según sea necesario
+}
 
 // Primeng Icons
 @import "primeicons/primeicons.css";
@@ -17,7 +36,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 // Establecer el tamaño de fuente base
 body {
   font-size: 1rem; // Puedes ajustar esto según tus preferencias
-  background-color: $color-background;
+  background-color: var(--color-background);
 }
 
 // Utilizar rem en lugar de px para obtener un escalado más fácil
@@ -36,13 +55,13 @@ h1 {
 // ESTILOS DE PRIMENG
 // NAVBAR
 .p-menubar {
-  background-color: $color-primary;
+  background-color: var(--color-primary) ;
   a {
     margin-left: 1rem;
   }
   font-size: 1.7rem;
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
-    color: $color-hover;
+    color: var(--color-hover);
   }
 }
 .p-menubar img {
@@ -52,6 +71,8 @@ h1 {
   font-size: 1.3rem;
   margin-right: 0.8rem;
 }
+
+
 
 
 
