@@ -3,6 +3,7 @@ import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { DividerModule } from 'primeng/divider';
 import { CardModule } from 'primeng/card';
+import { GalleriaModule } from 'primeng/galleria';
 
 
 
@@ -11,7 +12,8 @@ import { CardModule } from 'primeng/card';
     MenuModule,
     MenubarModule,
     DividerModule,
-    CardModule
+    CardModule,
+    GalleriaModule
   ]
 })
 export class PrimengModule { }
