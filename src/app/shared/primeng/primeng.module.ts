@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { DividerModule } from 'primeng/divider';
+import { CardModule } from 'primeng/card';
 
 
 
@@ -9,7 +10,8 @@ import { DividerModule } from 'primeng/divider';
   exports: [
     MenuModule,
     MenubarModule,
-    DividerModule
+    DividerModule,
+    CardModule
   ]
 })
 export class PrimengModule { }

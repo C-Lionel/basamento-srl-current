@@ -6,14 +6,6 @@
   --color-hover: #8A8A8A;
 }
 
-// BORRADOR
-
-.prueba {
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
-
 /* You can add global styles to this file, and also import other style files */
 
 .main-margen-inferior {
@@ -55,17 +47,18 @@ h1 {
 // ESTILOS DE PRIMENG
 // NAVBAR
 .p-menubar {
+  height: 6rem;
   background-color: var(--color-primary) ;
-  a {
-    margin-left: 1rem;
-  }
-  font-size: 1.7rem;
+  // a {
+  //   margin-left: 2rem;
+  // }
+  font-size: 1.3rem;
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
     color: var(--color-hover);
   }
 }
 .p-menubar img {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 .p-menubar .search {
   font-size: 1.3rem;
