@@ -31,8 +31,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/primeng/resources/themes/bootstrap4-dark-purple/theme.css",
-              "node_modules/primeng/resources/primeng.min.css"
+              "src/assets/styles/theme.css",
+              "src/assets/styles/primeng.min.css"
             ],
             "scripts": []
           },
