@@ -1,14 +1,9 @@
 <!-- app/pages/proyectos/proyectos.component.html -->
-<div class="servicios" *ngIf="selectedProject === 's-ager'">
+<div class="servicios" *ngIf="selectedProject === 'junin-2816'">
   <!-- Contenido específico para S.Ager -->
   <div>
-    <p-card header="Satus Ager">
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Pavimentación, plateas de hormigón armado para secadoras
-      </p>
-      <p-divider></p-divider>
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Ejecución de comedor para personal</p>
-      <p-divider></p-divider>
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Plateas de hormigon armado para GLP</p>
+    <p-card header="Depósito Junin 2816">
+      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Ejecución depósito comercial de 130 m² cubiertos. </p>
 
     </p-card>
   </div>
@@ -36,7 +31,7 @@
         <div class="custom-galleria-footer">
             <button type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"><i class="pi pi-list"></i></button>
             <span *ngIf="images" class="title-container">
-                <span>{{ activeIndex + 1 }}/{{ images.length }}</span>
+                <span>Imagen {{ activeIndex + 1 }} de {{ images.length }}</span>
                 <span class="title">{{ images[activeIndex].title }}</span>
                 <span>{{ images[activeIndex].alt }}</span>
             </span>
@@ -45,9 +40,6 @@
     </ng-template>
     </p-galleria>
   </div>
-
-
-
 
 
 </div>

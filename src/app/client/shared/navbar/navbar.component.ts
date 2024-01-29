@@ -68,7 +68,7 @@ export class NavbarComponent {
       '/',
       '/nosotros',
       '/proyectos',
-      '/proyectos/s-ager',
+      '/proyectos/junin-2816',
       '/proyectos/axion',
       '/proyectos/corralon-velez',
       '/servicios',
@@ -106,10 +106,10 @@ export class NavbarComponent {
                 icon: 'pi pi-wallet',
                 items: [
                   {
-                    label: 'S.Ager',
+                    label: 'Depósito Comercial',
                     icon: 'pi pi-minus',
                     // command: () => this.selectProject('s-ager'),
-                    routerLink: 'proyectos/s-ager'
+                    routerLink: 'proyectos/junin-2816'
                   },
                   {
                     label: 'Axion',
