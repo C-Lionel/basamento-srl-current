@@ -1,72 +1,41 @@
-<!-- app/pages/proyectos/proyectos.component.html -->
-<div class="servicios" *ngIf="selectedProject === 'junin-2816'">
-  <!-- Contenido específico para S.Ager -->
-  <div>
-    <p-card header="Depósito Junin 2816">
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Ejecución depósito comercial de 130 m² cubiertos. </p>
 
+<div class="servicios" [ngClass]="{'show-all-projects': showAllProjects, 'show-single-project': !showAllProjects}" *ngIf="servicios && servicios.length > 0">
+
+  <!-- Contenido específico para cada servicio -->
+  <div *ngFor="let servicio of servicios">
+
+    <p-card [header]="servicio.nombre">
+      <p>{{ servicio.descripcion }}</p>
     </p-card>
+
+    <!-- GALERIA DE IMAGENES -->
+    <div class="card">
+      <p-galleria #galleria [value]="servicio.imagenes" [(activeIndex)]="activeIndex" [numVisible]="5"
+        [showThumbnails]="showThumbnails" [showItemNavigators]="true" [showItemNavigatorsOnHover]="true" [circular]="true"
+        [autoPlay]="true" [transitionInterval]="3000" [containerStyle]="{'width':'100%'}"
+        [containerClass]="galleriaClass()">
+        <ng-template pTemplate="item" let-item>
+          <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+          </div>
+        </ng-template>
+
+        <ng-template pTemplate="footer" let-item>
+          <div class="custom-galleria-footer">
+              <button type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"><i class="pi pi-list"></i></button>
+              <span *ngIf="servicio.imagenes" class="title-container">
+                  <span>Imagen {{ activeIndex + 1 }} de {{ servicio.imagenes.length }}</span>
+                  <span class="title">{{ servicio.imagenes[activeIndex].title }}</span>
+                  <span>{{ servicio.imagenes[activeIndex].alt }}</span>
+              </span>
+              <button type="button" pButton [ngClass]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button"></button>
+          </div>
+        </ng-template>
+      </p-galleria>
+    </div>
   </div>
 
-
-
-  <!-- GALERIA DE IMAGENES -->
-
-
-  <div class="card">
-    <p-galleria #galleria [value]="images" [(activeIndex)]="activeIndex" [numVisible]="5"
-      [showThumbnails]="showThumbnails" [showItemNavigators]="true" [showItemNavigatorsOnHover]="true" [circular]="true"
-      [autoPlay]="true" [transitionInterval]="3000" [containerStyle]="{'width':'100%'}"
-      [containerClass]="galleriaClass()">
-      <ng-template pTemplate="item" let-item>
-        <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
-      </ng-template>
-      <ng-template pTemplate="thumbnail" let-item>
-        <div class="grid grid-nogutter justify-content-center">
-          <img [src]="item.thumbnailImageSrc" style="display: block;" />
-        </div>
-      </ng-template>
-
-      <ng-template pTemplate="footer" let-item>
-        <div class="custom-galleria-footer">
-            <button type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"><i class="pi pi-list"></i></button>
-            <span *ngIf="images" class="title-container">
-                <span>Imagen {{ activeIndex + 1 }} de {{ images.length }}</span>
-                <span class="title">{{ images[activeIndex].title }}</span>
-                <span>{{ images[activeIndex].alt }}</span>
-            </span>
-            <button type="button" pButton [ngClass]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button"></button>
-        </div>
-    </ng-template>
-    </p-galleria>
-  </div>
-
-
-</div>
-
-<div class="servicios" *ngIf="selectedProject === 'axion'">
-  <!-- Contenido específico para AXION -->
-  <div>
-    <p-card header="Satus Ager">
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Pavimentación, plateas de hormigón armado para secadoras
-      </p>
-      <p-divider></p-divider>
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Ejecución de comedor para personal</p>
-      <p-divider></p-divider>
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Plateas de hormigon armado para GLP</p>
-
-    </p-card>
-  </div>
-
-</div>
-
-<div class="servicios" *ngIf="selectedProject === 'corralon-velez'">
-  <!-- Contenido específico para AXION -->
-  <div>
-    <p-card header="Satus Ager">
-      <p> <i class="pi pi-check" style="font-size: 0.4rem"></i> Local comercial para cliente Carlos Velez</p>
-
-
-    </p-card>
-  </div>
 </div>

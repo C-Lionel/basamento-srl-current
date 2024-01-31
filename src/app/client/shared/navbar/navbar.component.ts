@@ -1,7 +1,6 @@
 import { Component} from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
-import { ProyectosService } from '../../services/proyectos.service';
 
 @Component({
   selector: 'shared-navbar',
@@ -18,14 +17,7 @@ export class NavbarComponent {
 
   constructor(
     private router: Router,
-    // private proyectosService: ProyectosService
     ) {}
-
- //TODO: NO SE USÓ AL FINAL EL SERVICIO EN ESTE COMPONENTE!!
-  //  private selectProject(project: string) {
-  //   this.proyectosService.setSelectedProject(project);
-  // }
-
 
   search() {
     const rutaEncontrada = this.encontrarRutaPorCoincidenciaParcial(this.searchTerm);
@@ -70,7 +62,7 @@ export class NavbarComponent {
       '/proyectos',
       '/proyectos/junin-2816',
       '/proyectos/axion',
-      '/proyectos/corralon-velez',
+      '/proyectos/alvear-1065',
       '/servicios',
       '/contacto'
       // ... (otras rutas)
@@ -119,7 +111,7 @@ export class NavbarComponent {
                   {
                     label: 'Corralón Velez',
                     icon: 'pi pi-minus',
-                    routerLink: 'proyectos/corralon-velez'
+                    routerLink: 'proyectos/alvear-1065'
                   },
                 ]
             },

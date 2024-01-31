@@ -2,6 +2,7 @@ import { Component, OnInit, ChangeDetectorRef, OnDestroy, ViewChild } from '@ang
 import { Galleria } from 'primeng/galleria';
 import { ProyectosService } from '../../services/proyectos.service';
 import { ActivatedRoute } from '@angular/router';
+import { Servicio } from '../../models/proyecto.model';
 
 @Component({
   templateUrl: './proyectos.component.html',
@@ -15,8 +16,9 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     private cd: ChangeDetectorRef
     ) {}
 
+  showAllProjects: boolean = true;
   selectedProject: string | null = null;
-  images: any[] | undefined;
+  servicios: Servicio[] | undefined;
   showThumbnails: boolean = false;
   fullscreen: boolean = false;
   activeIndex: number = 0;
@@ -39,19 +41,25 @@ export class ProyectosComponent implements OnInit, OnDestroy {
       }
   ];
 
-
-
   ngOnInit() {
-    // Obtén el valor del parámetro 'project' de la URL
-    this.route.paramMap.subscribe((params) => {
+
+    this.route.paramMap.subscribe(async (params) => {
       this.selectedProject = params.get('project');
       console.log('Selected Project: proyectos.component.ts', this.selectedProject);
-      // Actualiza el servicio compartido con el proyecto seleccionado
-      this.proyectosService.setSelectedProject(this.selectedProject);
-    });
 
-    this.proyectosService.getImages().then((images) => (this.images = images));
-        this.bindDocumentListeners();
+      this.proyectosService.setSelectedProject(this.selectedProject);
+
+      if (this.selectedProject) {
+        // Si hay un proyecto seleccionado, encuentra el servicio que coincida con el nombre del proyecto
+        const servicios = await this.proyectosService.getServicios();
+        this.servicios = servicios.filter(servicio => servicio.ruta.toLowerCase() === this.selectedProject?.toLowerCase());
+      } else {
+        // Si no hay un proyecto seleccionado, obtén todos los servicios
+        this.servicios = await this.proyectosService.getServicios();
+      }
+
+      this.bindDocumentListeners();
+    });
 
   }
 
@@ -139,12 +147,7 @@ fullScreenIcon() {
     return `pi ${this.fullscreen ? 'pi-window-minimize' : 'pi-window-maximize'}`;
 }
 
-// fullScreenIcon() {
-//   return this.fullscreen ? 'pi pi-window-minimize' : 'pi pi-window-maximize';
-// }
-
 
 }
-
 
 

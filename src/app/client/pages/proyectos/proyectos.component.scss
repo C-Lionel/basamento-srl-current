@@ -1,26 +1,20 @@
-
 .servicios {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
+  // Estilos comunes para ambos casos...
+  // ...
+
+  &.show-all-projects {
+    // Estilos específicos para show-all-projects...
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    // Añade estilos adicionales específicos para show-all-projects si es necesario...
+  }
+
+  &.show-single-project {
+    // Estilos específicos para show-single-project...
+
+
+    // Añade estilos adicionales específicos para show-single-project si es necesario...
+  }
 }
-
-// .servicios {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
