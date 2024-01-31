@@ -98,18 +98,13 @@ export class NavbarComponent {
                 icon: 'pi pi-wallet',
                 items: [
                   {
-                    label: 'Depósito Comercial',
+                    label: 'Junin 2816',
                     icon: 'pi pi-minus',
                     // command: () => this.selectProject('s-ager'),
                     routerLink: 'proyectos/junin-2816'
                   },
                   {
-                    label: 'Axion',
-                    icon: 'pi pi-minus',
-                    routerLink: 'proyectos/axion'
-                  },
-                  {
-                    label: 'Corralón Velez',
+                    label: 'Alvear 1065',
                     icon: 'pi pi-minus',
                     routerLink: 'proyectos/alvear-1065'
                   },

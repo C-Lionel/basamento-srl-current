@@ -63,6 +63,10 @@ export class ProyectosComponent implements OnInit, OnDestroy {
 
   }
 
+  getDescripcionOpciones(opciones: { [key: string]: string }): string[] {
+    return Object.values(opciones);
+  }
+
   onThumbnailButtonClick() {
     this.showThumbnails = !this.showThumbnails;
 }

@@ -9,7 +9,9 @@ export interface ProyectoImagen {
 export interface Servicio {
   ruta: string;
   nombre: string;
-  descripcion: string;
+  descripcion: {
+    opciones: { [key: string]: string };
+  };
   imagenes: ProyectoImagen[];
 }
 

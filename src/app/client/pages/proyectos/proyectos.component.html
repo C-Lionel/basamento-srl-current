@@ -2,11 +2,14 @@
 <div class="servicios" [ngClass]="{'show-all-projects': showAllProjects, 'show-single-project': !showAllProjects}" *ngIf="servicios && servicios.length > 0">
 
   <!-- Contenido específico para cada servicio -->
-  <div *ngFor="let servicio of servicios">
+<div *ngFor="let servicio of servicios">
+  <p-card [header]="servicio.nombre">
 
-    <p-card [header]="servicio.nombre">
-      <p>{{ servicio.descripcion }}</p>
-    </p-card>
+      <div *ngFor="let opcion of getDescripcionOpciones(servicio.descripcion.opciones)">
+        <i class="pi pi-check" style="color: white; font-size: 0.8rem;"></i> {{ opcion }}
+      </div>
+
+  </p-card>
 
     <!-- GALERIA DE IMAGENES -->
     <div class="card">

@@ -18,7 +18,11 @@ export class ProyectosService {
       {
         ruta: 'junin-2816',
         nombre: 'Junin 2816',
-        descripcion: 'Ejecución depósito comercial de 130 m² cubiertos.',
+        descripcion: {
+          opciones: {
+            option1: 'Ejecución depósito comercial de 130 m² cubiertos.',
+          },
+        },
         imagenes: [
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-1.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-2.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
@@ -31,7 +35,11 @@ export class ProyectosService {
       {
         ruta: 'alvear-1065',
         nombre: 'Alvear 1065',
-        descripcion: 'Remodelación Alvear 1065',
+        descripcion: {
+          opciones: {
+            option1: 'Remodelación Alvear 1065',
+          },
+        },
         imagenes: [
           { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-1.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
           { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-2.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
