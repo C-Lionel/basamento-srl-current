@@ -13,6 +13,10 @@
 
   &.show-single-project {
     // Estilos específicos para show-single-project...
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
 
 
     // Añade estilos adicionales específicos para show-single-project si es necesario...
