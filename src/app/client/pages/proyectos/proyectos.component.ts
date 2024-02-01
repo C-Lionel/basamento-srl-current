@@ -16,7 +16,6 @@ export class ProyectosComponent implements OnInit, OnDestroy {
     private cd: ChangeDetectorRef
     ) {}
 
-  showAllProjects: boolean = true;
   selectedProject: string | null = null;
   servicios: Servicio[] | undefined;
   showThumbnails: boolean = false;

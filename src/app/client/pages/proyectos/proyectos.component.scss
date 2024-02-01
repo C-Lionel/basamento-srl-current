@@ -1,24 +1,6 @@
 .servicios {
-  // Estilos comunes para ambos casos...
-  // ...
-
-  &.show-all-projects {
-    // Estilos específicos para show-all-projects...
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    // Añade estilos adicionales específicos para show-all-projects si es necesario...
-  }
-
-  &.show-single-project {
-    // Estilos específicos para show-single-project...
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-
-
-    // Añade estilos adicionales específicos para show-single-project si es necesario...
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }

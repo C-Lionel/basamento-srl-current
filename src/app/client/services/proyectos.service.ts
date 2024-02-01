@@ -21,6 +21,12 @@ export class ProyectosService {
         descripcion: {
           opciones: {
             option1: 'Ejecución depósito comercial de 130 m² cubiertos.',
+            option2: 'Ejecución depósito comercial de 130 m² cubiertos.',
+            option3: 'Ejecución depósito comercial de 130 m² cubiertos.',
+            option4: 'Ejecución depósito comercial de 130 m² cubiertos.',
+            option5: 'Ejecución depósito comercial de 130 m² cubiertos.',
+            option6: 'Ejecución depósito comercial de 130 m² cubiertos.',
+            option7: 'Ejecución depósito comercial de 130 m² cubiertos.',
           },
         },
         imagenes: [
@@ -30,6 +36,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-4.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-5.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-6.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
+          { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-7.jpg', alt: 'Venado Tuerto - Provincia de Santa Fe', title: 'Depósito calle Junin 2816' },
         ],
       },
       {

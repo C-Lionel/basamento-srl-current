@@ -1,8 +1,8 @@
-
-<div class="servicios" [ngClass]="{'show-all-projects': showAllProjects, 'show-single-project': !showAllProjects}" *ngIf="servicios && servicios.length > 0">
+<br> <br>
+<div class="servicios" *ngIf="servicios && servicios.length > 0">
 
   <!-- Contenido específico para cada servicio -->
-<div *ngFor="let servicio of servicios">
+<div class="content" *ngFor="let servicio of servicios">
   <p-card [header]="servicio.nombre">
 
       <div *ngFor="let opcion of getDescripcionOpciones(servicio.descripcion.opciones)">
@@ -10,6 +10,9 @@
       </div>
 
   </p-card>
+
+  <br> <br>
+
 
     <!-- GALERIA DE IMAGENES -->
     <div class="card">
@@ -39,6 +42,7 @@
         </ng-template>
       </p-galleria>
     </div>
+    <br> <br>
   </div>
 
 </div>
