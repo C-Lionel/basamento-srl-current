@@ -10,7 +10,7 @@ const routes: Routes = [
     component: ProyectosComponent,
   },
   {
-    path: ':project', // :project es un parámetro dinámico en la ruta
+    path: ':project',
     component: ProyectosComponent,
   },
 ];

@@ -1,0 +1,36 @@
+
+{
+  "items": [
+    {
+      "label": "Nosotros",
+      "icon": "pi pi-users",
+      "routerLink": "nosotros"
+    },
+    {
+      "label": "Proyectos",
+      "icon": "pi pi-wallet",
+      "items": [
+        {
+          "label": "Junin 2816",
+          "icon": "pi pi-minus",
+          "routerLink": "proyectos/junin-2816"
+        },
+        {
+          "label": "Alvear 1065",
+          "icon": "pi pi-minus",
+          "routerLink": "proyectos/alvear-1065"
+        }
+      ]
+    },
+    {
+      "label": "Servicios",
+      "icon": "pi pi-shopping-bag",
+      "routerLink": "servicios"
+    },
+    {
+      "label": "Contacto",
+      "icon": "pi pi-phone",
+      "routerLink": "contacto"
+    }
+  ]
+}

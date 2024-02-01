@@ -58,7 +58,7 @@ export class ProyectosService {
       },
       // Agregar más servicios según sea necesario
     ];
-    console.log('Servicios obtenidos:', servicios);
+    // console.log('Servicios obtenidos:', servicios);
     return Promise.resolve(servicios);
   }
 

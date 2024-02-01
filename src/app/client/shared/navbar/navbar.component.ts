@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
+import * as navbarConfig from '../../models/config/navbar-config.json';
 
 @Component({
   selector: 'shared-navbar',
@@ -83,43 +84,7 @@ export class NavbarComponent {
   }
 
 
-
-
     ngOnInit() {
-        this.items = [
-
-            {
-                label: 'Nosotros',
-                icon: 'pi pi-users',
-                routerLink: 'nosotros'
-            },
-            {
-                label: 'Proyectos',
-                icon: 'pi pi-wallet',
-                items: [
-                  {
-                    label: 'Junin 2816',
-                    icon: 'pi pi-minus',
-                    // command: () => this.selectProject('s-ager'),
-                    routerLink: 'proyectos/junin-2816'
-                  },
-                  {
-                    label: 'Alvear 1065',
-                    icon: 'pi pi-minus',
-                    routerLink: 'proyectos/alvear-1065'
-                  },
-                ]
-            },
-            {
-                label: 'Servicios',
-                icon: 'pi pi-shopping-bag',
-                routerLink: 'servicios'
-            },
-            {
-                label: 'Contacto',
-                icon: 'pi pi-phone',
-                routerLink: 'contacto'
-            },
-        ];
+      this.items = (navbarConfig as any).default.items;
     }
 }

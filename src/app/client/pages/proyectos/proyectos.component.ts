@@ -44,7 +44,7 @@ export class ProyectosComponent implements OnInit, OnDestroy {
 
     this.route.paramMap.subscribe(async (params) => {
       this.selectedProject = params.get('project');
-      console.log('Selected Project: proyectos.component.ts', this.selectedProject);
+      // console.log('Selected Project: proyectos.component.ts', this.selectedProject);
 
       this.proyectosService.setSelectedProject(this.selectedProject);
 
@@ -102,8 +102,6 @@ onFullScreenChange() {
     this.cd.reattach();
 }
 
-// proyectos.component.ts
-// ...
 
 closePreviewFullScreen() {
   if (document.exitFullscreen) {
@@ -120,7 +118,7 @@ closePreviewFullScreen() {
   }
 }
 
-// ...
+
 
 bindDocumentListeners() {
     this.onFullScreenListener = this.onFullScreenChange.bind(this);
