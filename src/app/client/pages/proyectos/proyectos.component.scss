@@ -1,6 +1,30 @@
-.servicios {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+// APLICAMOS DOS TIPOS DE ESTILOS, UNA PARA PROYECTOS Y OTRA PARA PROYECTOS/:PROYECTO PERO DEJAMOS LOS MISMOS ESTILOS POR EL PRIMENG,
+// IGUAL DEJAMOS LA LÓGICA POR SI NECESITAMOS APLICAR OTROS ESTILOS.
+
+.servicios__content__galeria {
+  margin-top: 0.5rem;
 }
+
+  .individual-proyecto  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .proyectos-page  {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    .servicios__content {
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+
+  }
+
+
+

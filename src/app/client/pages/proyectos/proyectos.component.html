@@ -1,20 +1,17 @@
-<br> <br>
-<div class="servicios" *ngIf="servicios && servicios.length > 0">
-  <!-- Contenido específico para cada servicio -->
-<div *ngFor="let servicio of servicios">
-  <p-card [header]="servicio.nombre">
 
+
+<div class="servicios" [ngClass]="proyectosClass" *ngIf="servicios && servicios.length > 0" >
+  <!-- Contenido específico para cada servicio -->
+<div class="servicios__content"  *ngFor="let servicio of servicios">
+
+  <p-card [header]="servicio.nombre">
       <div *ngFor="let opcion of getDescripcionOpciones(servicio.descripcion.opciones)">
         <i class="pi pi-check" style="color: white; font-size: 0.8rem;"></i> {{ opcion }}
       </div>
-
   </p-card>
 
-  <br> <br>
-
-
     <!-- GALERIA DE IMAGENES -->
-    <div class="card">
+    <div class="card servicios__content__galeria">
       <p-galleria #galleria [value]="servicio.imagenes" [(activeIndex)]="activeIndex" [numVisible]="5"
         [showThumbnails]="showThumbnails" [showItemNavigators]="true" [showItemNavigatorsOnHover]="true" [circular]="true"
         [autoPlay]="true" [transitionInterval]="3000" [containerStyle]="{'width':'100%'}"
@@ -41,7 +38,7 @@
         </ng-template>
       </p-galleria>
     </div>
-    <br> <br>
+
   </div>
 
 </div>
