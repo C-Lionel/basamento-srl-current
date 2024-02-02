@@ -51,9 +51,9 @@ export class ProyectosComponent implements OnInit, OnDestroy {
       const isProyectosPage = segments.length === 0 || segments.some(segment => segment.path === 'proyectos');
 
       if (!isProyectosPage) {
-        this.proyectosClass = 'individual-proyecto';
+        this.proyectosClass = 'proyectos__individual';
       } else {
-        this.proyectosClass = 'proyectos-page';
+        this.proyectosClass = 'proyectos__list';
       }
 
       // console.log('Is Proyectos Page:', isProyectosPage);
@@ -62,7 +62,7 @@ export class ProyectosComponent implements OnInit, OnDestroy {
 
 
     this.route.paramMap.subscribe(async (params) => {
-      
+
       this.selectedProject = params.get('project');
       // console.log('Selected Project: proyectos.component.ts', this.selectedProject);
 
