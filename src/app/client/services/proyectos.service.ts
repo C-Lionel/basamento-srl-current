@@ -23,10 +23,7 @@ export class ProyectosService {
             option1: 'Ejecución depósito comercial de 130 m² cubiertos.',
             option2: 'Ejecución depósito comercial de 130 m² cubiertos.',
             option3: 'Ejecución depósito comercial de 130 m² cubiertos.',
-            option4: 'Ejecución depósito comercial de 130 m² cubiertos.',
-            option5: 'Ejecución depósito comercial de 130 m² cubiertos.',
-            option6: 'Ejecución depósito comercial de 130 m² cubiertos.',
-            option7: 'Ejecución depósito comercial de 130 m² cubiertos.',
+
           },
         },
         imagenes: [
@@ -45,6 +42,7 @@ export class ProyectosService {
         descripcion: {
           opciones: {
             option1: 'Remodelación Alvear 1065',
+            option2: 'Remodelación Alvear 1065',
           },
         },
         imagenes: [

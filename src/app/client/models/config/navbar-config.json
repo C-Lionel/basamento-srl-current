@@ -13,12 +13,12 @@
       "items": [
         {
           "label": "Junin 2816",
-          "icon": "pi pi-minus",
+          "icon": "pi pi-chevron-right",
           "routerLink": "proyectos/junin-2816"
         },
         {
           "label": "Alvear 1065",
-          "icon": "pi pi-minus",
+          "icon": "pi pi-chevron-right",
           "routerLink": "proyectos/alvear-1065"
         }
       ]

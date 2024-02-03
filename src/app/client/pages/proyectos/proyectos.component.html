@@ -5,8 +5,8 @@
 <div class="proyectos__content"  *ngFor="let servicio of servicios">
 
   <p-card [header]="servicio.nombre">
-      <div *ngFor="let opcion of getDescripcionOpciones(servicio.descripcion.opciones)">
-        <i class="pi pi-check" style="color: white; font-size: 0.8rem;"></i> {{ opcion }}
+      <div style="margin-bottom: 0.3rem;" *ngFor="let opcion of getDescripcionOpciones(servicio.descripcion.opciones)">
+        <i class="pi pi-minus" style="color: white; font-size: 0.5rem;"></i> {{ opcion }}
       </div>
   </p-card>
 
