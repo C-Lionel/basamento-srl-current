@@ -1,10 +1,16 @@
+// FUENTES
+@font-face {
+  font-family: montserrat-regular-400;
+  src: url('./assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+}
 
+// cocogoose
 
 /* Colores */
 :root {
-  --color-background: #8EA1AB;
-  --footer-backround:#758D9A;
-  --color-primary: #1e3846;
+  --color-background: #FFFFFF;
+  --footer-backround:#033055;
+  --color-primary: #033055;
   --color-hover: #8A8A8A;
 }
 
@@ -31,11 +37,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 body {
   font-size: 1rem; // Puedes ajustar esto según tus preferencias
   background-color: var(--color-background);
+  font-family: montserrat-regular-400;
 }
 
 // Utilizar rem en lugar de px para obtener un escalado más fácil
 html {
   font-size: 100%;
+  color: #033055;
+  // font-family: cocogoose-pro-semilight;
 }
 
 // ESTILOS GENERALES DE MI APLICACIÓN
@@ -71,6 +80,9 @@ h1 {
 
 // PROYECTOS
 
+.p-card-body {
+  background-color: #0E0C0A;
+}
 
 
   .custom-galleria {
@@ -143,6 +155,7 @@ h1 {
 
 
   }
+
 
 
 
