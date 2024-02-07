@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GaleriaImagenesComponent } from './galeria-imagenes/galeria-imagenes.component';
+import { PrimengModule } from 'src/app/shared/primeng/primeng.module';
 
 
 
@@ -9,7 +10,8 @@ import { GaleriaImagenesComponent } from './galeria-imagenes/galeria-imagenes.co
     GaleriaImagenesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PrimengModule
   ],
   exports: [
     GaleriaImagenesComponent
