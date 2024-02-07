@@ -13,6 +13,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { PrimengModule } from '../shared/primeng/primeng.module';
+import { ComponentsModule } from './components/components.module';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PrimengModule } from '../shared/primeng/primeng.module';
     CommonModule,
     ClientRoutingModule,
     PrimengModule,
-    FormsModule
+    FormsModule,
+    ComponentsModule
   ]
 })
 export class ClientModule { }
