@@ -1,18 +1,18 @@
 <h1 class="main-margen-superior">PROYECTOS</h1>
 
-<div class="proyectos" [ngClass]="proyectosClass" *ngIf="servicios && servicios.length > 0" >
+<div class="proyectos" [ngClass]="proyectosClass" *ngIf="proyectos && proyectos.length > 0" >
   <!-- Contenido específico para cada servicio -->
-<div class="proyectos__content"  *ngFor="let servicio of servicios">
+<div class="proyectos__content"  *ngFor="let proyecto of proyectos">
 
-  <p-card [header]="servicio.nombre">
-      <div style="margin-bottom: 0.3rem" *ngFor="let opcion of getDescripcionOpciones(servicio.descripcion.opciones)">
+  <p-card [header]="proyecto.nombre">
+      <div style="margin-bottom: 0.3rem" *ngFor="let opcion of getDescripcionOpciones(proyecto.descripcion.opciones)">
         <i class="pi pi-chevron-circle-right" style="color: #FFC107; font-size: 0.8rem;"></i> {{ opcion }}
       </div>
   </p-card>
 
     <!-- GALERIA DE IMAGENES -->
     <div class="card proyectos__content__galeria">
-      <p-galleria #galleria [value]="servicio.imagenes" [(activeIndex)]="activeIndex" [numVisible]="5"
+      <p-galleria #galleria [value]="proyecto.imagenes" [(activeIndex)]="activeIndex" [numVisible]="5"
         [showThumbnails]="showThumbnails" [showItemNavigators]="true" [showItemNavigatorsOnHover]="true" [circular]="true"
         [autoPlay]="true" [transitionInterval]="3000" [containerStyle]="{'width':'100%'}"
         [containerClass]="galleriaClass()">
@@ -28,10 +28,10 @@
         <ng-template pTemplate="footer" let-item>
           <div class="custom-galleria-footer">
               <button type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"><i class="pi pi-list"></i></button>
-              <span *ngIf="servicio.imagenes" class="title-container">
-                  <span>Imagen {{ activeIndex + 1 }} de {{ servicio.imagenes.length }}</span>
-                  <span class="title">{{ servicio.imagenes[activeIndex].title }}</span>
-                  <span>{{ servicio.imagenes[activeIndex].alt }}</span>
+              <span *ngIf="proyecto.imagenes" class="title-container">
+                  <span>Imagen {{ activeIndex + 1 }} de {{ proyecto.imagenes.length }}</span>
+                  <span class="title">{{ proyecto.imagenes[activeIndex].title }}</span>
+                  <span>{{ proyecto.imagenes[activeIndex].alt }}</span>
               </span>
               <button type="button" pButton [ngClass]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button"></button>
           </div>

@@ -6,7 +6,7 @@ export interface ProyectoImagen {
   title: string;
 }
 
-export interface Servicio {
+export interface Proyecto {
   ruta: string;
   nombre: string;
   descripcion: {

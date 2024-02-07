@@ -2,7 +2,7 @@ import { Component, OnInit, ChangeDetectorRef, OnDestroy, ViewChild } from '@ang
 import { Galleria } from 'primeng/galleria';
 import { ProyectosService } from '../../services/proyectos.service';
 import { ActivatedRoute } from '@angular/router';
-import { Servicio } from '../../models/proyecto.model';
+import { Proyecto } from '../../models/proyecto.model';
 
 @Component({
   templateUrl: './proyectos.component.html',
@@ -19,7 +19,7 @@ export class ProyectosComponent implements OnInit, OnDestroy {
   ) { }
 
   selectedProject: string | null = null;
-  servicios: Servicio[] | undefined;
+  proyectos: Proyecto[] | undefined;
   showThumbnails: boolean = false;
   fullscreen: boolean = false;
   activeIndex: number = 0;
@@ -70,11 +70,19 @@ export class ProyectosComponent implements OnInit, OnDestroy {
 
       if (this.selectedProject) {
         // Si hay un proyecto seleccionado, encuentra el servicio que coincida con el nombre del proyecto
-        const servicios = await this.proyectosService.getServicios();
-        this.servicios = servicios.filter(servicio => servicio.ruta.toLowerCase() === this.selectedProject?.toLowerCase());
+        const proyectos = await this.proyectosService.getProyectos();
+        this.proyectos = proyectos.filter(proyecto => proyecto.ruta.toLowerCase() === this.selectedProject?.toLowerCase());
+        this.activeIndex = 0;
       } else {
         // Si no hay un proyecto seleccionado, obtén todos los servicios
-        this.servicios = await this.proyectosService.getServicios();
+        this.proyectos = await this.proyectosService.getProyectos();
+      }
+
+       // Verificar y ajustar el índice activo
+       if (this.proyectos && this.proyectos.length > 0 && this.proyectos[0].imagenes && this.proyectos[0].imagenes.length > 0) {
+        if (this.activeIndex >= this.proyectos[0].imagenes.length) {
+          this.activeIndex = this.proyectos[0].imagenes.length - 1;
+        }
       }
 
       this.bindDocumentListeners();

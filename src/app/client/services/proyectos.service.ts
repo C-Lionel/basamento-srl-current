@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Servicio } from '../models/proyecto.model';
+import { Proyecto } from '../models/proyecto.model';
 
 @Injectable({
   providedIn: 'root',
@@ -13,8 +13,8 @@ export class ProyectosService {
     this.selectedProjectSource.next(project);
   }
 
-  getServicios(): Promise<Servicio[]> {
-    const servicios: Servicio[] = [
+  getProyectos(): Promise<Proyecto[]> {
+    const proyectos: Proyecto[] = [
       {
         ruta: 'junin-2816',
         nombre: 'Junin 2816',
@@ -57,7 +57,7 @@ export class ProyectosService {
       // Agregar más servicios según sea necesario
     ];
     // console.log('Servicios obtenidos:', servicios);
-    return Promise.resolve(servicios);
+    return Promise.resolve(proyectos);
   }
 
 
