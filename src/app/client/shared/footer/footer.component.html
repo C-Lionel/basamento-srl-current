@@ -1,52 +1,49 @@
 <footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-section desarrollador">
-        <h2> <img src="../../../../assets/Logo-blanco.svg" alt="" height="50rem"></h2>
-        <p>Somos una empresa con más de 30 años </p>
+  <div class="footer__container">
+    <div class="footer__content">
+
+      <div class="footer__section footer__section--desarrollador">
+        <h2> <img src="../../../../assets/Logo_3.svg" alt="" height="50rem"></h2>
+         <p>Somos una empresa con más de 30 años </p>
          <p> de trayectoria en el rubro de la construcción, </p>
          <p> lo que nos convierte en líderes en el sector. </p>
-
       </div>
 
-      <div class="footer-section contact">
+      <div class="footer__section footer__section--contact">
         <h2>SECCIONES</h2>
-        <p> <a routerLink="/nosotros">Sobre nosotros</a></p>
-        <p> <a routerLink="/proyectos">Nuestros proyectos</a></p>
-        <p> <a routerLink="/servicios">Servicios y actividades</a></p>
-        <p> <a routerLink="/contacto">Contáctanos</a></p>
+        <p> <a class="footer__link" routerLink="/nosotros">Sobre nosotros</a></p>
+        <p> <a class="footer__link" routerLink="/proyectos">Nuestros proyectos</a></p>
+        <p> <a class="footer__link" routerLink="/servicios">Servicios y actividades</a></p>
+        <p> <a class="footer__link" routerLink="/contacto">Contáctanos</a></p>
       </div>
 
-       <div class="footer-section about">
+      <div class="footer__section footer__section--about">
         <h2>CONTACTO</h2>
-        <p> <i class="pi pi-map-marker" style="color: #BFC8D3; margin-right: 0.3rem;" ></i> Tucumán 555, Venado Tuerto, Santa Fe</p>
-        <p>
-        <p> <i class="pi pi-envelope" style="color: #BFC8D3; margin-right: 0.3rem;" ></i> administracion{{arroba}}basamento-srl.com </p>
-        <p>
-        <p> <i class="pi pi-phone" style="color: #BFC8D3; margin-right: 0.3rem;"></i> +54 9 (3462) 553824 / 537066</p>
+        <p> <i class="pi pi-map-marker"></i> Tucumán 555, Venado Tuerto, Santa Fe</p>
+        <p> <i class="pi pi-envelope"></i> administracion{{arroba}}basamento-srl.com </p>
+        <p> <i class="pi pi-phone"></i> +54 9 (3462) 553824 / 537066</p>
       </div>
     </div>
     <hr>
   </div>
-  <br>
-  <div class="container">
-    <p style="font-size: 0.8rem;"> Copyright &copy; 2024 | BASAMENTO SRL </p>
+
+  <div class="footer__container">
+    <p class="footer__copyright"> Copyright &copy; {{ agno_actual }} | BASAMENTO SRL </p>
   </div>
-  <br>
-  <!-- REDES SOCIALES -->
-        <div class="container">
-          <a href="https://tu-enlace-de-facebook" target="_blank" rel="noopener noreferrer">
-            <i style=" margin-right: 1rem; font-size: 1.5rem; color: white;" class="pi pi-whatsapp"></i>
-          </a>
-          <a href="https://tu-enlace-de-facebook" target="_blank" rel="noopener noreferrer">
-            <i style="margin-right: 1rem; font-size: 1.5rem; color: white" class="pi pi-instagram"></i>
-          </a>
-          <a href="https://tu-enlace-de-facebook" target="_blank" rel="noopener noreferrer">
-            <i style="font-size: 1.5rem; color: white" class="pi pi-facebook"></i>
-          </a>
-        </div>
+
+  <div class="footer__social-container">
+
+    <div class="footer__social">
+      <a href="https://tu-enlace-de-whatsapp" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+        <i class="pi pi-whatsapp"></i>
+      </a>
+      <a href="https://tu-enlace-de-instagram" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+        <i class="pi pi-instagram"></i>
+      </a>
+      <a href="https://tu-enlace-de-facebook" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+        <i class="pi pi-facebook"></i>
+      </a>
+    </div>
+  </div>
 
 </footer>
-
-
-

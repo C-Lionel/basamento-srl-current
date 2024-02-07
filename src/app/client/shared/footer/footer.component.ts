@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   public arroba = '@';
+  public fechaActual = new Date();
+
+  public agno_actual: number = this.fechaActual.getFullYear();
 }
