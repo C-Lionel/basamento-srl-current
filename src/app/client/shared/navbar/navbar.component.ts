@@ -62,7 +62,7 @@ export class NavbarComponent {
       '/nosotros',
       '/proyectos',
       '/proyectos/junin-2816',
-      '/proyectos/axion',
+      '/proyectos/santafe-2189',
       '/proyectos/alvear-1065',
       '/servicios',
       '/contacto'
