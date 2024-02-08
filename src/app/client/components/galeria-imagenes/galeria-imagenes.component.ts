@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-galeria-imagenes',
@@ -6,10 +6,6 @@ import { ChangeDetectorRef, Component, Input, OnDestroy, OnInit } from '@angular
   styleUrls: ['./galeria-imagenes.component.scss']
 })
 export class GaleriaImagenesComponent implements OnDestroy, OnInit {
-
-  constructor(
-    private cd: ChangeDetectorRef
-    ) {}
 
   ngOnInit(): void {
     this.bindDocumentListeners();
@@ -32,8 +28,6 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
     } else {
         this.openPreviewFullScreen();
     }
-
-    this.cd.detach();
 }
 
   openPreviewFullScreen() {
