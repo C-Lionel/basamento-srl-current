@@ -1,32 +1,43 @@
-import { Component, Input, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-galeria-imagenes',
   templateUrl: './galeria-imagenes.component.html',
   styleUrls: ['./galeria-imagenes.component.scss']
 })
-export class GaleriaImagenesComponent implements OnDestroy {
+export class GaleriaImagenesComponent implements OnDestroy, OnInit {
+
+  constructor(
+    private cd: ChangeDetectorRef
+    ) {}
+
+  ngOnInit(): void {
+    this.bindDocumentListeners();
+  }
 
   @Input() imagenes: any[] = [];
   @Input() showThumbnails: boolean = false;
   @Input() activeIndex: number = 0;
-
   fullscreen: boolean = false;
   onFullScreenListener: any;
 
-  ngOnDestroy() {
-    this.unbindDocumentListeners();
+  onThumbnailButtonClick() {
+    this.showThumbnails = !this.showThumbnails;
   }
+
 
   toggleFullScreen() {
     if (this.fullscreen) {
-      this.closePreviewFullScreen();
+        this.closePreviewFullScreen();
     } else {
-      this.openPreviewFullScreen();
+        this.openPreviewFullScreen();
     }
-  }
+
+    this.cd.detach();
+}
 
   openPreviewFullScreen() {
+    console.log('Abriendo pantalla completa...');
     let elem = document.querySelector('.p-galleria') as any;
     if (elem) {
       try {
@@ -46,6 +57,7 @@ export class GaleriaImagenesComponent implements OnDestroy {
   }
 
   onFullScreenChange() {
+    console.log('Cambio en el estado de pantalla completa');
     this.fullscreen = !!(
       document.fullscreenElement ||
       (document as any).mozFullScreenElement ||
@@ -55,6 +67,7 @@ export class GaleriaImagenesComponent implements OnDestroy {
   }
 
   closePreviewFullScreen() {
+    console.log('Cerrando pantalla completa...');
     if (document.exitFullscreen) {
       document.exitFullscreen();
     } else if ((document as any).mozCancelFullScreen) {
@@ -65,7 +78,6 @@ export class GaleriaImagenesComponent implements OnDestroy {
       (document as any).msExitFullscreen();
     }
   }
-
   bindDocumentListeners() {
     this.onFullScreenListener = this.onFullScreenChange.bind(this);
     document.addEventListener('fullscreenchange', this.onFullScreenListener);
@@ -73,6 +85,7 @@ export class GaleriaImagenesComponent implements OnDestroy {
     document.addEventListener('webkitfullscreenchange', this.onFullScreenListener);
     document.addEventListener('msfullscreenchange', this.onFullScreenListener);
   }
+
 
   unbindDocumentListeners() {
     document.removeEventListener('fullscreenchange', this.onFullScreenListener);
@@ -82,6 +95,11 @@ export class GaleriaImagenesComponent implements OnDestroy {
     this.onFullScreenListener = null;
   }
 
+
+  ngOnDestroy() {
+    this.unbindDocumentListeners();
+  }
+
   galleriaClass() {
     return `custom-galleria ${this.fullscreen ? 'fullscreen' : ''}`;
   }
@@ -89,8 +107,4 @@ export class GaleriaImagenesComponent implements OnDestroy {
   fullScreenIcon() {
     return `pi ${this.fullscreen ? 'pi-window-minimize' : 'pi-window-maximize'}`;
   }
-
-  onThumbnailButtonClick() {
-    this.showThumbnails = !this.showThumbnails;
-}
 }
