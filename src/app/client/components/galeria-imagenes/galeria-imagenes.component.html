@@ -1,5 +1,5 @@
 <div class="card proyectos__content__galeria">
-  <p-galleria #galleria [value]="imagenes" [(activeIndex)]="activeIndex" [numVisible]="5"
+  <p-galleria  [value]="imagenes" [(activeIndex)]="activeIndex" [numVisible]="5" [responsiveOptions]="responsiveOptions"
     [showThumbnails]="showThumbnails" [showItemNavigators]="true" [showItemNavigatorsOnHover]="true" [circular]="true"
     [autoPlay]="true" [transitionInterval]="3000" [containerStyle]="{'width':'100%'}"
     [containerClass]="galleriaClass()">

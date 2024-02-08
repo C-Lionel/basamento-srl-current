@@ -12,10 +12,29 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
   }
 
   @Input() imagenes: any[] = [];
+
   @Input() showThumbnails: boolean = false;
+
   @Input() activeIndex: number = 0;
+
   fullscreen: boolean = false;
+
   onFullScreenListener: any;
+
+  responsiveOptions = [
+    {
+        breakpoint: '1024px',
+        numVisible: 5
+    },
+    {
+        breakpoint: '768px',
+        numVisible: 3
+    },
+    {
+        breakpoint: '560px',
+        numVisible: 1
+    }
+];
 
   onThumbnailButtonClick() {
     this.showThumbnails = !this.showThumbnails;
