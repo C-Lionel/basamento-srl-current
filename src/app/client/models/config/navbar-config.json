@@ -12,15 +12,21 @@
       "icon": "pi pi-wallet",
       "items": [
         {
+          "label": "Alvear 1065",
+          "icon": "pi pi-chevron-right",
+          "routerLink": "proyectos/alvear-1065"
+        },
+        {
           "label": "Junin 2816",
           "icon": "pi pi-chevron-right",
           "routerLink": "proyectos/junin-2816"
         },
         {
-          "label": "Alvear 1065",
+          "label": "Santa Fe 2189",
           "icon": "pi pi-chevron-right",
-          "routerLink": "proyectos/alvear-1065"
+          "routerLink": "proyectos/santafe-2189"
         }
+
       ]
     },
     {
