@@ -35,7 +35,12 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-6.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-7.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-8.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-8.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-9.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-10.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-11.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-12.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-13.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-14.jpg'},
       ],
     },
     {
