@@ -2,7 +2,7 @@
 export interface ProyectoImagen {
   itemImageSrc: string;
   thumbnailImageSrc: string;
-  alt: string;
+  alt?: string;
   title: string;
 }
 

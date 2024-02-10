@@ -16,23 +16,33 @@
           "items": [
             {
               "label": "Alvear 1065",
-              "icon": "pi pi-chevron-right",
-              "routerLink": "proyectos/alvear-1065"
+              "routerLink": "proyectos/alvear-1065",
+              "icon": "pi pi-check-square"
             }
           ]
         },
         {
-          "label": "Historicos",
+          "label": "Históricos",
           "items": [
             {
+              "label": "Cem. Otoñal",
+              "routerLink": "proyectos/cementerio-otoñal",
+              "icon": "pi pi-check-square"
+            },
+            {
               "label": "Junin 2816",
-              "icon": "pi pi-chevron-right",
-              "routerLink": "proyectos/junin-2816"
+              "routerLink": "proyectos/junin-2816",
+              "icon": "pi pi-check-square"
+            },
+            {
+              "label": "Los Molles",
+              "routerLink": "proyectos/los-molles",
+              "icon": "pi pi-check-square"
             },
             {
               "label": "Santa Fe 2189",
-              "icon": "pi pi-chevron-right",
-              "routerLink": "proyectos/santafe-2189"
+              "routerLink": "proyectos/santafe-2189",
+              "icon": "pi pi-check-square"
             }
           ]
         }
