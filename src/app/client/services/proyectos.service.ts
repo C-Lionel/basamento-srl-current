@@ -16,35 +16,7 @@ export class ProyectosService {
 
 
   private proyectos: any[] = [
-    {
-      nombre: 'Alvear 1065',
-      ruta: 'alvear-1065',
-      descripcion: {
-        opciones: {
-          option1: 'Remodelación de vivienda',
-          option2: 'Construcción de nuevo baño y lavadero',
-          option3: 'Reparación de cañerias de gas y presentación en litoral gas',
-          option4: 'Mantenimiento y nuevas cañerias de agua y cloacas',
-          option5: 'Arreglos y nuevas instalaciones eléctricas',
-        },
-      },
-      imagenes: [
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-1.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-2.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-3.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-4.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-5.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-6.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-7.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-8.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-9.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-10.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-11.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-12.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-13.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-14.jpg'},
-      ],
-    },
+
     {
       nombre: 'Estación de Servicio Axion - Roma',
       ruta: 'axion-roma',
@@ -103,6 +75,35 @@ export class ProyectosService {
       ],
     },
     {
+      nombre: 'Alvear 1065',
+      ruta: 'alvear-1065',
+      descripcion: {
+        opciones: {
+          option1: 'Remodelación de vivienda',
+          option2: 'Construcción de nuevo baño y lavadero',
+          option3: 'Reparación de cañerias de gas y presentación en litoral gas',
+          option4: 'Mantenimiento y nuevas cañerias de agua y cloacas',
+          option5: 'Arreglos y nuevas instalaciones eléctricas',
+        },
+      },
+      imagenes: [
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-4.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-5.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-6.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-7.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-8.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-9.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-10.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-11.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-12.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-13.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-14.jpg'},
+      ],
+    },
+    {
       nombre: 'Perillo 1125',
       ruta: 'perillo-1125',
       descripcion: {
@@ -119,6 +120,48 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-6.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-7.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-8.jpg'},
+      ],
+    },
+    {
+      nombre: 'Sarmiento 249',
+      ruta: 'sarmiento-249',
+      descripcion: {
+        opciones: {
+          option1: 'Sarmiento 249',
+        },
+      },
+      imagenes: [
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-4.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-5.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-6.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-7.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-8.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-9.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-10.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-11.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-12.jpg'},
+      ],
+    },
+    {
+      nombre: 'Barzola Grúas',
+      ruta: 'barzola-gruas',
+      descripcion: {
+        opciones: {
+          option1: 'Sarmiento 249',
+        },
+      },
+      imagenes: [
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-4.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-5.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-6.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-7.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-8.jpg'},
       ],
     },
     {

@@ -14,19 +14,25 @@
         {
           "label": "Recientes",
           "items": [
-            {
-              "label": "Alvear 1065",
-              "routerLink": "proyectos/alvear-1065",
-              "icon": "pi pi-check-square"
-            },
+
             {
               "label": "Axion - Roma",
               "routerLink": "proyectos/axion-roma",
               "icon": "pi pi-check-square"
             },
             {
+              "label": "Alvear 1065",
+              "routerLink": "proyectos/alvear-1065",
+              "icon": "pi pi-check-square"
+            },
+            {
               "label": "Perillo 1125",
               "routerLink": "proyectos/perillo-1125",
+              "icon": "pi pi-check-square"
+            },
+            {
+              "label": "Sarmiento 249",
+              "routerLink": "proyectos/sarmiento-249",
               "icon": "pi pi-check-square"
             }
           ]
@@ -34,6 +40,11 @@
         {
           "label": "Anteriores",
           "items": [
+            {
+              "label": "Barzola - Grúas",
+              "routerLink": "proyectos/barzola-gruas",
+              "icon": "pi pi-check-square"
+            },
             {
               "label": "Cem. Otoñal",
               "routerLink": "proyectos/cementerio-otoñal",
