@@ -5,12 +5,12 @@
     [containerClass]="galleriaClass()">
 
     <ng-template pTemplate="item" let-item>
-      <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+      <img loading="lazy" [src]="item.itemImageSrc" style="width: 100%; display: block;" />
     </ng-template>
 
     <ng-template pTemplate="thumbnail" let-item>
       <div class="grid grid-nogutter justify-content-center">
-        <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        <img loading="lazy" [src]="item.thumbnailImageSrc" style="display: block;" />
       </div>
     </ng-template>
 

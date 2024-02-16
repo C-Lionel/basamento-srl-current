@@ -6,6 +6,9 @@
 
 // cocogoose
 
+// #033055
+// #EFAB9C
+
 /* Colores */
 :root {
   --color-background: #FFFFFF;
@@ -68,10 +71,9 @@ h1 {
   height: 6rem;
   background-color: var(--color-primary) ;
   color: #FFC107;
-  // a {
-  //   margin-left: 2rem;
-  // }
   font-size: 1.3rem;
+  border-radius: 0;
+  
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
     color: white;
   }

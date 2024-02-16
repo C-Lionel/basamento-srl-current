@@ -12,21 +12,36 @@
       "icon": "pi pi-wallet",
       "items": [
         {
-          "label": "Actuales",
+          "label": "Recientes",
           "items": [
             {
               "label": "Alvear 1065",
               "routerLink": "proyectos/alvear-1065",
               "icon": "pi pi-check-square"
+            },
+            {
+              "label": "Axion - Roma",
+              "routerLink": "proyectos/axion-roma",
+              "icon": "pi pi-check-square"
+            },
+            {
+              "label": "Perillo 1125",
+              "routerLink": "proyectos/perillo-1125",
+              "icon": "pi pi-check-square"
             }
           ]
         },
         {
-          "label": "Históricos",
+          "label": "Anteriores",
           "items": [
             {
               "label": "Cem. Otoñal",
               "routerLink": "proyectos/cementerio-otoñal",
+              "icon": "pi pi-check-square"
+            },
+            {
+              "label": "Esc. Los Padres",
+              "routerLink": "proyectos/escuela-los-padres",
               "icon": "pi pi-check-square"
             },
             {
@@ -40,8 +55,18 @@
               "icon": "pi pi-check-square"
             },
             {
+              "label": "Orsa",
+              "routerLink": "proyectos/orsa",
+              "icon": "pi pi-check-square"
+            },
+            {
               "label": "Santa Fe 2189",
               "routerLink": "proyectos/santafe-2189",
+              "icon": "pi pi-check-square"
+            },
+            {
+              "label": "Super Alem",
+              "routerLink": "proyectos/super-alem",
               "icon": "pi pi-check-square"
             }
           ]

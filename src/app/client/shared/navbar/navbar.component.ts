@@ -63,6 +63,12 @@ export class NavbarComponent {
       '/proyectos',
       '/proyectos/junin-2816',
       '/proyectos/santafe-2189',
+      '/proyectos/axion-roma',
+      '/proyectos/perillo-1125',
+      '/proyectos/cementerio-otoñal',
+      '/proyectos/escuela-los-padres',
+      '/proyectos/los-molles',
+      '/proyectos/super-alem',
       '/proyectos/alvear-1065',
       '/servicios',
       '/contacto'
