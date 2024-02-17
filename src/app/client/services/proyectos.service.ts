@@ -203,34 +203,20 @@ export class ProyectosService {
       ],
     },
     {
-      nombre: 'Escuela de los Padres',
-      ruta: 'escuela-los-padres',
+      nombre: 'Jockey Club',
+      ruta: 'jockey-club',
       descripcion: {
         opciones: {
-          option1: 'Pintura interior y exterior',
+          option1: 'Jockey Club',
         },
       },
       imagenes: [
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-1.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-2.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-3.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-4.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-5.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-6.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-7.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-8.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-9.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-10.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-11.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-12.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-13.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-14.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-15.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-15.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-16.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-16.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-17.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-17.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-18.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-18.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-19.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-19.jpg'},
-        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-20.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-20.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-4.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-5.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-6.jpg'},
       ],
     },
     {
@@ -256,48 +242,6 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-12.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-13.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-14.jpg'},
-      ],
-    },
-    {
-      nombre: 'Los Molles',
-      ruta: 'los-molles',
-      descripcion: {
-        opciones: {
-          option1: 'Los Molles - Arias',
-        },
-      },
-      imagenes: [
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-1.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-2.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-3.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-4.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-5.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-6.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-7.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-8.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-9.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-10.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-11.jpg'},
-      ],
-    },
-    {
-      nombre: 'Orsa',
-      ruta: 'orsa',
-      descripcion: {
-        opciones: {
-          option1: 'Ejecución playa de maniobra y estacionamiento camiones en planta Royal Canin',
-          option2: 'Ejecución tendido pluvial a Arroyo en exterior planta Royal Canin',
-          option3: 'Ejecución cámaras y desagües internos en planta Royal Canin',
-        },
-      },
-      imagenes: [
-          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-1.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-2.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-3.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-4.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-5.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-6.jpg'},
-
       ],
     },
     {
@@ -361,7 +305,116 @@ export class ProyectosService {
         { itemImageSrc: 'assets/imagenes/proyectos/super-alem/galeria/img-25.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/super-alem/small/img-25.jpg'},
       ],
     },
+    {
+      nombre: 'Escuela de los Padres',
+      ruta: 'escuela-los-padres',
+      descripcion: {
+        opciones: {
+          option1: 'Pintura interior y exterior',
+        },
+      },
+      imagenes: [
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-1.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-2.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-3.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-4.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-5.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-6.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-7.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-8.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-9.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-10.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-11.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-12.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-13.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-14.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-15.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-15.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-16.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-16.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-17.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-17.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-18.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-18.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-19.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-19.jpg'},
+        { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-20.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-20.jpg'},
+      ],
+    },
 
+    {
+      nombre: 'Los Molles',
+      ruta: 'los-molles',
+      descripcion: {
+        opciones: {
+          option1: 'Los Molles - Arias',
+        },
+      },
+      imagenes: [
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-4.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-5.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-6.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-7.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-8.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-9.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-9.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-10.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-11.jpg'},
+      ],
+    },
+    {
+      nombre: 'Orsa',
+      ruta: 'orsa',
+      descripcion: {
+        opciones: {
+          option1: 'Ejecución playa de maniobra y estacionamiento camiones en planta Royal Canin',
+          option2: 'Ejecución tendido pluvial a Arroyo en exterior planta Royal Canin',
+          option3: 'Ejecución cámaras y desagües internos en planta Royal Canin',
+        },
+      },
+      imagenes: [
+          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-4.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-5.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-6.jpg'},
+
+      ],
+    },
+    {
+      nombre: 'Polo Club',
+      ruta: 'polo-club',
+      descripcion: {
+        opciones: {
+          option1: 'Ejecución de cordón cuneta, alcantarillas y pavimento'
+        },
+      },
+      imagenes: [
+          { itemImageSrc: 'assets/imagenes/proyectos/polo/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/polo/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/polo/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/polo/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/polo/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/polo/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/polo/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/polo/small/img-4.jpg'},
+
+
+      ],
+    },
+    {
+      nombre: 'Roma Parador',
+      ruta: 'roma-parador',
+      descripcion: {
+        opciones: {
+          option1: 'Roma Parador'
+        },
+      },
+      imagenes: [
+          { itemImageSrc: 'assets/imagenes/proyectos/roma-parador/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/roma-parador/small/img-1.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/roma-parador/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/roma-parador/small/img-2.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/roma-parador/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/roma-parador/small/img-3.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/roma-parador/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/roma-parador/small/img-4.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/roma-parador/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/roma-parador/small/img-5.jpg'},
+          { itemImageSrc: 'assets/imagenes/proyectos/roma-parador/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/roma-parador/small/img-6.jpg'},
+
+
+      ],
+    },
 
   ];
 
