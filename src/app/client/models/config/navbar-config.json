@@ -12,7 +12,7 @@
       "icon": "pi pi-wallet",
       "items": [
         {
-          "label": "Recientes",
+          "label": "Actuales",
           "items": [
 
             {
@@ -38,7 +38,7 @@
           ]
         },
         {
-          "label": "Anteriores",
+          "label": "Previos",
           "items": [
 
             {
