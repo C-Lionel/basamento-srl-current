@@ -1,0 +1,34 @@
+$color-background: #EFF5F5;
+
+
+.servicios {
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    
+    &--destacado {
+      background-color: $color-background;
+    }
+  }
+
+  &__image {
+    animation: slideInLeft 1s forwards;
+  }
+
+  &__info {
+    margin-top: 2.5rem;
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__description {
+    margin-bottom: 1.5625rem;
+  }
+}
+
