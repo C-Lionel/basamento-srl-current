@@ -30,6 +30,8 @@
 
 // Primeng Icons
 @import "primeicons/primeicons.css";
+@import "~animate.css/animate.css";
+
 
 // Reset de márgenes y padding
 body, h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -73,7 +75,7 @@ h1 {
   color: #FFC107;
   font-size: 1.3rem;
   border-radius: 0;
-  
+
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
     color: white;
   }
