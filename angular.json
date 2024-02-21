@@ -17,9 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "aos"
-           ],
             "outputPath": "dist/basamento-srl-current",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -35,8 +32,7 @@
             "styles": [
               "src/styles.scss",
               "src/assets/styles/theme.css",
-              "src/assets/styles/primeng.min.css",
-              "node_modules/aos/dist/aos.css"
+              "src/assets/styles/primeng.min.css"
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js"

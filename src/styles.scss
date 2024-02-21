@@ -4,6 +4,10 @@
   src: url('./assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
 }
 
+@import "primeicons/primeicons.css";
+@import "~animate.css/animate.css";
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
+
 // cocogoose
 
 // #033055
@@ -28,9 +32,7 @@
   margin-bottom: 50px; // Ajusta según sea necesario
 }
 
-// Primeng Icons
-@import "primeicons/primeicons.css";
-@import "~animate.css/animate.css";
+
 
 
 // Reset de márgenes y padding
@@ -165,7 +167,6 @@ h1 {
               }
           }
       }
-
 
   }
 
