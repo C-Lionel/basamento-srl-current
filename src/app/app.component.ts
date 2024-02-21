@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 declare let AOS: any;
+
 import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
@@ -10,15 +11,19 @@ import { PrimeNGConfig } from 'primeng/api';
 export class AppComponent implements OnInit {
 
   title = 'basamento-srl-current';
+  private static initialized = false;
 
   constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit() {
     this.primengConfig.ripple = true;
-    // Animaciones al hacer scroll, lo importamos en el app para que lo cargue bien cuando iniciamos por primera vez la aplicación
-    AOS.init({
-      once: true
-    });
+    
+    if (!AppComponent.initialized) {
+      AppComponent.initialized = true;
+      AOS.init({
+        once: true
+      });
+    }
   }
 
 }
