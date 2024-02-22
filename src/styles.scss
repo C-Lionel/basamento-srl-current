@@ -8,11 +8,6 @@
 @import "~animate.css/animate.css";
 @import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
 
-// cocogoose
-
-// #033055
-// #EFAB9C
-
 /* Colores */
 :root {
   --color-background: #FFFFFF;
@@ -25,15 +20,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 .main-margen-inferior {
-  margin-top: 50px; // Ajusta según sea necesario
+  margin-top: 50px;
 }
 
 .main-margen-superior {
-  margin-bottom: 50px; // Ajusta según sea necesario
+  margin-bottom: 50px;
 }
-
-
-
 
 // Reset de márgenes y padding
 body, h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -72,6 +64,10 @@ h1 {
 }
 
 .p-menubar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   height: 6rem;
   background-color: var(--color-primary) ;
   color: #FFC107;
@@ -169,7 +165,5 @@ h1 {
       }
 
   }
-
-
 
 
