@@ -11,6 +11,7 @@
 /* Colores */
 :root {
   --color-background: #FFFFFF;
+  --color-background-light: #F4F5F7;
   --color-primary: #033055;
   --color-secondary: #0096C2;
   --color-terciary: #F2FDFE;
@@ -169,9 +170,10 @@ h1 {
   .p-scrolltop  {
     background-color: var(--color-primary);
     .p-scrolltop-icon {
-      color: var(--color-terciary)
+      color: var(--color-terciary);
     }
   }
+
 
   //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
 
@@ -179,6 +181,9 @@ h1 {
   .p-accordion .p-accordion-header .p-accordion-header-link:hover {
     background-color: #39414e;
   }
+
+
+
 
 
 
