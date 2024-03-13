@@ -5,6 +5,9 @@ import { DividerModule } from 'primeng/divider';
 import { CardModule } from 'primeng/card';
 import { GalleriaModule } from 'primeng/galleria';
 import { ImageModule } from 'primeng/image';
+import { AccordionModule } from 'primeng/accordion';
+import { ButtonModule } from 'primeng/button';
+import { ScrollTopModule } from 'primeng/scrolltop';
 
 
 
@@ -16,7 +19,11 @@ import { ImageModule } from 'primeng/image';
     DividerModule,
     CardModule,
     GalleriaModule,
-    ImageModule
+    ImageModule,
+    AccordionModule,
+    ButtonModule,
+    ScrollTopModule
+
   ]
 })
 export class PrimengModule { }

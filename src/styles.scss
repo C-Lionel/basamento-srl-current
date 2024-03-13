@@ -166,4 +166,22 @@ h1 {
 
   }
 
+  .p-scrolltop  {
+    background-color: var(--color-primary);
+    .p-scrolltop-icon {
+      color: var(--color-terciary)
+    }
+  }
+
+  //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
+
+
+  .p-accordion .p-accordion-header .p-accordion-header-link:hover {
+    background-color: #39414e;
+  }
+
+
+
+
+
 

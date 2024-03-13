@@ -16,7 +16,7 @@
 
     <ng-template pTemplate="footer" let-item>
       <div class="custom-galleria-footer">
-          <button type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"><i class="pi pi-list"></i></button>
+          <button type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"></button>
           <span *ngIf="imagenes" class="title-container">
               <span>Imagen {{ activeIndex + 1 }} de {{ imagenes.length }}</span>
               <span class="title">{{ imagenes[activeIndex]?.title }}</span>
@@ -25,6 +25,8 @@
           <button type="button" pButton [ngClass]="fullScreenIcon()" (click)="toggleFullScreen()" class="fullscreen-button"></button>
       </div>
     </ng-template>
+
+   
 
   </p-galleria>
 </div>
