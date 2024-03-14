@@ -26,4 +26,57 @@
     justify-content: space-evenly;
     margin-bottom: 10rem;
   }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    p{
+      width: 35%;
+      text-align: left;
+      margin-right: 5rem;
+      line-height: 1.65rem;
+      font-size: 1.0625rem;
+      .strong{
+        font-size: 1.4rem;
+      }
+    }
+    img {
+      border-radius: 1rem; /* Bordes redondeados */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__contact {
+    text-align: center;
+    margin-top: 10rem;
+    p {
+      font-size: 1.0625rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    button {
+      background-color: var(--color-secondary);
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      // border-radius: 8px;
+      transition-duration: 0.2s;
+      margin-bottom: 3rem;
+
+    }
+
+    button:hover {
+      background-color: var(--color-primary); /* Cambia el color de fondo al hacer hover */
+      color: var(--color-secondary);
+      box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Añade una sombra elevada */
+      transform: translateY(-5px);
+      border-radius: 5px;
+    }
+  }
 }
