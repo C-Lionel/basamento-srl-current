@@ -20,6 +20,11 @@
 
 /* You can add global styles to this file, and also import other style files */
 
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .main-margen-inferior {
   margin-top: 50px;
 }
@@ -180,6 +185,15 @@ h1 {
 
   .p-accordion .p-accordion-header .p-accordion-header-link:hover {
     background-color: #39414e;
+  }
+
+  .p-card {
+    margin-bottom: 2rem;
+  }
+  .p-card:hover {
+    background-color: #39414e;
+    transition: transform 0.5s ease;
+    transform: scale(1.01);
   }
 
 
