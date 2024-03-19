@@ -10,11 +10,14 @@ export class ContactoComponent {
 
   formGroup!: FormGroup;
   value!: string;
+  ingredient!: string;
+  public arroba = '@';
 
   ngOnInit() {
     this.formGroup = new FormGroup({
       nombre: new FormControl(null, Validators.required),
       apellido: new FormControl(null, Validators.required),
+      email: new FormControl(null, Validators.required),
       telefono: new FormControl(null, Validators.required),
       mensaje: new FormControl(null, Validators.required),
     });

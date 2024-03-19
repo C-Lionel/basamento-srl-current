@@ -16,8 +16,9 @@ export class AppComponent implements OnInit {
   constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit() {
+
     this.primengConfig.ripple = true;
-    
+
     if (!AppComponent.initialized) {
       AppComponent.initialized = true;
       AOS.init({

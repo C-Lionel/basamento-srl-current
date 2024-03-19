@@ -15,14 +15,36 @@
   &__info {
     flex: 1; // El texto ocupa el espacio disponible
     margin-right: 20px; // Ajusta el espacio entre el texto y el formulario
+    P{
+      margin-bottom: 1.7rem;
+    }
+    img {
+      border-radius: 0.35rem;
+      opacity: 0.9;
+      filter: grayscale(30%); /* Aplicar escala de grises al 50% */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
   }
 
   &__form {
     flex: 1; // El formulario ocupa el espacio disponible
+    .radio_options{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin-bottom: 1.7rem;
+      div {
+        padding-right: 1rem;
+        p-radioButton{
+          padding-right: 0.4rem;
+        }
+      }
+    }
   }
 
   h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.7rem;
     color: #05a4d4;
   }
 

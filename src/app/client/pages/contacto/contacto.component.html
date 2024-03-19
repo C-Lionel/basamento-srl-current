@@ -8,19 +8,43 @@
 
   <div class="contacto__info">
     <p>
-      ¡Gracias por tu interés en contactar con Sustentacorp! Estamos emocionados por saber cómo podemos colaborar
-      contigo en tu próximo proyecto. Ya sea que necesites más información, desees solicitar un presupuesto o
-      simplemente quieras conocernos mejor, estamos aquí para escucharte y responder a tus consultas.
+      ¡Gracias por tu interés en contactar con <strong>Basamento SRL</strong>! Estamos entusiasmados por conocer cómo podemos colaborar contigo en tu próximo proyecto. Ya sea que requieras más detalles, quieras solicitar un presupuesto o simplemente desees conocernos mejor, estamos aquí para escucharte y responder a todas tus consultas.
     </p>
+    <!-- <p-image src="assets/imagenes/contacto/img-contacto.jpg" alt="Image"></p-image> -->
+    <img src="assets/imagenes/contacto/img-contacto.jpg" alt="">
   </div>
 
   <div class="contacto__form">
 
     <h2>Formulario de Contacto</h2>
+
+  <div class="radio_options">
+      <div>
+          <p-radioButton name="pizza" value="Cheese" [(ngModel)]="ingredient" inputId="ingredient1"></p-radioButton>
+          <label for="ingredient1">Servicios de ingeniería</label>
+      </div>
+
+      <div>
+          <p-radioButton name="pizza" value="Mushroom" [(ngModel)]="ingredient" inputId="ingredient2"></p-radioButton>
+          <label for="ingredient2">Presupuesto</label>
+      </div>
+
+      <div>
+          <p-radioButton name="pizza" value="Pepper" [(ngModel)]="ingredient" inputId="ingredient3"></p-radioButton>
+          <label for="ingredient3">Proyectos en curso</label>
+      </div>
+
+      <div>
+          <p-radioButton name="pizza" value="Onion" [(ngModel)]="ingredient" inputId="ingredient4"></p-radioButton>
+          <label for="ingredient4">Otros</label>
+      </div>
+  </div>
+
     <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
       <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
       <input type="text" pInputText formControlName="apellido" placeholder="Apellido" />
-      <input type="number" pInputText formControlName="telefono" placeholder="Telefono" />
+      <input type="email" pInputText formControlName="email" placeholder="E-Mail" />
+      <input type="tel" pInputText formControlName="telefono" placeholder="Telefono" />
       <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje" [(ngModel)]="value" placeholder="Mensaje"></textarea>
       <button type="submit" pButton label="Enviar"></button>
     </form>

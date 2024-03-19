@@ -12,6 +12,7 @@ import { ScrollTopModule } from 'primeng/scrolltop';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 
 
@@ -35,7 +36,7 @@ import { CascadeSelectModule } from 'primeng/cascadeselect';
     ScrollTopModule,
     InputTextModule,
     InputTextareaModule,
-    CascadeSelectModule
+    RadioButtonModule
 
   ]
 })

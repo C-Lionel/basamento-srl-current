@@ -1615,13 +1615,14 @@
     transition-duration: 0.15s;
     background-color: #151515;
   }
+
   .p-radiobutton .p-radiobutton-box.p-highlight {
-    border-color: #c298d8;
-    background: #c298d8;
+    border-color: #05A4D4;
+    background: #05A4D4;
   }
   .p-radiobutton .p-radiobutton-box.p-highlight:not(.p-disabled):hover {
-    border-color: #9954bb;
-    background: #9954bb;
+    border-color: #05A4D4;
+    background: #05A4D4;
     color: #151515;
   }
 
