@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -10,29 +10,40 @@ export class ContactoComponent {
 
   formGroup!: FormGroup;
   value!: string;
-  ingredient!: string;
+  public asunto: string = '';
   public arroba = '@';
 
+  constructor(private formBuilder: FormBuilder) { }
+
   ngOnInit() {
-    this.formGroup = new FormGroup({
+    this.formGroup = this.formBuilder.group({
       nombre: new FormControl(null, Validators.required),
       apellido: new FormControl(null, Validators.required),
       email: new FormControl(null, Validators.required),
       telefono: new FormControl(null, Validators.required),
+      asunto: new FormControl(null),
+      otros: new FormControl(null), // Nuevo campo para "Otros"
       mensaje: new FormControl(null, Validators.required),
     });
-
-
   }
 
   onSubmit() {
     if (this.formGroup.valid) {
-      // Aquí puedes enviar los datos del formulario
-      console.log(this.formGroup.value);
+      const formData = { ...this.formGroup.value };
+      console.log(formData);
+      this.formGroup.reset();
+      this.asunto = '';
     } else {
-      // Marca los campos inválidos
       this.formGroup.markAllAsTouched();
     }
   }
+
+  updateAsunto(value: string) {
+    this.formGroup.patchValue({ asunto: value });
+    if (value !== 'Otros') {
+      this.formGroup.patchValue({ otros: null });
+    }
+  }
+
 
 }
