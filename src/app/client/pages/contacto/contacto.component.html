@@ -1,1 +1,32 @@
+
+
 <h1 class="main-margen-superior animate__animated animate__fadeIn">CONTACTO</h1>
+
+<div class="contacto">
+
+  <div class="contacto__content container main-padding-superior main-padding-inferior">
+
+  <div class="contacto__info">
+    <p>
+      ¡Gracias por tu interés en contactar con Sustentacorp! Estamos emocionados por saber cómo podemos colaborar
+      contigo en tu próximo proyecto. Ya sea que necesites más información, desees solicitar un presupuesto o
+      simplemente quieras conocernos mejor, estamos aquí para escucharte y responder a tus consultas.
+    </p>
+  </div>
+
+  <div class="contacto__form">
+
+    <h2>Formulario de Contacto</h2>
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
+      <input type="text" pInputText formControlName="apellido" placeholder="Apellido" />
+      <input type="number" pInputText formControlName="telefono" placeholder="Telefono" />
+      <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje" [(ngModel)]="value" placeholder="Mensaje"></textarea>
+      <button type="submit" pButton label="Enviar"></button>
+    </form>
+
+  </div>
+
+</div>
+
+</div>

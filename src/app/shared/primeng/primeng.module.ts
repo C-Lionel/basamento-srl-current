@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
@@ -8,6 +9,15 @@ import { ImageModule } from 'primeng/image';
 import { AccordionModule } from 'primeng/accordion';
 import { ButtonModule } from 'primeng/button';
 import { ScrollTopModule } from 'primeng/scrolltop';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { CascadeSelectModule } from 'primeng/cascadeselect';
+
+
+
+
+
+
 
 
 
@@ -22,7 +32,10 @@ import { ScrollTopModule } from 'primeng/scrolltop';
     ImageModule,
     AccordionModule,
     ButtonModule,
-    ScrollTopModule
+    ScrollTopModule,
+    InputTextModule,
+    InputTextareaModule,
+    CascadeSelectModule
 
   ]
 })

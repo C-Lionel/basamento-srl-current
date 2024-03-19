@@ -7,6 +7,8 @@
 @import "primeicons/primeicons.css";
 @import "~animate.css/animate.css";
 @import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
+// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 
 /* Colores */
 :root {
@@ -23,6 +25,13 @@
 .container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.main-padding-superior {
+  padding-top: 50px;
+}
+.main-padding-inferior {
+  padding-bottom: 50px;
 }
 
 .main-margen-inferior {

@@ -11,7 +11,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimengModule } from '../shared/primeng/primeng.module';
 import { ComponentsModule } from './components/components.module';
 
@@ -33,7 +33,8 @@ import { ComponentsModule } from './components/components.module';
     ClientRoutingModule,
     PrimengModule,
     FormsModule,
-    ComponentsModule
+    ComponentsModule,
+    ReactiveFormsModule
   ]
 })
 export class ClientModule { }
