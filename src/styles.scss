@@ -14,7 +14,7 @@
 /* Colores */
 :root {
   --color-background: #FFFFFF;
-  --color-background-light: #F4F5F7;
+  --color-background-light: #F6F6F6;
   --color-primary: #033055;
   --color-secondary: #0096C2;
   --color-terciary: #F2FDFE;
@@ -209,11 +209,11 @@ h1 {
 // swall-alert2
 
   div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
-    background-color: red!important;
+    background-color: #A04B4B!important;
   }
 
   div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
-    background-color: green!important;
+    background-color: #4BA063!important;
   }
 
   div:where(.swal2-container) button:where(.swal2-styled) {

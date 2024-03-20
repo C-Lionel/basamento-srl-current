@@ -12,7 +12,7 @@ export class ContactoComponent {
 
   formGroup!: FormGroup;
   value!: string;
-  public asunto: string = 'Presupuesto';
+  public asunto: string = '';
   public arroba = '@';
 
   constructor(private formBuilder: FormBuilder) { }
@@ -23,10 +23,21 @@ export class ContactoComponent {
       apellido: new FormControl(null, Validators.required),
       email: new FormControl(null, [Validators.required, Validators.email]),
       telefono: new FormControl(null, [Validators.required, Validators.pattern("^[0-9]*$")]),
-      asunto: new FormControl(null),
+      asunto: new FormControl(null, Validators.required),
       otros: new FormControl(null),
       mensaje: new FormControl(null),
     });
+
+    // Validación dinámica para hacer el campo "otros" requerido si el asunto es "Otros"
+    this.formGroup.get('asunto')!.valueChanges.subscribe((value) => {
+      if (value === 'Otros') {
+        this.formGroup.get('otros')!.setValidators(Validators.required);
+      } else {
+        this.formGroup.get('otros')!.clearValidators();
+      }
+      this.formGroup.get('otros')!.updateValueAndValidity();
+    });
+
   }
 
   onSubmit() {
@@ -35,7 +46,7 @@ export class ContactoComponent {
       Swal.fire({
         title: 'Está seguro que desea enviar el formulario?',
         text: 'Enviará un formulario de contacto que será respondido a la brevedad..',
-        icon: 'question',
+        icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Enviar',
         cancelButtonText: 'Cancelar',

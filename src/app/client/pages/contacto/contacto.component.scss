@@ -1,8 +1,15 @@
+$color-background: #F3FEFE;
+
 .contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #F3FEFE;
+  background-color: $color-background;
+  .text-validators {
+      margin-bottom: 1rem;
+      margin-top: -0.6rem;
+      color: red;
+  }
 
   &__content {
     display: flex;
@@ -53,11 +60,7 @@
     flex-direction: column;
     align-items: flex-start; // Alinea los elementos del formulario a la izquierda
     width: 100%; // Ajusta el ancho del formulario
-    div {
-      margin-bottom: 1rem;
-      margin-top: -0.6rem;
-      color: red;
-    }
+
   }
 
   input,

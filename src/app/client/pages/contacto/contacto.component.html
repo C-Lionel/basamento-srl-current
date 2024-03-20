@@ -1,77 +1,90 @@
-
 <h1 class="main-margen-superior animate__animated animate__fadeIn">CONTACTO</h1>
 
 <div class="contacto">
 
   <div class="contacto__content container main-padding-superior main-padding-inferior">
 
-  <div class="contacto__info">
-    <p>
-      ¡Gracias por tu interés en contactar con <strong>Basamento SRL</strong>! Estamos entusiasmados por conocer cómo podemos colaborar contigo en tu próximo proyecto. Ya sea que requieras más detalles, quieras solicitar un presupuesto o simplemente desees conocernos mejor, estamos aquí para escucharte y responder a todas tus consultas.
-    </p>
-    <!-- <p-image src="assets/imagenes/contacto/img-contacto.jpg" alt="Image"></p-image> -->
-    <img src="assets/imagenes/contacto/img-contacto.jpg" alt="">
-  </div>
+    <div class="contacto__info">
+      <p>
+        ¡Gracias por tu interés en contactar con <strong>Basamento SRL</strong>! Estamos entusiasmados por conocer cómo
+        podemos colaborar contigo en tu próximo proyecto. Ya sea que requieras más detalles, quieras solicitar un
+        presupuesto o simplemente desees conocernos mejor, estamos aquí para escucharte y responder a todas tus
+        consultas.
+      </p>
+      <!-- <p-image src="assets/imagenes/contacto/img-contacto.jpg" alt="Image"></p-image> -->
+      <img src="assets/imagenes/contacto/img-contacto.jpg" alt="">
+    </div>
 
-  <div class="contacto__form">
+    <div class="contacto__form">
 
-    <h2>Formulario de Contacto</h2>
+      <h2>Formulario de Contacto</h2>
 
-    <div class="radio_options">
-      <div>
-          <p-radioButton name="asunto" [value]="'Servicios de ingeniería'" [(ngModel)]="asunto" (ngModelChange)="updateAsunto('Servicios de ingeniería')" inputId="asunto1"></p-radioButton>
+      <div class="radio_options">
+        <div>
+          <p-radioButton name="asunto" [value]="'Servicios de ingeniería'" [(ngModel)]="asunto"
+            (ngModelChange)="updateAsunto('Servicios de ingeniería')" inputId="asunto1"></p-radioButton>
           <label for="asunto1">Servicios de ingeniería</label>
-      </div>
+        </div>
 
-      <div>
-          <p-radioButton name="asunto" [value]="'Presupuesto'" [(ngModel)]="asunto" (ngModelChange)="updateAsunto('Presupuesto')" inputId="asunto2"></p-radioButton>
+        <div>
+          <p-radioButton name="asunto" [value]="'Presupuesto'" [(ngModel)]="asunto"
+            (ngModelChange)="updateAsunto('Presupuesto')" inputId="asunto2"></p-radioButton>
           <label for="asunto2">Presupuesto</label>
-      </div>
+        </div>
 
-      <div>
-          <p-radioButton name="asunto" [value]="'Proyectos en curso'" [(ngModel)]="asunto" (ngModelChange)="updateAsunto('Proyectos en curso')" inputId="asunto3"></p-radioButton>
+        <div>
+          <p-radioButton name="asunto" [value]="'Proyectos en curso'" [(ngModel)]="asunto"
+            (ngModelChange)="updateAsunto('Proyectos en curso')" inputId="asunto3"></p-radioButton>
           <label for="asunto3">Proyectos en curso</label>
-      </div>
+        </div>
 
-      <div>
-          <p-radioButton name="asunto" [value]="'Otros'" [(ngModel)]="asunto" (ngModelChange)="updateAsunto('Otros')" inputId="asunto4"></p-radioButton>
+        <div>
+          <p-radioButton name="asunto" [value]="'Otros'" [(ngModel)]="asunto" (ngModelChange)="updateAsunto('Otros')"
+            inputId="asunto4"></p-radioButton>
           <label for="asunto4">Otros</label>
+        </div>
       </div>
+
+      <div class="text-validators"
+        *ngIf="formGroup.get('asunto')!.invalid && (formGroup.get('asunto')!.dirty || formGroup.get('asunto')!.touched)">
+        <small *ngIf="formGroup.get('asunto')!.errors?.['required']">Debe seleccionar un asunto</small>
+      </div>
+
+      <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+
+        <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
+        <div class="text-validators" *ngIf="formGroup.get('nombre')!.invalid && (formGroup.get('nombre')!.dirty || formGroup.get('nombre')!.touched)">
+          <small *ngIf="formGroup.get('nombre')!.errors?.['required']">El nombre es obligatorio</small>
+        </div>
+
+        <input type="text" pInputText formControlName="apellido" placeholder="Apellido" />
+        <div class="text-validators" *ngIf="formGroup.get('apellido')!.invalid && (formGroup.get('apellido')!.dirty || formGroup.get('apellido')!.touched)">
+          <small *ngIf="formGroup.get('apellido')!.errors?.['required']">El apellido es obligatorio</small>
+        </div>
+
+        <input type="email" pInputText formControlName="email" placeholder="E-Mail" />
+        <div class="text-validators" *ngIf="formGroup.get('email')!.invalid && (formGroup.get('email')!.dirty || formGroup.get('email')!.touched)">
+          <small *ngIf="formGroup.get('email')!.errors?.['required']">El correo electrónico es obligatorio</small>
+          <small *ngIf="formGroup.get('email')!.errors?.['email']">El correo electrónico no es válido</small>
+        </div>
+
+        <input type="text" pInputText formControlName="telefono" placeholder="Telefono" />
+        <div class="text-validators" *ngIf="formGroup.get('telefono')!.invalid && (formGroup.get('telefono')!.dirty || formGroup.get('telefono')!.touched)">
+          <small *ngIf="formGroup.get('telefono')!.errors?.['required']">El teléfono es obligatorio</small>
+          <small *ngIf="formGroup.get('telefono')!.errors?.['pattern']">El teléfono debe contener solo números</small>
+        </div>
+
+        <input *ngIf="asunto === 'Otros'" type="text" pInputText formControlName="otros" placeholder="Especificar otro asunto" />
+        <div class="text-validators" *ngIf="formGroup.get('otros')!.invalid && (formGroup.get('otros')!.dirty || formGroup.get('otros')!.touched)">
+          <small *ngIf="formGroup.get('otros')!.errors?.['required']">El asunto "Otros" es obligatorio</small>
+        </div>
+
+        <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje" placeholder="Tu mensaje es importante para nosotros. Déjalo aquí (opcional)"></textarea>
+        <button type="submit" pButton label="Enviar"></button>
+      </form>
+
+    </div>
+
   </div>
-
-
-    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-
-      <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
-      <div *ngIf="formGroup.get('nombre')!.invalid && (formGroup.get('nombre')!.dirty || formGroup.get('nombre')!.touched)">
-        <small *ngIf="formGroup.get('nombre')!.errors?.['required']">El nombre es obligatorio</small>
-      </div>
-
-      <input type="text" pInputText formControlName="apellido" placeholder="Apellido" />
-      <div *ngIf="formGroup.get('apellido')!.invalid && (formGroup.get('apellido')!.dirty || formGroup.get('apellido')!.touched)">
-        <small *ngIf="formGroup.get('apellido')!.errors?.['required']">El apellido es obligatorio</small>
-      </div>
-
-      <input type="email" pInputText formControlName="email" placeholder="E-Mail" />
-      <div *ngIf="formGroup.get('email')!.invalid && (formGroup.get('email')!.dirty || formGroup.get('email')!.touched)">
-        <small *ngIf="formGroup.get('email')!.errors?.['required']">El correo electrónico es obligatorio</small>
-        <small *ngIf="formGroup.get('email')!.errors?.['email']">El correo electrónico no es válido</small>
-      </div>
-
-      <input type="text" pInputText formControlName="telefono" placeholder="Telefono" />
-      <div *ngIf="formGroup.get('telefono')!.invalid && (formGroup.get('telefono')!.dirty || formGroup.get('telefono')!.touched)">
-        <small *ngIf="formGroup.get('telefono')!.errors?.['required']">El teléfono es obligatorio</small>
-        <small *ngIf="formGroup.get('telefono')!.errors?.['pattern']">El teléfono debe contener solo números</small>
-      </div>
-
-
-      <input *ngIf="asunto === 'Otros'" type="text" pInputText formControlName="otros" placeholder="Especificar otro asunto" />
-      <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje"  placeholder="Mensaje"></textarea>
-      <button type="submit" pButton label="Enviar"></button>
-    </form>
-
-  </div>
-
-</div>
 
 </div>
