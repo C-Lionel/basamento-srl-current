@@ -1226,8 +1226,8 @@
   .p-inputtext:enabled:focus {
     outline: 0 none;
     outline-offset: 0;
-    box-shadow: 0 0 0 1px #f0e6f5;
-    border-color: #c298d8;
+    box-shadow: 0 0 0 1px var(--color-secondary);
+    border-color: var(--color-secondary);
   }
   .p-inputtext.ng-dirty.ng-invalid {
     border-color: #f19ea6;
