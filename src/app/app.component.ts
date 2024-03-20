@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+
 declare let AOS: any;
 
 import { PrimeNGConfig } from 'primeng/api';

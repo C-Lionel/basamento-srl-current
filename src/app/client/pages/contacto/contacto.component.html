@@ -42,6 +42,9 @@
 
     <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
       <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
+      <div *ngIf="formGroup.get('nombre')!.invalid && (formGroup.get('nombre')!.dirty || formGroup.get('nombre')!.touched)">
+        <small *ngIf="formGroup.get('nombre')!.errors?.['required']">El nombre es obligatorio</small>
+      </div>
       <input type="text" pInputText formControlName="apellido" placeholder="Apellido" />
       <input type="email" pInputText formControlName="email" placeholder="E-Mail" />
       <input type="tel" pInputText formControlName="telefono" placeholder="Telefono" />

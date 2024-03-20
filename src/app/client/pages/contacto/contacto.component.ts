@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -10,7 +12,7 @@ export class ContactoComponent {
 
   formGroup!: FormGroup;
   value!: string;
-  public asunto: string = '';
+  public asunto: string = 'Presupuesto';
   public arroba = '@';
 
   constructor(private formBuilder: FormBuilder) { }
@@ -22,7 +24,7 @@ export class ContactoComponent {
       email: new FormControl(null, Validators.required),
       telefono: new FormControl(null, Validators.required),
       asunto: new FormControl(null),
-      otros: new FormControl(null), // Nuevo campo para "Otros"
+      otros: new FormControl(null),
       mensaje: new FormControl(null, Validators.required),
     });
   }
@@ -30,9 +32,32 @@ export class ContactoComponent {
   onSubmit() {
     if (this.formGroup.valid) {
       const formData = { ...this.formGroup.value };
-      console.log(formData);
-      this.formGroup.reset();
-      this.asunto = '';
+      Swal.fire({
+        title: 'Está seguro que desea enviar el formulario?',
+        text: 'Enviará un formulario de contacto que será respondido a la brevedad..',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Enviar',
+        cancelButtonText: 'Cancelar',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          emailjs.send('service_jiyt6nk', 'template_tzm219p', formData, 'user_0rv8S2OYEBzS2Fp80CRNP')
+            .then((response) => {
+              console.log('Correo enviado correctamente', response.status, response.text);
+              // Resetear el formulario después de enviar
+              Swal.fire('¡Enviado!', 'El formulario ha sido enviado correctamente.', 'success');
+              this.formGroup.reset();
+              this.asunto = 'Presupuesto';
+            }).catch((e) => {
+              console.log('Error al enviar el correo', e);
+              Swal.fire('¡Error!', 'Hubo un problema al enviar el formulario.', 'error');
+            });
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          // Manejar el caso en el que se cancela la confirmación
+          Swal.fire('Cancelado', 'No se ha enviado el formulario.', 'info');
+        }
+      });
     } else {
       this.formGroup.markAllAsTouched();
     }
@@ -44,6 +69,5 @@ export class ContactoComponent {
       this.formGroup.patchValue({ otros: null });
     }
   }
-
 
 }
