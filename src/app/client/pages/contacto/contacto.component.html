@@ -41,13 +41,30 @@
 
 
     <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+
       <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
       <div *ngIf="formGroup.get('nombre')!.invalid && (formGroup.get('nombre')!.dirty || formGroup.get('nombre')!.touched)">
         <small *ngIf="formGroup.get('nombre')!.errors?.['required']">El nombre es obligatorio</small>
       </div>
+
       <input type="text" pInputText formControlName="apellido" placeholder="Apellido" />
+      <div *ngIf="formGroup.get('apellido')!.invalid && (formGroup.get('apellido')!.dirty || formGroup.get('apellido')!.touched)">
+        <small *ngIf="formGroup.get('apellido')!.errors?.['required']">El apellido es obligatorio</small>
+      </div>
+
       <input type="email" pInputText formControlName="email" placeholder="E-Mail" />
-      <input type="tel" pInputText formControlName="telefono" placeholder="Telefono" />
+      <div *ngIf="formGroup.get('email')!.invalid && (formGroup.get('email')!.dirty || formGroup.get('email')!.touched)">
+        <small *ngIf="formGroup.get('email')!.errors?.['required']">El correo electrónico es obligatorio</small>
+        <small *ngIf="formGroup.get('email')!.errors?.['email']">El correo electrónico no es válido</small>
+      </div>
+
+      <input type="text" pInputText formControlName="telefono" placeholder="Telefono" />
+      <div *ngIf="formGroup.get('telefono')!.invalid && (formGroup.get('telefono')!.dirty || formGroup.get('telefono')!.touched)">
+        <small *ngIf="formGroup.get('telefono')!.errors?.['required']">El teléfono es obligatorio</small>
+        <small *ngIf="formGroup.get('telefono')!.errors?.['pattern']">El teléfono debe contener solo números</small>
+      </div>
+
+
       <input *ngIf="asunto === 'Otros'" type="text" pInputText formControlName="otros" placeholder="Especificar otro asunto" />
       <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje"  placeholder="Mensaje"></textarea>
       <button type="submit" pButton label="Enviar"></button>

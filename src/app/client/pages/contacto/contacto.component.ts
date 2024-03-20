@@ -21,11 +21,11 @@ export class ContactoComponent {
     this.formGroup = this.formBuilder.group({
       nombre: new FormControl(null, Validators.required),
       apellido: new FormControl(null, Validators.required),
-      email: new FormControl(null, Validators.required),
-      telefono: new FormControl(null, Validators.required),
+      email: new FormControl(null, [Validators.required, Validators.email]),
+      telefono: new FormControl(null, [Validators.required, Validators.pattern("^[0-9]*$")]),
       asunto: new FormControl(null),
       otros: new FormControl(null),
-      mensaje: new FormControl(null, Validators.required),
+      mensaje: new FormControl(null),
     });
   }
 
@@ -55,7 +55,7 @@ export class ContactoComponent {
             });
         } else if (result.dismiss === Swal.DismissReason.cancel) {
           // Manejar el caso en el que se cancela la confirmación
-          Swal.fire('Cancelado', 'No se ha enviado el formulario.', 'error');
+          Swal.fire('Cancelado', 'No se ha enviado el formulario.', 'info');
         }
       });
     } else {
