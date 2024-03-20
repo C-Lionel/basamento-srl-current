@@ -55,7 +55,7 @@ export class ContactoComponent {
             });
         } else if (result.dismiss === Swal.DismissReason.cancel) {
           // Manejar el caso en el que se cancela la confirmación
-          Swal.fire('Cancelado', 'No se ha enviado el formulario.', 'info');
+          Swal.fire('Cancelado', 'No se ha enviado el formulario.', 'error');
         }
       });
     } else {

@@ -192,7 +192,6 @@ h1 {
 
   //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
 
-
   .p-accordion .p-accordion-header .p-accordion-header-link:hover {
     background-color: #39414e;
   }
@@ -206,8 +205,20 @@ h1 {
     transform: scale(1.01);
   }
 
+  // CONTACTO
+// swall-alert2
 
+  div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
+    background-color: red!important;
+  }
 
+  div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: green!important;
+  }
+
+  div:where(.swal2-container) button:where(.swal2-styled) {
+    box-shadow: none!important;
+  }
 
 
 
