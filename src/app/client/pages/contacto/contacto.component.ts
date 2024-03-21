@@ -15,6 +15,7 @@ export class ContactoComponent {
   public asunto: string = '';
   public arroba = '@';
 
+
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {

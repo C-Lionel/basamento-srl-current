@@ -3,7 +3,8 @@ $color-background: #F3FEFE;
 .contacto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: $color-background;
   .text-validators {
       margin-bottom: 1rem;
@@ -13,17 +14,24 @@ $color-background: #F3FEFE;
 
   &__content {
     display: flex;
-    justify-content: space-between; // Alinea los elementos uno al lado del otro
-    align-items: flex-start; // Alinea los elementos en la parte superior
-    margin-top: 20px; // Ajusta la distancia superior
-    margin-bottom: 20px; // Ajusta la distancia inferior
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   &__info {
-    flex: 1; // El texto ocupa el espacio disponible
-    margin-right: 20px; // Ajusta el espacio entre el texto y el formulario
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 10rem;
+    // background-color: red;
     P{
       margin-bottom: 1.7rem;
+      text-align: justify;
     }
     img {
       border-radius: 0.35rem;
@@ -60,6 +68,9 @@ $color-background: #F3FEFE;
     flex-direction: column;
     align-items: flex-start; // Alinea los elementos del formulario a la izquierda
     width: 100%; // Ajusta el ancho del formulario
+    button {
+      width: 100%;
+    }
 
   }
 
@@ -89,5 +100,41 @@ $color-background: #F3FEFE;
       background-color: #05a4d4; // Cambia el color de fondo del botón al pasar el ratón
     }
   }
+
+  &__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    span {
+      color: #80722be4;
+      font-size: 6rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+
+  &__map iframe{
+    display: flex;
+    width: 100vh;
+    height: 50vh;
+    margin-top: 10rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+
 }
 

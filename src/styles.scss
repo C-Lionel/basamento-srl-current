@@ -105,6 +105,10 @@ h1 {
   margin-right: 0.8rem;
 }
 
+.p-inputtext:focus {
+  border: none !important;
+}
+
 
 // PROYECTOS
 
@@ -220,6 +224,3 @@ h1 {
     box-shadow: none!important;
   }
 
-  .p-inputtext:focus {
-    border: none !important;
-  }
