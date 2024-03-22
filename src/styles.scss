@@ -187,8 +187,15 @@ h1 {
   }
 
   .p-scrolltop  {
-    background-color: var(--color-primary);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    background-color: var(--color-secondary);
     .p-scrolltop-icon {
+      color: var(--color-primary);
+    }
+  }
+  .p-scrolltop:hover  {
+    background-color: var(--color-primary);
+    .p-scrolltop-icon:hover {
       color: var(--color-terciary);
     }
   }
@@ -223,4 +230,3 @@ h1 {
   div:where(.swal2-container) button:where(.swal2-styled) {
     box-shadow: none!important;
   }
-

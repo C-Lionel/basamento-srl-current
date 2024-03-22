@@ -10,14 +10,13 @@
         <i class="pi pi-chevron-circle-right" style="color: #FFC107; font-size: 0.8rem;"></i> {{ opcion }}
       </div>
   </p-card>
-
     <!-- GALERIA DE IMAGENES -->
     <app-galeria-imagenes [imagenes]="proyecto.imagenes" [showThumbnails]="false" [activeIndex]="0"></app-galeria-imagenes>
 
-
   </div>
 
-  <p-scrollTop />
+  <p-scrollTop *ngIf="showScrollTop" />
+
 
 </div>
 

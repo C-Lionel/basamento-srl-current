@@ -17,14 +17,17 @@ export class ProyectosComponent implements OnInit {
   proyectos: Proyecto[] | undefined;
   proyectosClass: string = 'proyectos';
   showThumbnails: boolean = false;
+  showScrollTop: boolean = false;
 
   ngOnInit() {
     this.route.url.subscribe(segments => {
       const isProyectosPage = segments.length === 0 || segments.some(segment => segment.path === 'proyectos');
       if (!isProyectosPage) {
         this.proyectosClass = 'proyectos__individual';
+        this.showScrollTop = false;
       } else {
         this.proyectosClass = 'proyectos__list';
+        this.showScrollTop = true;
       }
     });
 
