@@ -60,7 +60,7 @@ export class ContactoComponent {
               // Resetear el formulario después de enviar
               Swal.fire('¡Enviado!', 'El formulario ha sido enviado correctamente.', 'success');
               this.formGroup.reset();
-              this.asunto = 'Presupuesto';
+              this.asunto = '';
             }).catch((e) => {
               console.log('Error al enviar el correo', e);
               Swal.fire('¡Error!', 'Hubo un problema al enviar el formulario.', 'error');
