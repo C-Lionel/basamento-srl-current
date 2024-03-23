@@ -1,9 +1,9 @@
 
-<h1 class="main-margen-superior animate__animated animate__fadeIn">PROYECTOS</h1>
+<div class="proyectos content" [ngClass]="proyectosClass" *ngIf="proyectos && proyectos.length > 0" >
 
-<div class="proyectos main-padding-superior main-padding-inferior" [ngClass]="proyectosClass" *ngIf="proyectos && proyectos.length > 0" >
+  <h1 class="title-margin-bottom animate__animated animate__fadeIn">PROYECTOS</h1>
   <!-- Contenido específico para cada servicio -->
-<div class="proyectos__content animate__animated animate__fadeIn"  *ngFor="let proyecto of proyectos">
+<div class="proyectos__content animate__animated animate__fadeIn last-content"  *ngFor="let proyecto of proyectos">
 
   <p-card [header]="proyecto.nombre">
       <div style="margin-bottom: 0.3rem" *ngFor="let opcion of getDescripcionOpciones(proyecto.descripcion.opciones)">

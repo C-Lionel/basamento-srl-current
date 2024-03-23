@@ -10,8 +10,9 @@
 
 // @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+// ESTILOS GENERALES DE MI APLICACIÓN
 
-/* Colores */
+//COLORES
 :root {
   --color-background: #FFFFFF;
   --color-background-light: #F6F6F6;
@@ -21,26 +22,22 @@
   --color-hover: #BFC8D3;
 }
 
-/* You can add global styles to this file, and also import other style files */
 
 .container {
   max-width: 80%;
   margin: 0 auto;
 }
 
-.main-padding-superior {
-  padding-top: 50px;
-}
-.main-padding-inferior {
-  padding-bottom: 50px;
+.content {
+  padding-top: 2.5rem;
 }
 
-.main-margen-inferior {
-  margin-top: 50px;
+.last-content {
+  margin-bottom: 2.5rem;
 }
 
-.main-margen-superior {
-  margin-bottom: 50px;
+.title-margin-bottom {
+  margin-bottom: 2.5rem;
 }
 
 // Reset de márgenes y padding
@@ -54,6 +51,7 @@ body {
   font-size: 1rem; // Puedes ajustar esto según tus preferencias
   background-color: var(--color-background);
   font-family: montserrat-regular-400;
+  padding-top: 60px;
 }
 
 // Utilizar rem en lugar de px para obtener un escalado más fácil
@@ -63,7 +61,6 @@ html {
   // font-family: cocogoose-pro-semilight;
 }
 
-// ESTILOS GENERALES DE MI APLICACIÓN
 
 h1 {
   font-size: 3rem;
@@ -71,8 +68,97 @@ h1 {
   justify-content: center;
 }
 
-// ESTILOS DE PRIMENG
 
+
+
+
+
+
+
+
+
+
+// ANIMACIONES GENERALES DE MI APLICACIÓN
+
+.puff-in-center {
+	animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+ @keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.swing-in-top-fwd {
+	animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+ @keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+.kenburns-top {
+	animation: kenburns-top 10s ease-in-out alternate-reverse both;
+}
+
+ @keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
+
+
+
+.focus-in-contract-bck {
+	animation: focus-in-contract-bck 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// ESTILOS DE PRIMENG
 // NAVBAR
 
 .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
@@ -84,7 +170,7 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  height: 6rem;
+  // height: 6rem;
   background-color: var(--color-primary) ;
   color: #FFC107;
   font-size: 1.3rem;
@@ -189,13 +275,17 @@ h1 {
   .p-scrolltop  {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     background-color: var(--color-secondary);
+    opacity: 0.7 !important;
+    border-radius: 15% !important;
+    transition: opacity 0.4s !important;
     .p-scrolltop-icon {
       color: var(--color-primary);
     }
   }
   .p-scrolltop:hover  {
-    background-color: var(--color-primary);
-    .p-scrolltop-icon:hover {
+    background-color: #1A517F;
+    opacity: 1 !important;
+    .p-scrolltop-icon{
       color: var(--color-terciary);
     }
   }
@@ -210,7 +300,7 @@ h1 {
   .p-card {
     margin-bottom: 2rem;
   }
-  .p-card:hover {
+  .nosotros__card .p-card:hover {
     background-color: #39414e;
     transition: transform 0.5s ease;
     transform: scale(1.01);
@@ -230,3 +320,4 @@ h1 {
   div:where(.swal2-container) button:where(.swal2-styled) {
     box-shadow: none!important;
   }
+
