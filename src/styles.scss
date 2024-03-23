@@ -115,7 +115,7 @@ h1 {
 }
 
 .kenburns-top {
-	animation: kenburns-top 10s ease-in-out alternate-reverse both;
+	animation: kenburns-top 15s cubic-bezier(0.600, 0.040, 0.980, 0.335) alternate-reverse backwards;
 }
 
  @keyframes kenburns-top {
@@ -131,8 +131,9 @@ h1 {
 
 
 
+
 .focus-in-contract-bck {
-	animation: focus-in-contract-bck 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
  @keyframes focus-in-contract-bck {
