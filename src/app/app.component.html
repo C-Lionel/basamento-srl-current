@@ -1,4 +1,6 @@
-  <div>
-    <router-outlet></router-outlet>
-  </div>
+<div>
+  <app-loading-component *ngIf="isLoading" [isLoading]="isLoading"></app-loading-component>
+  <router-outlet *ngIf="!isLoading"></router-outlet>
+</div>
+
 

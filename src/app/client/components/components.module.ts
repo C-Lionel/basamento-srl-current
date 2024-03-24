@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GaleriaImagenesComponent } from './galeria-imagenes/galeria-imagenes.component';
+import { LoadingComponentComponent } from './loading-component/loading-component.component';
 import { PrimengModule } from 'src/app/shared/primeng/primeng.module';
 
 
@@ -9,6 +10,7 @@ import { PrimengModule } from 'src/app/shared/primeng/primeng.module';
 @NgModule({
   declarations: [
     GaleriaImagenesComponent,
+    LoadingComponentComponent
 
   ],
   imports: [
@@ -17,6 +19,7 @@ import { PrimengModule } from 'src/app/shared/primeng/primeng.module';
   ],
   exports: [
     GaleriaImagenesComponent,
+    LoadingComponentComponent
 
   ]
 })
