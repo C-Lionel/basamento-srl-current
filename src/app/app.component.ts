@@ -23,9 +23,8 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         window.addEventListener('load', () => {
-          this.isLoading = false;
+            this.isLoading = false;
         });
-        window.scrollTo(0, 0); // Reinicia la posición de desplazamiento
       }
     });
 
