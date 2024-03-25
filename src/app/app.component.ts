@@ -20,10 +20,31 @@ export class AppComponent implements OnInit {
     ) { }
 
   ngOnInit() {
+
+    // this.router.events.subscribe(event => {
+    //   if (event instanceof NavigationEnd) {
+    //     window.addEventListener('load', () => {
+    //         this.isLoading = false;
+    //     });
+    //   }
+    // });
+
+    let loadTimeout: ReturnType<typeof setTimeout>;
+
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+        this.isLoading = true;
+
+        // Temporizador para mostrar el loading solo si la página no se carga en 250 milisegundos
+        loadTimeout = setTimeout(() => {
+          this.isLoading = false;
+        }, 200);
+
+        // Verificar si la página se ha cargado completamente
         window.addEventListener('load', () => {
-            this.isLoading = false;
+          // Cancelar el temporizador si la página se carga antes del tiempo establecido
+          clearTimeout(loadTimeout);
+          this.isLoading = false;
         });
       }
     });
