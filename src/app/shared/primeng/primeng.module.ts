@@ -11,7 +11,7 @@ import { ButtonModule } from 'primeng/button';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
-import { RadioButtonModule } from 'primeng/radiobutton';
+import { RadioButtonModule } from 'primeng/radiobutton'
 
 
 
@@ -37,8 +37,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     ScrollTopModule,
     InputTextModule,
     InputTextareaModule,
-    RadioButtonModule
-
+    RadioButtonModule,
   ]
 })
 export class PrimengModule { }

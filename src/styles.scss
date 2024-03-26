@@ -105,7 +105,7 @@ h1 {
 }
 
 .kenburns-top {
-	animation: kenburns-top 15s cubic-bezier(0.600, 0.040, 0.980, 0.335) alternate-reverse backwards;
+	animation: kenburns-top 10s cubic-bezier(0.600, 0.040, 0.980, 0.335) alternate-reverse backwards;
 }
 
  @keyframes kenburns-top {
@@ -137,6 +137,38 @@ h1 {
     opacity: 1;
   }
 }
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
 
 
 

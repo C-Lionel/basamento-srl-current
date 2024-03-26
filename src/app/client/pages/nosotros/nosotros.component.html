@@ -108,7 +108,11 @@
           eficiente gestión de sus activos de infraestructura, con un enfoque en la sustentabilidad y la calidad.
         </strong>
       </p>
-      <img  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../../../../assets/imagenes/nosotros/oficina.jpg" width="400" alt="">
+      <!-- <img  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src="../../../../assets/imagenes/nosotros/oficina.jpg" width="400" alt=""> -->
+      <video data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" #videoPlayer (ended)="restartVideo(videoPlayer)" controls>
+        <source  src="assets/videos/home/video_presentacion.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
     </div>
 
     <div class="nosotros__content">

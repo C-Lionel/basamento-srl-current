@@ -27,9 +27,10 @@
   &__info {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20rem;
     p{
+      flex: 1;
       text-align: left;
       margin-right: 5rem;
       line-height: 1.65rem;
@@ -38,9 +39,13 @@
         font-size: 1.25rem;
       }
     }
-    img {
-      border-radius: 1rem; /* Bordes redondeados */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    video {
+      max-height: 50rem;
+      width: 40%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
     }
   }
   &__contact {
