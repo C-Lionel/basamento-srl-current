@@ -103,7 +103,7 @@ $color-background: #F3FEFE;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 10rem;
+    margin-top: 15rem;
 
     section {
       display: flex;
@@ -116,7 +116,7 @@ $color-background: #F3FEFE;
       margin-bottom: 1rem;
     }
     h3 {
-      margin-top: 10px;
+      margin-top: 15px;
       margin-bottom: 1rem;
     }
     p {
@@ -128,7 +128,7 @@ $color-background: #F3FEFE;
     display: flex;
     width: 100vh;
     height: 50vh;
-    margin-top: 10rem;
+    margin-top: 15rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
   }

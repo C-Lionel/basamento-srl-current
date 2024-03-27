@@ -28,7 +28,7 @@
 }
 
 .content {
-  padding-top: 2.5rem;
+  padding-top: 5rem;
 }
 
 .last-content {
@@ -36,7 +36,7 @@
 }
 
 .title-margin-bottom {
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 // Reset de márgenes y padding
@@ -301,6 +301,8 @@ h1 {
   }
 
 
+  // NOSOTROS
+
   //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
 
   .p-accordion .p-accordion-header .p-accordion-header-link:hover {
@@ -313,7 +315,7 @@ h1 {
   .nosotros__card .p-card:hover {
     background-color: #39414e;
     transition: transform 0.5s ease;
-    transform: scale(1.01);
+    transform: scale(1.05);
   }
 
   // CONTACTO
