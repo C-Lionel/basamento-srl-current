@@ -14,11 +14,11 @@
 }
 
 .type1::after {
-  content: "Info";
+  content: "Nosotros";
   height: 50px;
   width: 150px;
-  background-color: #008080;
-  color: #fff;
+  background-color: #033055;
+  color: #ffff;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -32,11 +32,11 @@
 }
 
 .type1::before {
-  content: "Más";
+  content: "Sobre";
   height: 50px;
   width: 150px;
-  background-color: #fff;
-  color: #008080;
+  background-color: #ffff;
+  color: #033055;
   position: absolute;
   top: 0%;
   left: 0%;

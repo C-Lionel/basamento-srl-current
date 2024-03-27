@@ -104,22 +104,6 @@ h1 {
   }
 }
 
-.kenburns-top {
-	animation: kenburns-top 10s cubic-bezier(0.600, 0.040, 0.980, 0.335) alternate-reverse backwards;
-}
-
- @keyframes kenburns-top {
-  0% {
-    transform: scale(1) translateY(0);
-    transform-origin: 50% 16%;
-  }
-  100% {
-    transform: scale(1.25) translateY(-15px);
-    transform-origin: top;
-  }
-}
-
-
 .focus-in-contract-bck {
 	animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -212,6 +196,16 @@ h1 {
 .p-inputtext:focus {
   border: none !important;
 }
+
+// HOME
+
+.p-galleria.p-galleria-indicator-onitem .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+  background: #ffffff;
+}
+.p-galleria.p-galleria-indicator-onitem .p-galleria-indicators .p-galleria-indicator button {
+  border-radius: 50%;
+}
+
 
 
 // PROYECTOS
