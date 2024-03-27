@@ -35,7 +35,7 @@
 
       <p-galleria [value]="images" [circular]="true" [autoPlay]="true" [showItemNavigators]="true" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '1200px' }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+          <img [src]="item.itemImageSrc"/>
         </ng-template>
         <ng-template pTemplate="thumbnail" let-item>
           <div class="grid grid-nogutter justify-content-center">
