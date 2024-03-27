@@ -12,7 +12,6 @@ export class HomeService {
       { itemImageSrc: 'assets/imagenes/home/galleria/img-1.jpg'},
       { itemImageSrc: 'assets/imagenes/home/galleria/img-2.jpg'},
       { itemImageSrc: 'assets/imagenes/home/galleria/img-3.jpg'},
-
     ]);
   }
 }

@@ -20,15 +20,16 @@
   }
   &__card {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
   }
   &__info {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
     p{
       flex: 1;
       text-align: left;
@@ -40,7 +41,7 @@
       }
     }
     video {
-      max-height: 50rem;
+      max-height: 45rem;
       width: 40%;
       object-fit: cover;
       border-radius: 0.5rem;
@@ -50,7 +51,7 @@
   }
   &__contact {
     text-align: center;
-    margin-top: 20rem;
+    margin-top: 10rem;
     p {
       font-size: 1.0625rem;
       text-align: center;
