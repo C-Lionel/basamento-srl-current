@@ -39,33 +39,36 @@
   margin-bottom: 5rem;
 }
 
+
 // Reset de márgenes y padding
 body, h1, h2, h3, h4, h5, h6, p, ul, ol {
   margin: 0;
   padding: 0;
 }
 
-// Establecer el tamaño de fuente base
-body {
+
+html {
+
+  width: 100%;
+  font-size: 100%;
+  color: var(--color-primary);
+
+  body {
+  width: 100%;
   font-size: 1rem; // Puedes ajustar esto según tus preferencias
   background-color: var(--color-background);
   font-family: montserrat-regular-400;
   padding-top: 60px;
 }
-
-// Utilizar rem en lugar de px para obtener un escalado más fácil
-html {
-  font-size: 100%;
-  color: #033055;
-  // font-family: cocogoose-pro-semilight;
+  h1 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: var(--color-secondary);
+  }
 }
 
 
-h1 {
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-}
 
 // ANIMACIONES GENERALES DE MI APLICACIÓN
 
