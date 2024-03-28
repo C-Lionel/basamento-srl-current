@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./nosotros.component.scss']
 })
 export class NosotrosComponent {
+
   restartVideo(videoPlayer: HTMLVideoElement) {
     videoPlayer.currentTime = 0;
   }
