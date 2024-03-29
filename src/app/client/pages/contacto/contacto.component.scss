@@ -6,6 +6,7 @@ $color-background: #F3FEFE;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: $color-background;
+
   .text-validators {
       margin-bottom: 1rem;
       margin-top: -0.6rem;
@@ -14,22 +15,21 @@ $color-background: #F3FEFE;
 
   &__content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-  }
+    flex-direction: row;
+    align-items: center;
 
   &__info {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: column;
-    margin-right: 10rem;
-    // background-color: red;
+    margin-right: 7rem;
     P{
-      margin-bottom: 2.5rem;
+      margin-bottom: 3.1rem;
       text-align: justify;
+      line-height: 2rem;
     }
     img {
       border-radius: 0.35rem;
@@ -41,20 +41,27 @@ $color-background: #F3FEFE;
 
   &__form {
     flex: 1; // El formulario ocupa el espacio disponible
+    flex-wrap: wrap;
+    h2 {
+      font-size: 2rem;
+    }
     .radio_options{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
-      justify-content: flex-start;
       margin-bottom: 1.7rem;
       div {
         padding-right: 1rem;
+        font-size: 1.25rem;
         p-radioButton{
-          padding-right: 0.4rem;
+          padding-right: 1rem;
+          margin-top: 1rem;
         }
       }
     }
   }
+  }
+
 
   h2 {
     margin-bottom: 1.7rem;
@@ -78,7 +85,7 @@ $color-background: #F3FEFE;
     width: 100%; // Ajusta el ancho de los campos de entrada
     background-color:#3A414E;
     color: #FFFFFF;
-    margin-bottom: 10px; // Ajusta la distancia entre los campos de entrada
+    margin-bottom: 1rem; // Ajusta la distancia entre los campos de entrada
     padding: 10px; // Añade espacio interno a los campos de entrada
     border: 1px solid #ccc; // Añade un borde a los campos de entrada
     border-radius: 5px; // Añade bordes redondeados a los campos de entrada

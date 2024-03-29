@@ -35,7 +35,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
   padding-top: 60px;
 }
 
@@ -61,7 +61,7 @@ h1 {
 }
 
 .content {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 .last-content {
@@ -69,7 +69,7 @@ h1 {
 }
 
 .title-margin-bottom {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -337,3 +337,6 @@ h1 {
     box-shadow: none!important;
   }
 
+  .p-radiobutton .p-radiobutton-box {
+    margin-top: -0.13rem;
+}

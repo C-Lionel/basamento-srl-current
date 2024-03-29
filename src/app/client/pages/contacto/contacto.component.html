@@ -1,12 +1,12 @@
 
 
 <div class="contacto content">
-
+  
   <h1 class="title-margin-bottom animate__animated animate__fadeIn">CONTACTO</h1>
 
   <div class="contacto__content container animate__animated animate__fadeIn">
 
-    <div class="contacto__info">
+    <div class="contacto__content__info">
       <p>
         ¡Gracias por tu interés en contactar con <strong>Basamento SRL</strong>! Estamos entusiasmados por conocer cómo
         podemos colaborar contigo en tu próximo proyecto. Ya sea que requieras más detalles, quieras solicitar un
@@ -17,7 +17,7 @@
       <img class="swing-in-top-fwd" src="assets/imagenes/contacto/img-contacto.jpg" alt="">
     </div>
 
-    <div class="contacto__form">
+    <div class="contacto__content__form">
 
       <h2>Formulario de Contacto</h2>
 
@@ -28,7 +28,7 @@
           <label for="asunto1">Servicios de ingeniería</label>
         </div>
 
-        <div>
+        <div >
           <p-radioButton name="asunto" [value]="'Presupuesto'" [(ngModel)]="asunto"
             (ngModelChange)="updateAsunto('Presupuesto')" inputId="asunto2"></p-radioButton>
           <label for="asunto2">Presupuesto</label>
