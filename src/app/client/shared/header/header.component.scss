@@ -1,7 +1,7 @@
 .header {
   position: relative;
   width: 100%;
-  height: 50vh; // Ajusta la altura del video según tu necesidad
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,8 @@
     height: auto;
     transform: translateY(-50%); // Centra verticalmente el video
     object-fit: cover; // Para cubrir toda la área del contenedor
+    filter: blur(1.5px) grayscale(20%);
+    opacity: 0.9;
   }
 
   h1,
@@ -26,17 +28,17 @@
   }
 
   h1 {
-    font-size: 3rem; // Tamaño de fuente del h1
+    font-size: 3rem;
     top: 40%; // Coloca el h1 en la mitad vertical
     transform: translateY(-50%); // Centra verticalmente el h1
-    color: #ffff; // Color del texto
+    color:#ffff;
   }
 
   h4 {
     font-size: 1.5rem; // Tamaño de fuente del h4
     top: calc(50% + 2rem); // Coloca el h4 2rem por debajo del h1
     transform: translateY(-50%); // Centra verticalmente el h4
-    color: #ffffffc6;
+    color: #ffffffda;
   }
 }
 
