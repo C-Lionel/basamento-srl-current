@@ -21,14 +21,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
-    // this.router.events.subscribe(event => {
-    //   if (event instanceof NavigationEnd) {
-    //     window.addEventListener('load', () => {
-    //         this.isLoading = false;
-    //     });
-    //   }
-    // });
-
     let loadTimeout: ReturnType<typeof setTimeout>;
 
     this.router.events.subscribe(event => {
