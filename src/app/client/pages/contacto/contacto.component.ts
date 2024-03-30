@@ -14,6 +14,8 @@ export class ContactoComponent {
   value!: string;
   public asunto: string = '';
   public arroba = '@';
+  imageLoaded = false;
+  mapLoaded = false;
 
 
   constructor(private formBuilder: FormBuilder) { }
@@ -80,6 +82,14 @@ export class ContactoComponent {
     if (value !== 'Otros') {
       this.formGroup.patchValue({ otros: null });
     }
+  }
+
+  onImageLoad() {
+    this.imageLoaded = true;
+  }
+
+  onMapLoad() {
+    this.mapLoaded = true;
   }
 
 }

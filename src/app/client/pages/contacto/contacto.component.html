@@ -1,7 +1,7 @@
 
 
 <div class="contacto content">
-  
+
   <h1 class="title-margin-bottom animate__animated animate__fadeIn">CONTACTO</h1>
 
   <div class="contacto__content container animate__animated animate__fadeIn">
@@ -13,8 +13,8 @@
         presupuesto o simplemente desees conocernos mejor, estamos aquí para escucharte y responder a todas tus
         consultas.
       </p>
-      <!-- <p-image src="assets/imagenes/contacto/img-contacto.jpg" alt="Image"></p-image> -->
-      <img class="swing-in-top-fwd" src="assets/imagenes/contacto/img-contacto.jpg" alt="">
+      <app-loading [loaded]="imageLoaded"></app-loading>
+      <img class="swing-in-top-fwd" src="assets/imagenes/contacto/img-contacto.jpg" (load)="onImageLoad()" alt="">
     </div>
 
     <div class="contacto__content__form">
@@ -117,8 +117,9 @@
   </div>
 
   <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"  class="contacto contacto__map container last-content">
-    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7889.605351467845!2d-61.96701362981567!3d-33.75626155555726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c87b487979cc21%3A0x6ccc11578cb91bd7!2sTucum%C3%A1n%20555%2C%20Venado%20Tuerto%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1710996967871!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- </div>
+    <app-loading [loaded]="mapLoaded"></app-loading>
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7889.605351467845!2d-61.96701362981567!3d-33.75626155555726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c87b487979cc21%3A0x6ccc11578cb91bd7!2sTucum%C3%A1n%20555%2C%20Venado%20Tuerto%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1710996967871!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" (load)="onMapLoad()"></iframe>
+  </div>
 
  <p-scrollTop />
 
