@@ -14,8 +14,8 @@ export class ContactoComponent {
   value!: string;
   public asunto: string = '';
   public arroba = '@';
-  imageLoaded = false;
-  
+  loaded = false;
+
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
@@ -82,8 +82,5 @@ export class ContactoComponent {
     }
   }
 
-  onImageLoad() {
-    this.imageLoaded = true;
-  }
 
 }

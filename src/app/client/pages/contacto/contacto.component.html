@@ -13,8 +13,8 @@
         presupuesto o simplemente desees conocernos mejor, estamos aquí para escucharte y responder a todas tus
         consultas.
       </p>
-      <app-loading [loaded]="imageLoaded"></app-loading>
-      <img class="swing-in-top-fwd" src="assets/imagenes/contacto/img-contacto.jpg" (load)="onImageLoad()" alt="">
+      <app-loading [ngStyle]="{ 'padding': loaded  ? '' : '13.5rem' }" [loaded]="loaded"></app-loading>
+      <img class="swing-in-top-fwd" src="assets/imagenes/contacto/img-contacto.jpg" (load)="loaded = true" alt="">
     </div>
 
     <div class="contacto__content__form">
