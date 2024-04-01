@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
         setTimeout(() => {
           this.isLoading = false;
           AOS.refresh(); // Reinitialize AOS on each navigation
-        }, 200); // Show loading for a minimum duration
+        }, 300); // Show loading for a minimum duration
       });
 
       this.primengConfig.ripple = true;
