@@ -32,12 +32,17 @@ export class AppComponent implements OnInit {
         }, 300);
       });
 
-      
+
       this.primengConfig.ripple = true;
 
       AOS.init({
         once: true
       });
+
+      window.addEventListener('load', () => {
+        this.loadingService.setLoading(false);
+      });
+
     }
 
 }
