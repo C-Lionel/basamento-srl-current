@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, RouteConfigLoadEnd  } from '@angular/router';
+import { filter } from 'rxjs/operators';
 declare let AOS: any;
 import { PrimeNGConfig } from 'primeng/api';
 
@@ -19,38 +20,23 @@ export class AppComponent implements OnInit {
     private router: Router
     ) { }
 
-  ngOnInit() {
-
-    let loadTimeout: ReturnType<typeof setTimeout>;
-
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
+    ngOnInit() {
+      this.router.events.pipe(
+        filter(event => event instanceof NavigationEnd || event instanceof RouteConfigLoadEnd)
+      ).subscribe(() => {
         this.isLoading = true;
-
-        // Temporizador para mostrar el loading solo si la página no se carga en 250 milisegundos
-        loadTimeout = setTimeout(() => {
+        setTimeout(() => {
           this.isLoading = false;
-        }, 200);
+          AOS.refresh(); // Reinitialize AOS on each navigation
+        }, 200); // Show loading for a minimum duration
+      });
 
-        // Verificar si la página se ha cargado completamente
-        window.addEventListener('load', () => {
-          // Cancelar el temporizador si la página se carga antes del tiempo establecido
-          clearTimeout(loadTimeout);
-          this.isLoading = false;
-        });
-      }
-    });
+      this.primengConfig.ripple = true;
 
-    this.primengConfig.ripple = true;
-
-    if (!AppComponent.initialized) {
-      AppComponent.initialized = true;
       AOS.init({
         once: true
       });
     }
-
-  }
 
 }
 

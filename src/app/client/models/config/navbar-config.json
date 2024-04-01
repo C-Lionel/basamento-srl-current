@@ -10,6 +10,7 @@
     {
       "label": "Proyectos",
       "icon": "pi pi-wallet",
+      "routerLink":"./proyectos",
       "items": [
         {
           "label": "Actuales",
