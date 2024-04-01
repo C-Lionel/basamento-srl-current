@@ -3,6 +3,7 @@ import { NavigationEnd, Router, RouteConfigLoadEnd  } from '@angular/router';
 import { filter } from 'rxjs/operators';
 declare let AOS: any;
 import { PrimeNGConfig } from 'primeng/api';
+import { LoadingService } from './client/services/loading.service';
 
 @Component({
   selector: 'app-root',
@@ -12,25 +13,26 @@ import { PrimeNGConfig } from 'primeng/api';
 export class AppComponent implements OnInit {
 
   title = 'basamento-srl-current';
-  private static initialized = false;
-  isLoading: boolean = true;
+
 
   constructor(
     private primengConfig: PrimeNGConfig,
-    private router: Router
+    private router: Router,
+    public loadingService: LoadingService
     ) { }
 
     ngOnInit() {
       this.router.events.pipe(
         filter(event => event instanceof NavigationEnd || event instanceof RouteConfigLoadEnd)
       ).subscribe(() => {
-        this.isLoading = true;
+        this.loadingService.setLoading(true);
         setTimeout(() => {
-          this.isLoading = false;
-          AOS.refresh(); // Reinitialize AOS on each navigation
-        }, 300); // Show loading for a minimum duration
+          AOS.refresh();
+          this.loadingService.setLoading(false);
+        }, 300);
       });
 
+      
       this.primengConfig.ripple = true;
 
       AOS.init({

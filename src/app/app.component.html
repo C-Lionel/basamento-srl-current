@@ -1,6 +1,8 @@
 <div>
-  <app-loading-general-component *ngIf="isLoading" [isLoading]="isLoading"></app-loading-general-component>
-  <router-outlet *ngIf="!isLoading"></router-outlet>
+  <app-loading-general-component *ngIf="loadingService.loading$ | async"></app-loading-general-component>
+  <router-outlet *ngIf="!(loadingService.loading$ | async)"></router-outlet>
 </div>
+
+
 
 

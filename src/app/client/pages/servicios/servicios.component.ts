@@ -16,8 +16,7 @@ export class ServiciosComponent implements OnInit  {
       this.firstLoad = false;
       setTimeout(() => {
         AOS.refresh();
-        // const endTime = performance.now();
-        // console.log(`Tiempo de carga del componente: ${endTime - startTime} milisegundos`);
+
       }, 100);
     }
   }
