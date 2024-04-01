@@ -28,14 +28,9 @@
 
     <div class="home__content__info__secondary">
 
-      <p-galleria [value]="images" [circular]="true" [autoPlay]="true" [showItemNavigators]="true" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '1200px' }">
+      <p-galleria [value]="images" [circular]="true" [autoPlay]="true" [showItemNavigators]="true" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" [containerStyle]="{ 'max-width': '1200px' }">
         <ng-template pTemplate="item" let-item>
-          <img [src]="item.itemImageSrc"/>
-        </ng-template>
-        <ng-template pTemplate="thumbnail" let-item>
-          <div class="grid grid-nogutter justify-content-center">
-            <img [src]="item.thumbnailImageSrc" style="display: block;" />
-          </div>
+          <img [src]="item.itemImageSrc" appLazyLoadImage />
         </ng-template>
       </p-galleria>
 
@@ -44,7 +39,7 @@
         <p>Basamento SRL es un equipo de profesionales comprometidos con la excelencia en la construcción. Con una sólida trayectoria en el sector, nos esforzamos por ofrecer un servicio personalizado y de alta calidad. Buscamos siempre soluciones innovadoras y brindamos asesoramiento integral en cada proyecto, garantizando la satisfacción de nuestros clientes.</p>
         <app-button-info-card></app-button-info-card>
       </div>
-      
+
     </div>
 
   </div>

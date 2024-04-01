@@ -7,10 +7,6 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 })
 export class GaleriaImagenesComponent implements OnDestroy, OnInit {
 
-  ngOnInit(): void {
-    this.bindDocumentListeners();
-  }
-
   @Input() imagenes: any[] = [];
 
   @Input() showThumbnails: boolean = false;
@@ -23,18 +19,51 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
 
   responsiveOptions = [
     {
-        breakpoint: '1024px',
-        numVisible: 5
+      breakpoint: '1024px',
+      numVisible: 5
     },
     {
-        breakpoint: '768px',
-        numVisible: 3
+      breakpoint: '768px',
+      numVisible: 3
     },
     {
-        breakpoint: '560px',
-        numVisible: 1
+      breakpoint: '560px',
+      numVisible: 1
     }
-];
+  ];
+
+  imagesLoaded: boolean[] = [];
+
+  ngOnInit(): void {
+    this.bindDocumentListeners();
+  }
+
+    // Método para cargar una imagen de tamaño completo
+    loadFullSizeImage(index: number) {
+      const image = this.imagenes[index];
+      if (!this.imagesLoaded[index] && image.fullSizeImageSrc) {
+        const img = new Image();
+        img.onload = () => {
+          // Una vez que la imagen está cargada, actualiza la fuente de la imagen en la matriz
+          this.imagenes[index].itemImageSrc = image.fullSizeImageSrc;
+          this.imagesLoaded[index] = true;
+        };
+        img.src = image.fullSizeImageSrc;
+      }
+    }
+
+    // Método para detectar cuando una imagen está en la vista y cargarla
+    onImageInView(index: number) {
+      if (!this.imagesLoaded[index]) {
+        this.loadFullSizeImage(index);
+      }
+    }
+
+    // Método para limpiar las imágenes que ya no están en la vista
+    onImageOutOfView(index: number) {
+      // Puedes limpiar la imagen de tamaño completo si lo deseas
+      this.imagenes[index].itemImageSrc = this.imagenes[index].thumbnailImageSrc;
+    }
 
   onThumbnailButtonClick() {
     this.showThumbnails = !this.showThumbnails;

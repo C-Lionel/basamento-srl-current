@@ -1,11 +1,11 @@
 <div class="card proyectos__content__galeria">
   <p-galleria  [value]="imagenes" [(activeIndex)]="activeIndex" [numVisible]="5" [responsiveOptions]="responsiveOptions"
     [showThumbnails]="showThumbnails" [showItemNavigators]="true" [showItemNavigatorsOnHover]="true" [circular]="true"
-    [autoPlay]="true" [transitionInterval]="3000" [containerStyle]="{'width':'100%'}"
+    [autoPlay]="false" [transitionInterval]="3000" [containerStyle]="{'width':'100%'}"
     [containerClass]="galleriaClass()">
 
     <ng-template pTemplate="item" let-item>
-      <img loading="lazy" [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+      <img loading="lazy" [src]="item.itemImageSrc" style="width: 100%; display: block;" (load)="onImageInView(activeIndex)" (error)="onImageOutOfView(activeIndex)" appLazyLoadImage  />
     </ng-template>
 
     <ng-template pTemplate="thumbnail" let-item>
@@ -26,7 +26,7 @@
       </div>
     </ng-template>
 
-   
+
 
   </p-galleria>
 </div>

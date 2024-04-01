@@ -21,7 +21,14 @@ export class AppComponent implements OnInit {
     public loadingService: LoadingService
     ) { }
 
+
+
     ngOnInit() {
+
+      window.addEventListener('load', () => {
+        this.loadingService.setLoading(false);
+      });
+
       this.router.events.pipe(
         filter(event => event instanceof NavigationEnd || event instanceof RouteConfigLoadEnd)
       ).subscribe(() => {
@@ -39,9 +46,7 @@ export class AppComponent implements OnInit {
         once: true
       });
 
-      window.addEventListener('load', () => {
-        this.loadingService.setLoading(false);
-      });
+
 
     }
 
