@@ -11,6 +11,10 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    .botones {
+      margin-bottom: 3rem;
+    }
+    // background-color: red;
   }
 
   &__list {
@@ -18,6 +22,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    // background-color: blue;
 
     .proyectos__content {
       margin-bottom: 3rem;

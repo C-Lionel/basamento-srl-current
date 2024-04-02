@@ -1,5 +1,3 @@
-
-
 {
   "items": [
     {
@@ -10,113 +8,101 @@
     {
       "label": "Proyectos",
       "icon": "pi pi-wallet",
-      "routerLink":"./proyectos",
+      "routerLink": "./proyectos",
       "items": [
         {
           "label": "Actuales",
+          "routerLink": "./proyectos/actuales",
           "items": [
-
             {
               "label": "Axion Roma",
-              "routerLink": "proyectos/axion-roma",
+              "routerLink": "./proyectos/axion-roma",
               "icon": "pi pi-check-square"
             },
             {
               "label": "Alvear 1065",
-              "routerLink": "proyectos/alvear-1065",
+              "routerLink": "./proyectos/alvear-1065",
               "icon": "pi pi-check-square"
             },
             {
               "label": "Perillo 1125",
-              "routerLink": "proyectos/perillo-1125",
+              "routerLink": "./proyectos/perillo-1125",
               "icon": "pi pi-check-square"
             },
             {
               "label": "Sarmiento 249",
-              "routerLink": "proyectos/sarmiento-249",
+              "routerLink": "./proyectos/sarmiento-249",
               "icon": "pi pi-check-square"
             }
           ]
         },
         {
           "label": "Previos",
+          "routerLink": "./proyectos/previos",
           "items": [
-
             {
               "label": "Barzola Grúas",
-              "routerLink": "proyectos/barzola-gruas",
+              "routerLink": "./proyectos/barzola-gruas",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Cem Otoñal",
-              "routerLink": "proyectos/cementerio-otoñal",
+              "routerLink": "./proyectos/cementerio-otoñal",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Jockey Club",
-              "routerLink": "proyectos/jockey-club",
+              "routerLink": "./proyectos/jockey-club",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Junin 2816",
-              "routerLink": "proyectos/junin-2816",
+              "routerLink": "./proyectos/junin-2816",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Santa Fe 2189",
-              "routerLink": "proyectos/santafe-2189",
+              "routerLink": "./proyectos/santafe-2189",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Super Alem",
-              "routerLink": "proyectos/super-alem",
+              "routerLink": "./proyectos/super-alem",
               "icon": "pi pi-check-square"
             }
-
           ]
         },
         {
           "label": "Legado",
+          "routerLink": "./proyectos/legado",
           "items": [
-
             {
               "label": "Esc los Padres",
-              "routerLink": "proyectos/escuela-los-padres",
+              "routerLink": "./proyectos/escuela-los-padres",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Los Molles",
-              "routerLink": "proyectos/los-molles",
+              "routerLink": "./proyectos/los-molles",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Orsa",
-              "routerLink": "proyectos/orsa",
+              "routerLink": "./proyectos/orsa",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Polo Club",
-              "routerLink": "proyectos/polo-club",
+              "routerLink": "./proyectos/polo-club",
               "icon": "pi pi-check-square"
             },
-
             {
               "label": "Roma Parador",
-              "routerLink": "proyectos/roma-parador",
+              "routerLink": "./proyectos/roma-parador",
               "icon": "pi pi-check-square"
             }
-
           ]
         }
-
       ]
     },
     {

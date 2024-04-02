@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Proyecto } from '../models/proyecto.model';
@@ -73,6 +74,9 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/axion-roma/galeria/img-45.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/axion-roma/small/img-45.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/axion-roma/galeria/img-46.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/axion-roma/small/img-46.jpg'},
       ],
+
+      categoria: "Actuales"
+
     },
     {
       nombre: 'Alvear 1065',
@@ -102,6 +106,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-13.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/alvear-1065/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/alvear-1065/small/img-14.jpg'},
       ],
+      categoria: "Actuales"
     },
     {
       nombre: 'Perillo 1125',
@@ -121,6 +126,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-7.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-8.jpg'},
       ],
+      categoria: "Actuales"
     },
     {
       nombre: 'Sarmiento 249',
@@ -144,6 +150,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-11.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/sarmiento-249/galeria/img-12.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/sarmiento-249/small/img-12.jpg'},
       ],
+      categoria: "Actuales"
     },
     {
       nombre: 'Barzola Grúas',
@@ -163,6 +170,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-7.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/barzola-gruas/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/barzola-gruas/small/img-8.jpg'},
       ],
+      categoria: "Previos"
     },
     {
       nombre: 'Cementerio Privado Otoñal',
@@ -201,6 +209,7 @@ export class ProyectosService {
         { itemImageSrc: 'assets/imagenes/proyectos/cementerio-otoñal/galeria/img-25.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/cementerio-otoñal/small/img-25.jpg'},
         { itemImageSrc: 'assets/imagenes/proyectos/cementerio-otoñal/galeria/img-26.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/cementerio-otoñal/small/img-26.jpg'},
       ],
+      categoria: "Previos"
     },
     {
       nombre: 'Jockey Club',
@@ -218,6 +227,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-5.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/jockey-club/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/jockey-club/small/img-6.jpg'},
       ],
+      categoria: "Previos"
     },
     {
       nombre: 'Junin 2816',
@@ -243,6 +253,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-13.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-13.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/junin-2816/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/junin-2816/small/img-14.jpg'},
       ],
+      categoria: "Previos"
     },
     {
       nombre: 'Santa Fe 2189',
@@ -268,6 +279,7 @@ export class ProyectosService {
         { itemImageSrc: 'assets/imagenes/proyectos/santa-fe-2189/galeria/img-14.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/santa-fe-2189/small/img-14.jpg'},
         { itemImageSrc: 'assets/imagenes/proyectos/santa-fe-2189/galeria/img-15.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/santa-fe-2189/small/img-15.jpg'},
       ],
+      categoria: "Previos"
     },
     {
       nombre: 'Supermercado Alem',
@@ -304,6 +316,7 @@ export class ProyectosService {
         { itemImageSrc: 'assets/imagenes/proyectos/super-alem/galeria/img-24.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/super-alem/small/img-24.jpg'},
         { itemImageSrc: 'assets/imagenes/proyectos/super-alem/galeria/img-25.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/super-alem/small/img-25.jpg'},
       ],
+      categoria: "Previos"
     },
     {
       nombre: 'Escuela de los Padres',
@@ -335,6 +348,7 @@ export class ProyectosService {
         { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-19.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-19.jpg'},
         { itemImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/galeria/img-20.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/escuela-los-padres/small/img-20.jpg'},
       ],
+      categoria: "Legado"
     },
 
     {
@@ -358,6 +372,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-10.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-10.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/los-molles/galeria/img-11.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/los-molles/small/img-11.jpg'},
       ],
+      categoria: "Legado"
     },
     {
       nombre: 'Orsa',
@@ -378,6 +393,7 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/orsa/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/orsa/small/img-6.jpg'},
 
       ],
+      categoria: "Legado"
     },
     {
       nombre: 'Polo Club',
@@ -392,9 +408,8 @@ export class ProyectosService {
           { itemImageSrc: 'assets/imagenes/proyectos/polo/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/polo/small/img-2.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/polo/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/polo/small/img-3.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/polo/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/polo/small/img-4.jpg'},
-
-
       ],
+      categoria: "Legado"
     },
     {
       nombre: 'Roma Parador',
@@ -414,6 +429,7 @@ export class ProyectosService {
 
 
       ],
+      categoria: "Legado"
     },
 
   ];
@@ -428,6 +444,34 @@ export class ProyectosService {
   setSelectedProject(project: string | null) {
     this.selectedProjectSource.next(project);
   }
+
+  getProyectosPorCategoria(categoria: string): Promise<Proyecto[]> {
+    const proyectosFiltrados = this.proyectos.filter(proyecto => {
+      // Aquí debes ajustar la lógica según la estructura de tu objeto de proyecto
+      // Por ejemplo, si tu objeto proyecto tiene una propiedad 'categoria', puedes usarla para filtrar
+      return proyecto.categoria === categoria;
+    });
+
+    return Promise.resolve(proyectosFiltrados);
+  }
+
+  async getProyectosCompletosPorCategoria(categoria: string): Promise<Proyecto[]> {
+  const proyectos = await this.getProyectos();
+  const proyectosFiltrados = await this.getProyectosPorCategoria(categoria);
+
+  // Filtrar los proyectos completos según la categoría
+  const proyectosCompletosFiltrados = proyectos.filter(proyecto =>
+    proyectosFiltrados.some(filtrado => filtrado.ruta === proyecto.ruta)
+  );
+
+  return proyectosCompletosFiltrados;
+}
+
+getProyecto(ruta: string): Promise<Proyecto | null> {
+  const proyecto = this.proyectos.find(p => p.ruta === ruta);
+  return Promise.resolve(proyecto ? { ...proyecto } : null);
+}
+
 
   getProyectos(): Promise<Proyecto[]> {
     const proyectosConImagenes: Proyecto[] = this.proyectos.map((proyecto: any) => {
@@ -459,6 +503,11 @@ export class ProyectosService {
 
     return Promise.resolve(proyectosConImagenes);
   }
+
+
 }
+
+
+
 
 
