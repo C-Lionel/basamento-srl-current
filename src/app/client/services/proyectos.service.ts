@@ -469,8 +469,38 @@ export class ProyectosService {
 
 getProyecto(ruta: string): Promise<Proyecto | null> {
   const proyecto = this.proyectos.find(p => p.ruta === ruta);
-  return Promise.resolve(proyecto ? { ...proyecto } : null);
+  if (proyecto) {
+    let altDescription = this.alt_description;
+
+    if (proyecto.nombre === 'Los Molles') {
+      altDescription = this.alt_description_2;
+    }
+
+    if (proyecto.nombre === 'Orsa') {
+      altDescription = this.alt_description_3;
+    }
+
+    const proyectoCompleto: Proyecto = {
+      ruta: proyecto.ruta,
+      nombre: this.capitalizeLetter(proyecto.nombre),
+      descripcion: proyecto.descripcion,
+      imagenes: proyecto.imagenes.map((imagen: any) => {
+        return {
+          itemImageSrc: imagen.itemImageSrc,
+          thumbnailImageSrc: imagen.thumbnailImageSrc,
+          alt: altDescription,
+          title: proyecto.nombre
+        };
+      }),
+    };
+
+    return Promise.resolve(proyectoCompleto);
+  }
+
+  return Promise.resolve(null);
 }
+
+
 
 
   getProyectos(): Promise<Proyecto[]> {
