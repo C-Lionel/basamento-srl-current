@@ -1,5 +1,5 @@
 <div>
-  <app-loading-general-component *ngIf="loadingService.loading$ | async"></app-loading-general-component>
+  <app-loading-component *ngIf="loadingService.loading$ | async"></app-loading-component>
   <router-outlet *ngIf="!(loadingService.loading$ | async)"></router-outlet>
 </div>
 
