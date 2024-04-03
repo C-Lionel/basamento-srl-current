@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
         setTimeout(() => {
           AOS.refresh();
           this.loadingService.setLoading(false);
-        }, 300);
+        }, 350);
       });
 
 
