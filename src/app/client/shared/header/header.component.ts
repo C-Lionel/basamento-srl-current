@@ -8,11 +8,4 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  videoLoaded = false;
-
-onVideoLoad() {
-  this.videoLoaded = true;
-}
-
-
 }

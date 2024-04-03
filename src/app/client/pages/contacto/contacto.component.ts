@@ -14,7 +14,6 @@ export class ContactoComponent {
   value!: string;
   public asunto: string = '';
   public arroba = '@';
-  loaded = false;
 
   constructor(private formBuilder: FormBuilder) { }
 
