@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
 import * as navbarConfig from '../../models/config/navbar-config.json';
@@ -14,11 +14,21 @@ export class NavbarComponent {
   searchTerm: string = '';
   searchTermError: boolean = false;
   searchTermFound: boolean = false;
+  isHome: boolean = false;
 
 
   constructor(
     private router: Router,
-    ) {}
+  ) { }
+
+  ngOnInit() {
+    this.items = (navbarConfig as any).default.items;
+    if (this.router.url === '/') {
+      this.isHome = true;
+    }else {
+      this.isHome = false;
+    }
+  }
 
   search() {
     const rutaEncontrada = this.encontrarRutaPorCoincidenciaParcial(this.searchTerm);
@@ -96,7 +106,5 @@ export class NavbarComponent {
   }
 
 
-    ngOnInit() {
-      this.items = (navbarConfig as any).default.items;
-    }
+
 }

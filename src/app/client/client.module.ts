@@ -34,7 +34,7 @@ import { ComponentsModule } from './components/components.module';
     PrimengModule,
     FormsModule,
     ComponentsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class ClientModule { }
