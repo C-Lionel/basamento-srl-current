@@ -23,6 +23,7 @@ export class NavbarComponent {
 
   ngOnInit() {
     this.items = (navbarConfig as any).default.items;
+
     if (this.router.url === '/') {
       this.isHome = true;
     }else {
@@ -104,7 +105,5 @@ export class NavbarComponent {
 
     return null; // Retorna null si no se encuentra ninguna coincidencia parcial
   }
-
-
 
 }
