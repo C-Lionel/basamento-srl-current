@@ -163,6 +163,8 @@ h1 {
 
 // NAVBAR
 
+
+
 .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
   color: #FFC107;
 }
@@ -177,6 +179,9 @@ h1 {
   font-size: 1.3rem;
   border-radius: 0;
 
+  .p-menuitem > .p-menuitem-content .p-menuitem-link {
+    background-color: var(--color-primary) ;
+  }
 
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
     color: white;
@@ -204,6 +209,18 @@ h1 {
 .home-class {
   .p-menubar  {
     background-color: transparent!important;
+
+    .p-menuitem.p-highlight > .p-menuitem-content {
+      color: rgba(255, 255, 255, 0.87);
+      background: #004e8c;
+    }
+    .p-submenu-list {
+      background: #004e8c;
+    }
+    .p-menuitem > .p-menuitem-content .p-menuitem-link {
+      background-color: rgba(255, 255, 255, 0) !important;
+    }
+
     .search {
       display: none;
     }
