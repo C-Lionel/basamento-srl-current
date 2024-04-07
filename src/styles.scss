@@ -212,10 +212,10 @@ h1 {
 
     .p-menuitem.p-highlight > .p-menuitem-content {
       color: rgba(255, 255, 255, 0.87);
-      background: #004e8c;
+      background: #3E5F91;
     }
     .p-submenu-list {
-      background: #004e8c;
+      background: #3E5F91;
     }
     .p-menuitem > .p-menuitem-content .p-menuitem-link {
       background-color: rgba(255, 255, 255, 0) !important;
@@ -224,9 +224,9 @@ h1 {
     .search {
       display: none;
     }
-    .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
-      display: none;
-    }
+    // .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
+    //   display: none;
+    // }
   }
 }
 

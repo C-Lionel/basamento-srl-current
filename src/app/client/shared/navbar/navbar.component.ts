@@ -15,6 +15,7 @@ export class NavbarComponent {
   searchTermError: boolean = false;
   searchTermFound: boolean = false;
   isHome: boolean = false;
+  currentRouteClass = '';
 
 
   constructor(
@@ -26,8 +27,10 @@ export class NavbarComponent {
 
     if (this.router.url === '/') {
       this.isHome = true;
+      this.currentRouteClass = 'ruta-activa';
     }else {
       this.isHome = false;
+      this.currentRouteClass = '';
     }
   }
 
