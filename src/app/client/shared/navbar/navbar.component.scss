@@ -1,24 +1,30 @@
-
-input {
-  font-size: 1rem;
-  width: auto;
-  height: 2rem;
-}
-
 img {
   cursor: pointer;
   width: auto;
   height: 3.2rem;
 }
 
+
+input {
+  font-size: 1rem;
+  width: 10rem;
+  height: 2rem;
+  color: black;
+}
+
 .error-message {
-  margin-left: 2rem;
-  margin-top: 0.2rem;
+  margin-left: 8rem;
   color: #F2FDFE;
+  font-size: 1rem;
+  margin-top: 0.1rem;
 }
 
 .show-error {
   color: red;
+}
+
+.p-inputtext {
+  background: white;
 }
 
 
