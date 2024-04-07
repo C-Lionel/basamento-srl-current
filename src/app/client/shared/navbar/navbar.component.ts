@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
 import * as navbarConfig from '../../models/config/navbar-config.json';
@@ -8,7 +8,7 @@ import * as navbarConfig from '../../models/config/navbar-config.json';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit, OnDestroy {
 
   items: MenuItem[] | undefined;
   searchTerm: string = '';
@@ -21,7 +21,7 @@ export class NavbarComponent {
 
   constructor(
     private router: Router,
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.items = (navbarConfig as any).default.items;
@@ -33,12 +33,6 @@ export class NavbarComponent {
       this.isHome = false;
       this.currentRouteClass = '';
     }
-  }
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const offset = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    this.isScrolled = offset > 100;
   }
 
   search() {
@@ -114,6 +108,16 @@ export class NavbarComponent {
     }
 
     return null; // Retorna null si no se encuentra ninguna coincidencia parcial
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const offset = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.isScrolled = offset > 100;
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.onWindowScroll);
   }
 
 }
