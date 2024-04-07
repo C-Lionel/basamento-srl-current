@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Router } from '@angular/router';
 import * as navbarConfig from '../../models/config/navbar-config.json';
@@ -16,6 +16,7 @@ export class NavbarComponent {
   searchTermFound: boolean = false;
   isHome: boolean = false;
   currentRouteClass = '';
+  isScrolled = false;
 
 
   constructor(
@@ -32,6 +33,12 @@ export class NavbarComponent {
       this.isHome = false;
       this.currentRouteClass = '';
     }
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const offset = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.isScrolled = offset > 100;
   }
 
   search() {

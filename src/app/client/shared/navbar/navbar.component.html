@@ -1,6 +1,6 @@
 
-    <div [ngClass]="{'home-class': isHome}">
-      <p-menubar [model]="items">
+    <div  [ngClass]="{'home-class': isHome, 'scrolled': isScrolled}">
+      <p-menubar [model]="items" >
         <ng-template pTemplate="start">
           <img *ngIf="currentRouteClass === '' " src="../../../../assets/Logo_2.svg" routerLink="/" class="logo" />
           <img *ngIf="currentRouteClass === 'ruta-activa' " src="../../../../assets/Logo_3.svg" routerLink="/" class="logo" />
