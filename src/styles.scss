@@ -14,7 +14,11 @@
   --color-background: #FFFFFF;
   --color-background-light: #F6F6F6;
   --color-primary: #033055;
-  --color-secondary: #0096C2;
+  --color-secondary: #1CBEDB;
+  --color-primary-light: #0076B4;
+  --color-secondary-light: #3FD4F5;
+  // --color-primary: #033055;
+  // --color-secondary: #0096C2;
   --color-terciary: #F2FDFE;
   --color-hover: #BFC8D3;
 }
@@ -176,10 +180,6 @@ h1 {
   height: 6.5rem;
   border-radius: 0;
 
-  .p-menuitem > .p-menuitem-content .p-menuitem-link {
-    background-color: var(--color-primary) ;
-  }
-
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
     color: white;
   }
@@ -203,7 +203,7 @@ h1 {
 // PARA EL NGCLASS DEL P-MENUBAR
 
  .scrolled .p-menubar  {
-  background-color: var(--color-primary) !important;
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary-light)) !important;
   transition: height 0.4s ease;
   height: 5.5rem;
   .error-message {
@@ -225,6 +225,12 @@ h1 {
 .home-class {
 
   .p-menubar  {
+    .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-submenu-icon {
+      color: var(--color-secondary);
+    }
+    .p-menuitem > .p-menuitem-content .p-menuitem-link .p-submenu-icon {
+      color: var(--color-secondary) !important;
+    }
     .error-message {
     color: black;
     }
