@@ -10,7 +10,14 @@ input {
   width: 10rem;
   height: 2rem;
   color: black;
+  border-radius: 5rem;
 }
+
+input::placeholder {
+  color: black;
+  font-weight: 500;
+}
+
 
 .error-message {
   margin-left: 8rem;
