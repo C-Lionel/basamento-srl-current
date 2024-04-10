@@ -1,6 +1,10 @@
 .home {
 
-  background-color: #ffffff00;
+  .lio {
+    display: flex;
+    margin-left: auto;
+    width: 10%;
+  }
 
   &__content {
     .colored-line {
@@ -19,15 +23,31 @@
       flex-direction: column;
 
       .section-1 {
+        margin-top: 10rem;
+        margin-bottom: 2.5rem;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
       }
 
       .section-2 {
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        div {
+          img {
+            margin-bottom: 2rem;
+          }
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          max-width: 20rem;
+          margin: 0 auto;
+        }
       }
     }
 

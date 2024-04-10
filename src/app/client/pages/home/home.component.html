@@ -1,6 +1,10 @@
 <shared-header></shared-header>
 
+
+
 <div class="home">
+
+  <img class="lio" src="../../../../assets/imagenes/home/vectores/onda.svg">
 
   <div class="home__content container">
 
@@ -8,19 +12,43 @@
 
       <section class="section-1">
         <h2 class="sub-title"> ¿Quiénes somos?</h2>
+
       </section>
 
       <section class="section-2">
-        <app-card-animated />
-        <app-card-animated />
-        <app-card-animated />
+
+        <div>
+          <img src="../../../../assets/imagenes/home/vectores/fundada.svg" style="width: 15rem;">
+          <p>Fundada por el <strong>Ingeniero</strong> <br>
+            <strong>Gustavo Cancellieri</strong>, es una
+            empresa de ingeniería civil con
+            más de <strong>20 años de experiencia.</strong> </p>
+        </div>
+
+        <div>
+          <img src="../../../../assets/imagenes/home/vectores/cartera.svg" style="width: 15rem;">
+          <p>Nuestra cartera muestra una <strong>amplia
+            gama de proyectos</strong>, cada uno ejecutado
+            con el compromiso de cumplir y <strong>superar
+            las expectativas del cliente.</strong></p>
+        </div>
+
+        <div>
+          <img src="../../../../assets/imagenes/home/vectores/confianza.svg" style="width: 15rem;">
+          <p>Somos sus <strong>socios en la construcción</strong>,
+            ya sea que esté buscando soluciones
+            innovadoras, ejecuciones confiables o
+            <strong>servicios excepcionales.</strong></p>
+        </div>
       </section>
 
     </div>
 
     <div class="home__content__info__secondary">
 
-      <p-galleria [value]="images" [circular]="true" [autoPlay]="true" [showItemNavigators]="true" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true" [containerStyle]="{ 'max-width': '1200px' }">
+      <p-galleria [value]="images" [circular]="true" [autoPlay]="true" [showItemNavigators]="true"
+        [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true"
+        [containerStyle]="{ 'max-width': '1200px' }">
         <ng-template pTemplate="item" let-item>
           <img [src]="item.itemImageSrc" appLazyLoadImage />
         </ng-template>
@@ -28,7 +56,10 @@
 
       <div class="info-box">
         <h2>Institucional</h2>
-        <p>Basamento SRL es un equipo de profesionales comprometidos con la excelencia en la construcción. Con una sólida trayectoria en el sector, nos esforzamos por ofrecer un servicio personalizado y de alta calidad. Buscamos siempre soluciones innovadoras y brindamos asesoramiento integral en cada proyecto, garantizando la satisfacción de nuestros clientes.</p>
+        <p>Basamento SRL es un equipo de profesionales comprometidos con la excelencia en la construcción. Con una
+          sólida trayectoria en el sector, nos esforzamos por ofrecer un servicio personalizado y de alta calidad.
+          Buscamos siempre soluciones innovadoras y brindamos asesoramiento integral en cada proyecto, garantizando la
+          satisfacción de nuestros clientes.</p>
         <app-button-info-card></app-button-info-card>
       </div>
 
@@ -36,4 +67,3 @@
 
   </div>
 </div>
-
