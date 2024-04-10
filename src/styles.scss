@@ -193,6 +193,10 @@ h1 {
   height: 6.5rem;
   border-radius: 0;
 
+  .search {
+    display: none;
+  }
+
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
     color: white;
   }
@@ -204,10 +208,10 @@ h1 {
 .p-menubar img {
   margin-right: 3rem;
 }
-.p-menubar .search {
-  font-size: 1.2rem;
-  margin-right: 0.8rem;
-}
+// .p-menubar .search {
+//   font-size: 1.2rem;
+//   margin-right: 0.8rem;
+// }
 
 .p-inputtext:focus {
   border: none !important;
@@ -250,9 +254,6 @@ h1 {
     .show-error {
     color: red;
     }
-    .error-message {
-      margin-left: 6rem !important;
-    }
     background-color: transparent;
 
     .p-menuitem.p-highlight > .p-menuitem-content {
@@ -265,9 +266,6 @@ h1 {
       background-color: rgba(255, 255, 255, 0) !important;
     }
 
-    .search {
-      display: none;
-    }
 
     // .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
     //   display: none;
