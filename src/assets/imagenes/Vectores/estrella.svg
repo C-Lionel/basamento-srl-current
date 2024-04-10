@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="5.3074mm" height="5.3074mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 7687.91 7687.91"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#FEFEFE;stroke-width:245.24;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-0" y1="3843.95" x2="7687.91" y2="3843.95">
+   <stop offset="0" style="stop-opacity:1; stop-color:#1BC2FD"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#38D7F1"/>
+  </linearGradient>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0" cx="3843.95" cy="3843.95" r="3843.95"/>
+  <polygon class="fil1 str0" points="3843.95,1316.28 4612.83,2889.66 6247.93,3062.76 4989.16,4280.11 5329.71,5888.84 3783.12,5067.96 2358.35,5888.84 2661.09,4164.08 1440.12,3062.76 3173.87,2817.96 "/>
+ </g>
+</svg>
