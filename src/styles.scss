@@ -66,8 +66,6 @@ h1 {
   font-size: 1rem;
   font-weight: bold;;
   background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
-  // margin-top: 3rem;
-  // margin-bottom: 3rem;
 }
 
 .container {
@@ -208,14 +206,9 @@ h1 {
 .p-menubar img {
   margin-right: 3rem;
 }
-// .p-menubar .search {
-//   font-size: 1.2rem;
-//   margin-right: 0.8rem;
-// }
 
-.p-inputtext:focus {
-  border: none !important;
-}
+
+
 
 // PARA EL NGCLASS DEL P-MENUBAR
 
@@ -223,12 +216,7 @@ h1 {
   background: linear-gradient(to right, var(--color-primary), var(--color-primary-light)) !important;
   transition: height 0.4s ease;
   height: 5.5rem;
-  .error-message {
-    color: white !important;
-  }
-  .show-error {
-    color: red !important;
-    }
+
   .p-submenu-list {
     background-color: var(--color-primary) !important;
     transition: height 0.4s ease;
@@ -248,12 +236,7 @@ h1 {
     .p-menuitem > .p-menuitem-content .p-menuitem-link .p-submenu-icon {
       color: var(--color-secondary) !important;
     }
-    .error-message {
-    color: black;
-    }
-    .show-error {
-    color: red;
-    }
+
     background-color: transparent;
 
     .p-menuitem.p-highlight > .p-menuitem-content {
@@ -266,10 +249,6 @@ h1 {
       background-color: rgba(255, 255, 255, 0) !important;
     }
 
-
-    // .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
-    //   display: none;
-    // }
   }
 }
 

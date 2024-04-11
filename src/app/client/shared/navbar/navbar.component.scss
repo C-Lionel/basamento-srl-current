@@ -4,37 +4,29 @@ img {
   height: 3.2rem;
 }
 
-
 input {
-  font-size: 1rem;
-  // width: 10rem;
+  width: 12rem;
   height: 2rem;
   color: black;
-  border-radius: 5rem;
+  border-radius: 1rem;
 }
 
 input::placeholder {
   color: black;
-  font-weight: 500;
-}
-
-
-.error-message {
-  color: #F2FDFE;
-  font-size: 1rem;
-  margin-top: 0.1rem;
-}
-
-.show-error {
-  color: red;
+  font-weight: 600;
 }
 
 .p-inputtext {
   background: white;
 }
 
+.error-input {
+  color: red;
+}
 
-
+.p-inputtext:focus {
+  border: none !important;
+}
 
 
 
