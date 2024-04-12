@@ -3,10 +3,11 @@
   .vector {
     display: flex;
     margin-left: auto;
-    width: 10%;
+    width: 12%;
   }
 
   &__content {
+
     .colored-line {
       width: 15rem;
       height: 0.2rem;
@@ -22,15 +23,15 @@
       display: flex;
       flex-direction: column;
 
-      .section-1 {
-        margin-top: 10rem;
-        margin-bottom: 2.5rem;
+      &__section-1 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
       }
 
-      .section-2 {
+      &__section-2 {
 
         display: flex;
         flex-direction: row;
@@ -47,6 +48,20 @@
           text-align: center;
           max-width: 20rem;
           margin: 0 auto;
+          line-height: 1.3rem;
+        }
+      }
+      &__section-3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5rem;
+        img {
+          margin-bottom: 1rem;
+        }
+        p {
+          color: var(--color-primary-light);
+          font-size: 2rem;
         }
       }
     }
@@ -72,7 +87,7 @@
         }
       }
 
-      margin-top: 10rem;
+      margin-top: 5rem;
       margin-bottom: 2.5rem;
       display: flex;
       flex-direction: column;

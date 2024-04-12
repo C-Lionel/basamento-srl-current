@@ -4,10 +4,27 @@
 
 
 // FUENTES
+
+// @font-face {
+//   font-family: montserrat-regular-400;
+//   src: url('./assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+// }
+
 @font-face {
-  font-family: montserrat-regular-400;
-  src: url('./assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
+  font-family: kanit-light;
+  src: url('./assets/fonts/Kanit/Kanit-Light.ttf');
 }
+
+@font-face {
+  font-family: kanit-medium;
+  src: url('./assets/fonts/Kanit/Kanit-Medium.ttf');
+}
+
+@font-face {
+  font-family: kanit-regular;
+  src: url('./assets/fonts/Kanit/Kanit-Regular.ttf');
+}
+
 
 //COLORES
 :root {
@@ -42,7 +59,7 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: montserrat-regular-400;
+  font-family: kanit-regular;
   color: var(--color-primary);
   background-color: var(--color-background);
 }
@@ -66,7 +83,7 @@ h1 {
   border-radius: 1.875rem;
   letter-spacing: 0.15rem;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;;
   background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
 }
