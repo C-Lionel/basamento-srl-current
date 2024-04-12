@@ -17,8 +17,6 @@
   --color-secondary: #1CBEDB;
   --color-primary-light: #0076B4;
   --color-secondary-light: #3FD4F5;
-  // --color-primary: #033055;
-  // --color-secondary: #0096C2;
   --color-terciary: #F2FDFE;
   --color-hover: #BFC8D3;
 }
@@ -58,6 +56,11 @@ h1 {
 
 // ESTILOS GENERALES
 
+.title_primary {
+  color: var(--color-primary-light);
+  font-size: 3rem;
+}
+
 .sub-title {
   padding: 1.2rem;
   border-radius: 1.875rem;
@@ -74,13 +77,12 @@ h1 {
 }
 
 .content {
-  padding-top: 8.5rem;
+  padding-top: 12rem;
 }
 
 .last-content {
   margin-bottom: 2.5rem;
 }
-
 
 .title-margin-bottom {
   margin-bottom: 3rem;
