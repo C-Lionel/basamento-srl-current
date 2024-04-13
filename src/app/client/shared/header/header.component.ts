@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  showButton = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.showButton = true;
+    }, 5000);
+  }
+
 }

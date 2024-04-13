@@ -7,6 +7,13 @@
   align-items: center;
   overflow: hidden;
 
+  button {
+    position: absolute;
+    font-size: 2rem;
+    top: 70%;
+  }
+
+ 
   video {
     position: absolute;
     width: 100%;
