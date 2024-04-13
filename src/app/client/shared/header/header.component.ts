@@ -13,7 +13,15 @@ export class HeaderComponent {
   constructor() {
     setTimeout(() => {
       this.showButton = true;
-    }, 5000);
+    }, 5500);
   }
+
+  scrollTo100vh() {
+    window.scrollTo({
+      top: window.innerHeight * 0.905,
+      behavior: 'smooth'
+    });
+  }
+
 
 }

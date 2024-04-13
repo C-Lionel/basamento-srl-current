@@ -1,9 +1,27 @@
 <div class="header">
+  
   <video class="animate__animated animate__fadeIn"  src="../../../../assets/videos/home/video_slider_2.mp4" type="video/mp4" playsinline loop autoplay preload="auto" [muted]="true"></video>
   <h1 class="focus-in-contract-bck h1_title_1">Bienvenidos a </h1>
   <h1 class="focus-in-contract-bck h1_title_2"> BASAMENTO SRL </h1>
   <h4 class="text-focus-in">Ingeniería y Construcción</h4>
-  <button [hidden]="!showButton" class="animate__animated animate__bounceInDown"> hola </button>
+
+  <!-- BOTÓN -->
+  <button [hidden]="!showButton" (click)="scrollTo100vh()" class="btn-53 animate__animated animate__bounceInDown">
+    <div class="original">Comenzemos</div>
+    <div class="letters">
+      <span>C</span>
+      <span>O</span>
+      <span>M</span>
+      <span>E</span>
+      <span>N</span>
+      <span>Z</span>
+      <span>E</span>
+      <span>M</span>
+      <span>O</span>
+      <span>S</span>
+    </div>
+  </button>
+
 </div>
 
 
