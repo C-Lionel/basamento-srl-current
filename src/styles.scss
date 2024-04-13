@@ -57,22 +57,6 @@ html {
   font-size: 100%;
 }
 
-@media screen and (max-width: 1920px) {
-  :root {
-    --scroll-to: 0.9050;
-  }
-}
-
-@media screen and (min-width: 1367px) and (max-width: 1680px) {
-}
-
-@media screen and (max-width: 1366px) {
-  html {
-    font-size: 65%;
-  }
-}
-
-
 body {
   font-size: 1rem;
   font-family: kanit-regular;
