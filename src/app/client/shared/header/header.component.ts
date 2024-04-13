@@ -17,11 +17,14 @@ export class HeaderComponent {
   }
 
   scrollTo100vh() {
+    const scrollToValue = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--scroll-to'));
     window.scrollTo({
-      top: window.innerHeight * 0.905,
+      top: window.innerHeight * scrollToValue,
       behavior: 'smooth'
     });
   }
+
+
 
 
 }
