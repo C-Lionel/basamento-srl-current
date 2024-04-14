@@ -18,7 +18,7 @@ export class HeaderComponent {
 
   scrollTo100vh() {
     window.scrollTo({
-      top: window.innerHeight,
+      top: window.innerHeight * 0.9050,
       behavior: 'smooth'
     });
   }
