@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   showButton = false;
+  @ViewChild('videoElement') videoElement!: ElementRef;
 
   constructor() {
     setTimeout(() => {
@@ -16,9 +17,20 @@ export class HeaderComponent {
     }, 4000);
   }
 
-  scrollTo100vh() {
+
+    // scrollToVideo() {
+  //   const videoHeight = this.videoElement.nativeElement.offsetHeight;
+  //   const scrollToHeight = videoHeight * 0.9050;
+  //   window.scrollTo({
+  //     top: scrollToHeight,
+  //     behavior: 'smooth'
+  //   });
+  // }
+
+  scrollToVideo() {
+    const videoHeight = this.videoElement.nativeElement.offsetHeight;
     window.scrollTo({
-      top: window.innerHeight * 0.9050,
+      top: videoHeight,
       behavior: 'smooth'
     });
   }
