@@ -19,8 +19,12 @@ export class HeaderComponent {
 
   scrollToVideo() {
     const videoHeight = this.videoElement.nativeElement.offsetHeight;
+    const remInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    const offset = 5.5 * remInPixels;
+    const scrollToValue = videoHeight - offset;
+  
     window.scrollTo({
-      top: videoHeight,
+      top: scrollToValue,
       behavior: 'smooth'
     });
   }
