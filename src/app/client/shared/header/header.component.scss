@@ -11,10 +11,11 @@
     position: absolute;
     font-size: 1rem;
     top: 65%;
-    @media screen and (max-width: 1400px) {
-      top: 60%;
-      font-size: 0.8rem;
-    }
+
+    // @media screen and (max-width: 1400px) {
+    //   top: 60%;
+    //   font-size: 0.8rem;
+    // }
   }
 
   video {
@@ -41,9 +42,9 @@
   color:#ffff;
   text-shadow: 2px 2px 4px #000000;
 
-  @media screen and (max-width: 1400px) {
-    font-size: 4rem;
-  }
+  // @media screen and (max-width: 1400px) {
+  //   font-size: 4rem;
+  // }
 }
 .h1_title_2 {
   font-size: 6rem;
@@ -53,9 +54,9 @@
   color:#ffff;
   text-shadow: 2px 2px 4px #000000;
 
-  @media screen and (max-width: 1400px) {
-    font-size: 5rem;
-  }
+  // @media screen and (max-width: 1400px) {
+  //   font-size: 5rem;
+  // }
 
 }
 
@@ -66,10 +67,10 @@
     color: #FEBF07;
     text-shadow: 2px 2px 4px #000000;
 
-    @media screen and (max-width: 1400px) {
-      font-size: 1.5rem;
-      top: calc(46% + 5rem);
-    }
+    // @media screen and (max-width: 1400px) {
+    //   font-size: 1.5rem;
+    //   top: calc(46% + 5rem);
+    // }
 
   }
 }
@@ -131,9 +132,9 @@
   position: relative;
   text-transform: uppercase;
 
-  @media screen and (max-width: 1400px) {
-    padding: 0.7rem 1.3rem;
-  }
+  // @media screen and (max-width: 1400px) {
+  //   padding: 0.7rem 1.3rem;
+  // }
 
 }
 
