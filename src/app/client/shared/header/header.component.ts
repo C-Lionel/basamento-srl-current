@@ -17,16 +17,6 @@ export class HeaderComponent {
     }, 4000);
   }
 
-
-    // scrollToVideo() {
-  //   const videoHeight = this.videoElement.nativeElement.offsetHeight;
-  //   const scrollToHeight = videoHeight * 0.9050;
-  //   window.scrollTo({
-  //     top: scrollToHeight,
-  //     behavior: 'smooth'
-  //   });
-  // }
-
   scrollToVideo() {
     const videoHeight = this.videoElement.nativeElement.offsetHeight;
     window.scrollTo({
@@ -34,8 +24,5 @@ export class HeaderComponent {
       behavior: 'smooth'
     });
   }
-
-
-
 
 }
