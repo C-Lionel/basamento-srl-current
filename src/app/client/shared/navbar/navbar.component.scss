@@ -2,6 +2,7 @@ img {
   cursor: pointer;
   width: auto;
   height: 3.2rem;
+  margin-bottom: 0.1rem;
 }
 
 input {
@@ -9,6 +10,10 @@ input {
   height: 2rem;
   color: black;
   border-radius: 1rem;
+  @media screen and (max-width: 1400px) {
+    width: 10rem;
+    height: 1.5rem;
+  }
 }
 
 input::placeholder {

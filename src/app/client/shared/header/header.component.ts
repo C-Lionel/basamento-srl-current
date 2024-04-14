@@ -13,7 +13,7 @@ export class HeaderComponent {
   constructor() {
     setTimeout(() => {
       this.showButton = true;
-    }, 5500);
+    }, 4000);
   }
 
   scrollTo100vh() {
