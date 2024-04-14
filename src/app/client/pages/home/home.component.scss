@@ -88,6 +88,11 @@
     }
 
     &__info__secondary {
+
+      .p-galleria {
+        max-width: 5rem !important;
+      }
+
       .info-box {
         color: #ffffff;
         display: flex;

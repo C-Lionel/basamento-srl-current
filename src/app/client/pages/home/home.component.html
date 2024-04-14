@@ -56,8 +56,8 @@
       <p-galleria [value]="images" [circular]="true" [autoPlay]="true" [showItemNavigators]="true"
         [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true"
         [containerStyle]="{ 'max-width': '1200px' }">
-        <ng-template pTemplate="item" let-item>
-          <img [src]="item.itemImageSrc" appLazyLoadImage />
+        <ng-template pTemplate="item" let-item >
+          <img  style="width: 68.75rem; display: block;" [src]="item.itemImageSrc" appLazyLoadImage />
         </ng-template>
       </p-galleria>
 
