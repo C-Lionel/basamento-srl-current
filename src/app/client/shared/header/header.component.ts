@@ -14,7 +14,7 @@ export class HeaderComponent {
   constructor() {
     setTimeout(() => {
       this.showButton = true;
-    }, 4000);
+    }, 3500);
   }
 
   scrollToVideo() {
@@ -22,7 +22,7 @@ export class HeaderComponent {
     const remInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize);
     const offset = 5.5 * remInPixels;
     const scrollToValue = videoHeight - offset;
-  
+
     window.scrollTo({
       top: scrollToValue,
       behavior: 'smooth'
