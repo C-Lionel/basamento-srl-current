@@ -1,62 +1,94 @@
 
-//
 
 .nosotros {
-  .colored-line {
-    width: 12rem;
-    height: 0.2rem;
-    background-color: #80722be4;
-    border: none;
-  }
   background-color: var(--color-background-light);
-  h2 {
-    margin-bottom: 1rem;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  hr {
-    width: 12rem;
-    margin-bottom: 5rem;
-  }
-  span {
+
+  .vector {
     display: flex;
-    justify-content: center;
-    padding: 2rem;
-    font-size: 5rem;
-    color: var(--color-secondary);
+    margin-left: auto;
+    width: 10rem;
+    height: auto;
   }
-  &__card {
+
+  &__content-1 {
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 15rem;
-  }
-  &__info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15rem;
-    p{
-      flex: 1;
-      text-align: left;
-      margin-right: 5rem;
-      line-height: 1.65rem;
-      font-size: 1.0625rem;
-      .strong{
-        font-size: 1.25rem;
+    flex-direction: column;
+
+    &__cards {
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 15rem;
+
+      span {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        font-size: 5rem;
+        color: var(--color-secondary);
       }
     }
-    video {
-      max-height: 45rem;
-      width: 37.5%;
-      object-fit: cover;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-      object-fit: scale-down;
-      background-color: #1F75BD;
-    }
   }
+
+  &__content-2 {
+
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 8rem;
+    }
+
+    &__section {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 8rem;
+
+      &__1 {
+
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        line-height: 2rem;
+        text-align: left;
+
+        &__text-1, &__text-2 {
+          margin-bottom: 3rem;
+        }
+        &__text-3 {
+          padding: 1.2rem;
+          border-radius: 1rem;
+          letter-spacing: 0.15rem;
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
+        }
+      }
+      &__2 {
+        padding-right: 2rem;
+        text-align: right;
+        flex: 1;
+
+        video {
+          max-height: 40rem;
+          width: 47%;
+          object-fit: cover;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          object-fit: scale-down;
+          background-color: #1F75BD;
+        }
+      }
+    }
+
+  }
+
+
   &__contact {
     text-align: center;
     margin-top: 15rem;

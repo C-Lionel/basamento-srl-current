@@ -88,6 +88,9 @@ h1 {
 .title_primary {
   color: var(--color-primary-light);
   font-size: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .sub-title {
@@ -97,6 +100,8 @@ h1 {
   color: white;
   font-size: 1.5rem;
   font-weight: bold;;
+  width: 18rem;
+  text-align: center;
   background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
 
   @media screen and (max-width: 1400px) {
@@ -105,13 +110,20 @@ h1 {
   }
 }
 
+.colored-line {
+  width: 12rem;
+  height: 0.2rem;
+  background-color: #80722be4;
+  border: none;
+}
+
 .container {
   max-width: 80%;
   margin: 0 auto;
 }
 
 .content {
-  padding-top: 12rem;
+  padding-top: 6.5rem;
 }
 
 .last-content {
@@ -408,10 +420,7 @@ h1 {
     background-color: #39414e;
   }
 
-  .p-card {
-    margin-bottom: 2rem;
-  }
-  .nosotros__card .p-card:hover {
+  .nosotros__content-1__cards .p-card:hover {
     background-color: #39414e;
     transition: transform 0.5s ease;
     transform: scale(1.05);
