@@ -1,5 +1,6 @@
 
 <div class="proyectos animate__animated animate__fadeIn content" [ngClass]="proyectosClass" *ngIf="proyectos && proyectos.length > 0" >
+
   <img class="vector " src="../../../../assets/imagenes/home/vectores/onda.svg">
 
   <h2 class="title_primary" data-aos="zoom-out" data-aos-duration="1000"> Nuestros Proyectos </h2>
@@ -8,6 +9,18 @@
     <button class="sub-title-proyectos" routerLink="/proyectos/actuales"> Actuales </button>
     <button class="sub-title-proyectos" routerLink="/proyectos/previos"> Previos </button>
     <button class="sub-title-proyectos" routerLink="/proyectos/legado"> Legado </button>
+  </div>
+
+  <div *ngIf="isCurrentRoute('/proyectos/actuales')" class="proyectos__categorias">
+    <h2 class="sub-title">Actuales</h2>
+  </div>
+
+  <div *ngIf="isCurrentRoute('/proyectos/previos')" class="proyectos__categorias">
+    <h2 class="sub-title">Previos</h2>
+  </div>
+
+  <div *ngIf="isCurrentRoute('/proyectos/legado')" class="proyectos__categorias">
+    <h2 class="sub-title">Legado</h2>
   </div>
 
   <!-- Contenido específico para cada servicio -->

@@ -6,6 +6,25 @@
 
   background-color: #ffffff00;
 
+  &__categorias{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: var( --color-primary-light);
+    position: relative;
+    width: 100%;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    h2 {
+      width: 22rem;
+      margin-left: 3rem;
+    }
+  }
+
   &__individual {
     display: flex;
     justify-content: space-around;

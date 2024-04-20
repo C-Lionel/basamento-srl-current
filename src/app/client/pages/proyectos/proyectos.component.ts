@@ -1,7 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { ProyectosService } from '../../services/proyectos.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Proyecto } from '../../models/proyecto.model';
 
 @Component({
@@ -12,6 +12,7 @@ export class ProyectosComponent implements OnInit {
   constructor(
     private proyectosService: ProyectosService,
     private route: ActivatedRoute,
+    private router: Router
   ) {}
 
   selectedProject: string | null = null;
@@ -62,5 +63,9 @@ export class ProyectosComponent implements OnInit {
   getDescripcionOpciones(opciones: { [key: string]: string }): string[] {
     return Object.values(opciones);
   }
+
+  isCurrentRoute(route: string): boolean {
+    return this.router.url === route;
+}
 
 }
