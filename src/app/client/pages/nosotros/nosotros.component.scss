@@ -3,14 +3,16 @@
 .nosotros {
   background-color: var(--color-background-light);
 
+
   .vector {
     display: flex;
     margin-left: auto;
-    width: 10rem;
+    width: 11rem;
     height: auto;
   }
 
   &__content-1 {
+
     display: flex;
     flex-direction: column;
 
@@ -19,7 +21,6 @@
       justify-content:space-around;
       align-items: center;
       flex-wrap: wrap;
-      margin-bottom: 15rem;
 
       span {
         display: flex;
@@ -29,6 +30,9 @@
         color: var(--color-secondary);
       }
     }
+
+    margin-bottom: 12rem;
+
   }
 
   &__content-2 {
@@ -47,7 +51,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 8rem;
 
       &__1 {
 
@@ -85,33 +88,66 @@
       }
     }
 
+    margin-bottom: 12rem;
+
+
+  }
+
+  &__content-3 {
+
+    display: flex;
+    flex-direction: column;
+
+    &__title-background {
+      background-color: var( --color-primary-light);
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      h2 {
+        width: 22rem;
+        margin-left: 3rem;
+      }
+    }
+
+    &__accordion {
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+
+    }
+
   }
 
 
   &__contact {
     text-align: center;
-    margin-top: 15rem;
+
     p {
-      font-size: 1.0625rem;
+      font-size: 2rem;
       text-align: center;
-      margin-bottom: 3rem;
+
     }
     button {
       background-color: var(--color-secondary);
       border: none;
       color: white;
-      padding: 15px 32px;
+      padding: 0.9375rem 2rem;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px;
+      font-size: 1rem;
       cursor: pointer;
       transition-duration: 0.2s;
 
     }
 
     button:hover {
-      background-color: var(--color-primary); /* Cambia el color de fondo al hacer hover */
+      background-color: var(--color-primary);
       color: var(--color-secondary);
       box-shadow: 0 4px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Añade una sombra elevada */
       transform: translateY(-5px);
