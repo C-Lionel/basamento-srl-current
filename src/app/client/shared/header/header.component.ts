@@ -14,7 +14,7 @@ export class HeaderComponent {
   constructor() {
     setTimeout(() => {
       this.showButton = true;
-    }, 3500);
+    }, 2500);
   }
 
   scrollToVideo() {
