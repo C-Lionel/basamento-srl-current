@@ -110,6 +110,61 @@ h1 {
   }
 }
 
+// .sub-title-proyectos {
+//   border: none;
+//   padding: 0.5rem;
+//   letter-spacing: 0.15rem;
+//   font-size: 1rem;
+//   margin-right: 1rem;
+//   color: white;
+//   font-weight: bold;;
+//   width: 10rem;
+//   text-align: center;
+//   background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
+//   cursor: pointer;
+//   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+//   @media screen and (max-width: 1400px) {
+//     font-size: 1rem;
+//     padding: 1rem;
+//   }
+// }
+
+// .sub-title-proyectos:hover {
+//   background: var(--color-secondary-light);
+// }
+
+.sub-title-proyectos {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: #0076B4;
+  --btn-bg-2: #3FD4F5;
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+  padding: 0.9em 1.4em;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  color: var(--btn-bg-color);
+}
+
+.sub-title-proyectos:hover {
+  background-position: right top;
+}
+
+.sub-title-proyectos:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
 .vector {
   display: flex;
   margin-left: auto;
