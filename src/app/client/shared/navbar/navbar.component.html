@@ -2,7 +2,7 @@
     <div  [ngClass]="{'home-class': isHome, 'no-home-class': !isHome, 'scrolled': isScrolled}">
       <p-menubar [model]="items" >
         <ng-template pTemplate="start">
-          <img *ngIf="currentRouteClass === '' " src="../../../../assets/Logo_2.svg" routerLink="/" class="logo" />
+          <img *ngIf="currentRouteClass === '' " src="../../../../assets/Logo_2-min.svg" routerLink="/" class="logo" />
           <img *ngIf="currentRouteClass === 'ruta-activa' " src="../../../../assets/Logo_3.svg" routerLink="/" class="logo" />
         </ng-template>
         <ng-template pTemplate="end">
