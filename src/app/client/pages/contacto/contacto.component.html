@@ -2,24 +2,11 @@
 
 <div class="contacto animate__animated animate__fadeIn content">
   <img class="vector " src="../../../../assets/imagenes/home/vectores/onda.svg">
-  <h1 class="title-margin-bottom">CONTACTO</h1>
+  <h2 class="title_primary" data-aos="zoom-out" data-aos-duration="1000"> Formulario de Contacto </h2>
 
-  <div class="contacto__content container">
-    <div class="contacto__content__info">
-      <p>
-        ¡Gracias por tu interés en contactar con <strong>Basamento SRL</strong>! Estamos entusiasmados por conocer cómo
-        podemos colaborar contigo en tu próximo proyecto. Ya sea que requieras más detalles, quieras solicitar un
-        presupuesto o simplemente desees conocernos mejor, estamos aquí para escucharte y responder a todas tus
-        consultas.
-      </p>
-      <img src="assets/imagenes/contacto/img-contacto.jpg" alt="">
-    </div>
+    <div class="contacto__content__1 ">
 
-    <div class="contacto__content__form">
-
-      <h2>Formulario de Contacto</h2>
-
-      <div class="radio_options">
+      <div class="contacto__content__1__radio__options">
         <div>
           <p-radioButton name="asunto" [value]="'Servicios de ingeniería'" [(ngModel)]="asunto"
             (ngModelChange)="updateAsunto('Servicios de ingeniería')" inputId="asunto1"></p-radioButton>
@@ -35,13 +22,13 @@
         <div>
           <p-radioButton name="asunto" [value]="'Proyectos en curso'" [(ngModel)]="asunto"
             (ngModelChange)="updateAsunto('Proyectos en curso')" inputId="asunto3"></p-radioButton>
-          <label for="asunto3">Proyectos en curso</label>
+          <label for="asunto3">Proyecto en curso</label>
         </div>
 
         <div>
           <p-radioButton name="asunto" [value]="'Otros'" [(ngModel)]="asunto" (ngModelChange)="updateAsunto('Otros')"
             inputId="asunto4"></p-radioButton>
-          <label for="asunto4">Otros</label>
+          <label for="asunto4">Otro</label>
         </div>
       </div>
 
@@ -50,7 +37,7 @@
         <small *ngIf="formGroup.get('asunto')!.errors?.['required']">Debe seleccionar un asunto</small>
       </div>
 
-      <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+      <form class="contacto__content__1__form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
 
         <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
         <div class="text-validators" *ngIf="formGroup.get('nombre')!.invalid && (formGroup.get('nombre')!.dirty || formGroup.get('nombre')!.touched)">
@@ -79,13 +66,12 @@
           <small *ngIf="formGroup.get('otros')!.errors?.['required']">El asunto "Otros" es obligatorio</small>
         </div>
 
-        <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje" placeholder="Tu mensaje es importante para nosotros. Déjalo aquí (opcional)"></textarea>
+        <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje" placeholder="Escribe aquí tu mensaje.."></textarea>
+
         <button type="submit" pButton label="Enviar"></button>
       </form>
 
     </div>
-
-  </div>
 
   <div class="contacto contacto__contact">
     <section>

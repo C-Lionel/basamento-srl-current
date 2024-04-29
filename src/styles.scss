@@ -31,8 +31,8 @@
   --color-background: #FFFFFF;
   --color-background-light: #F6F6F6;
   --color-primary: #033055;
-  --color-secondary: #1CBEDB;
   --color-primary-light: #0076B4;
+  --color-secondary: #1CBEDB;
   --color-secondary-light: #3FD4F5;
   --color-terciary: #F2FDFE;
   --color-hover: #BFC8D3;
@@ -277,23 +277,24 @@ h1 {
   }
 
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
-    color: #FFC107;
+    color: #BFC7A2;
   }
 
   .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
     color: white;
+
   }
 
-  .p-menuitem-link-active {
-    background-color: #3E5F91;
-    border-radius: 0.3rem;
-    opacity: 0.8;
-  }
-
-  // .p-menuitem > .p-menuitem-content .p-menuitem-link:hover {
-  //   background-color: #3fd4f52e;
-  //   border-radius: 0.3rem;
+  // .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
+  //   color: #FEBF07 !important;
+  //   opacity: 0.8;
+  //   transition: 0.1s all ease;
   // }
+
+  .p-menuitem-link-active .p-menuitem-text {
+    color: #FEBF07 !important;
+  }
+
 }
 
 
@@ -360,6 +361,20 @@ h1 {
 .p-galleria.p-galleria-indicator-onitem .p-galleria-indicators .p-galleria-indicator button {
   border-radius: 50%;
 }
+
+ // NOSOTROS
+
+  //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
+
+  .p-accordion .p-accordion-header .p-accordion-header-link:hover {
+    background-color: #39414e;
+  }
+
+  .nosotros__content-1__cards .p-card:hover {
+    background-color: #39414e;
+    transition: transform 0.5s ease;
+    transform: scale(1.05);
+  }
 
 
 // PROYECTOS
@@ -457,21 +472,10 @@ h1 {
   }
 
 
-  // NOSOTROS
 
-  //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
-
-  .p-accordion .p-accordion-header .p-accordion-header-link:hover {
-    background-color: #39414e;
-  }
-
-  .nosotros__content-1__cards .p-card:hover {
-    background-color: #39414e;
-    transition: transform 0.5s ease;
-    transform: scale(1.05);
-  }
 
   // ESTILOS DE SWALL-ALERT2
+
   // CONTACTO
 
   div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {

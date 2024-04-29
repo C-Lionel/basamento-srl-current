@@ -4,107 +4,74 @@ $color-background: #F3FEFE;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
   background-color: $color-background;
 
-  .text-validators {
-      margin-bottom: 1rem;
+  &__content__1 {
+
+    width: 50vw;
+    margin: 0 auto;
+
+    .text-validators {
+      margin-bottom: 0.5rem;
       margin-top: -0.6rem;
-      color: red;
-  }
-
-  &__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-
-  &__info {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-right: 7rem;
-    P{
-      margin-bottom: 3.1rem;
-      text-align: justify;
-      line-height: 2rem;
-    }
-    img {
-      border-radius: 0.35rem;
-      opacity: 0.9;
-      filter: grayscale(30%); /* Aplicar escala de grises al 50% */
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    }
-  }
-
-  &__form {
-    flex: 1; // El formulario ocupa el espacio disponible
-    flex-wrap: wrap;
-    h2 {
-      font-size: 2rem;
-    }
-    .radio_options{
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-bottom: 1.7rem;
-      div {
-        padding-right: 1rem;
-        font-size: 1.25rem;
-        p-radioButton{
-          padding-right: 1rem;
-          margin-top: 1rem;
-        }
+      justify-content: flex-start;
+      color: red;
+    }
+
+    &__radio__options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      overflow: hidden;
+
+      p-radioButton {
+        margin-right: 0.5rem;
       }
     }
-  }
-  }
 
+    &__form {
+      text-align: center;
+      button {
+        font-size: 1.1rem;
+        width: 12%;
+        padding: 0.625rem;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--color-secondary);
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
 
-  h2 {
-    margin-bottom: 1.7rem;
-    color: #05a4d4;
-  }
+        &:hover {
+          background-color: #05a4d4; // Cambia el color de fondo del botón al pasar el ratón
+        }
+      }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; // Alinea los elementos del formulario a la izquierda
-    width: 100%; // Ajusta el ancho del formulario
-    button {
-      width: 100%;
+      textarea {
+        min-height: 15rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        background-color: var(--color-primary);
+        margin-bottom: 1rem;
+        padding: 0.625rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: white;
+      }
     }
 
+
   }
 
-  input,
-  textarea
-   {
-    width: 100%; // Ajusta el ancho de los campos de entrada
-    background-color:#3A414E;
-    color: #FFFFFF;
-    margin-bottom: 1rem; // Ajusta la distancia entre los campos de entrada
-    padding: 10px; // Añade espacio interno a los campos de entrada
-    border: 1px solid #ccc; // Añade un borde a los campos de entrada
-    border-radius: 5px; // Añade bordes redondeados a los campos de entrada
-  }
-
-  button {
-    width: 100%; // Ajusta el ancho del botón
-    padding: 10px; // Añade espacio interno al botón
-    border: none; // Quita el borde del botón
-    border-radius: 5px; // Añade bordes redondeados al botón
-    background-color: var(--color-secondary); // Cambia el color de fondo del botón
-    color: white; // Cambia el color del texto del botón
-    cursor: pointer; // Cambia el cursor al pasar sobre el botón
-    transition: background-color 0.3s; // Agrega una transición al color de fondo del botón
-
-    &:hover {
-      background-color: #05a4d4; // Cambia el color de fondo del botón al pasar el ratón
-    }
-  }
 
   &__contact {
     display: flex;
@@ -117,21 +84,24 @@ $color-background: #F3FEFE;
       flex-direction: column;
       align-items: center;
     }
+
     span {
       color: #80722be4;
       font-size: 6rem;
       margin-bottom: 1rem;
     }
+
     h3 {
-      margin-top: 15px;
+      margin-top: 0.9375rem;
       margin-bottom: 1rem;
     }
+
     p {
-      font-size: 13px;
+      font-size: 0.8125rem;
     }
   }
 
-  &__map iframe{
+  &__map iframe {
     display: flex;
     width: 100vh;
     height: 50vh;
@@ -141,4 +111,3 @@ $color-background: #F3FEFE;
   }
 
 }
-
