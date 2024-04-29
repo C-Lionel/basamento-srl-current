@@ -1,10 +1,19 @@
-<div class="card">
-  <div class="content">
-    <p class="heading">Descubre más sobre nosotros</p>
-    <p class="para">
-      Conoce nuestra historia, nuestros valores y nuestro equipo.
-    </p>
-    <app-button-info-card />
+<div class="e-card playing" [style.width]="width" [style.height]="height">
+  <div class="image"></div>
+
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+
+
+      <div class="infotop" [style.fontSize]="fontSize">
+
+        <span class="material-symbols-outlined" style="font-size: 4rem; margin-bottom: 2rem;" >
+       {{svgName}}
+        </span> <br>
+          {{title}}
+<br>
+<div class="name"> {{subtitle_1}} <br> {{subtitle_2}} <br> {{subtitle_3}}  </div>
   </div>
 </div>
 

@@ -7,6 +7,8 @@
   <p>
     <strong>¡Gracias por tu interés!</strong> Estamos entusiasmados por conocer <br> como podemos <strong>colaborar con tu próximo proyecto.</strong>
   </p>
+
+
     <div class="contacto__content__1 ">
 
       <div class="contacto__content__1__radio__options">
@@ -78,27 +80,15 @@
 
   <div class="contacto contacto__contact">
     <section>
-      <span class="material-symbols-outlined" >
-        phone_in_talk
-        </span>
-      <h3>¡HABLÁ CON NOSOTROS!</h3>
-      <p>+54 9 (3462) 553824 / 537066</p>
+      <app-card-animated  svgName="phone_in_talk" title="¡Hablá con nosotros!" subtitle_1="+54 9 (3462) 553824" subtitle_2="537066"/>
     </section>
 
     <section>
-      <span class="material-symbols-outlined">
-        pin_drop
-      </span>
-      <h3>¡VISITANOS!</h3>
-      <p>Tucuman 555</p>
+      <app-card-animated [width]="'20rem'" [height]="'25rem'" [fontSize]="'2em'" svgName="pin_drop" title="¡Visitanos!" subtitle_1="Tucuman 555" subtitle_2="Venado Tuerto" subtitle_3="Santa Fe"/>
     </section>
 
     <section>
-      <span class="material-symbols-outlined">
-        timer
-      </span>
-      <h3>NUESTRAS OFICINAS</h3>
-      <p>Lunes a Viernes de 8 a 17 hs</p>
+      <app-card-animated  svgName="timer" title="Nuestras oficinas" subtitle_1="Lunes a Viernes" subtitle_2="8:00 a 17:00"/>
     </section>
 
   </div>

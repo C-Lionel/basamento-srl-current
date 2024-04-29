@@ -1,82 +1,82 @@
-.card {
-  // margin-top: 20rem;
-  // margin-bottom: 20rem;
+.e-card {
+  margin: 100px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 320px;
-  padding: 2px;
-  border-radius: 24px;
+  border-radius: 1rem;
   overflow: hidden;
-  line-height: 1.6;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 34px;
-  border-radius: 22px;
-  color: #022846;
-  overflow: hidden;
-  background: #7294A7;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.content .heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.3;
-  z-index: 1;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.content .para {
-  z-index: 1;
-  opacity: 0.8;
-  font-size: 18px;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.card::before {
-  content: "";
+.wave {
   position: absolute;
-  height: 160%;
-  width: 160%;
-  border-radius: inherit;
-  // background: #0a3cff;
-  background: linear-gradient(to right, #008CA2, #03778975);
-  transform-origin: center;
-  animation: moving 4.8s linear infinite paused;
-  transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,var(--color-primary),var(--color-secondary) 60%, var(--color-secondary) );
 }
 
-.card:hover::before {
-  animation-play-state: running;
-  z-index: -1;
-  width: 20%;
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
 }
 
-.card:hover .content .heading,
-.card:hover .content .para {
-  color: #000000;
+.infotop {
+  text-align: center;
+  font-size: 1.1em;
+  position: absolute;
+  top: 2.6em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
-.card:hover {
-  box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
-    0rem 24px 24px rgba(10, 60, 255, 0.09),
-    0rem 55px 33px rgba(10, 60, 255, 0.05),
-    0rem 97px 39px rgba(10, 60, 255, 0.01), 0rem 152px 43px rgba(10, 60, 255, 0);
-  scale: 1.05;
-  color: #000000;
+.name {
+  font-size: 14px;
+  font-weight: 100;
+  position: relative;
+  top: 1em;
 }
 
-@keyframes moving {
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 
   100% {
