@@ -49,8 +49,9 @@
         display: flex;
         flex-direction: column;
         width: 55%;
-        line-height: 2rem;
-        text-align: justify;
+        text-align: left;
+        line-height: 1.7rem;
+        font-size: 1.5rem;
 
         &__text-1, &__text-2 {
           margin-bottom: 3rem;
@@ -126,13 +127,14 @@
     }
     button {
       background-color: var(--color-secondary);
+      font-family: kanit-regular;
       border: none;
       color: white;
       padding: 0.9375rem 2rem;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 1rem;
+      font-size: 1.3rem;
       cursor: pointer;
       transition-duration: 0.2s;
 
@@ -145,6 +147,18 @@
       transform: translateY(-5px);
       border-radius: 5px;
     }
+
+    &__subtitle_1,
+    &__subtitle_2 {
+      color: var(--color-primary-light);
+      font-family: kanit-regular;
+      font-weight: bold;
+    }
+
+    &__subtitle_1 {
+      margin-bottom: -0.5rem;
+    }
+
   }
 }
 
