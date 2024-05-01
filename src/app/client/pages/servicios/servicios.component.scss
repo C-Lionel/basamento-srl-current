@@ -1,4 +1,4 @@
-$color-background: #EFF5F5;
+$color-background: #5ad8fe65;
 
 
 .servicios {
@@ -19,12 +19,13 @@ $color-background: #EFF5F5;
   }
 
   &__title {
-    font-size: 1.875rem;
-    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   &__description {
-    margin-bottom: 1.5625rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 

@@ -6,14 +6,14 @@
   <div class="wave"></div>
 
 
-      <div class="infotop" [style.fontSize]="fontSize">
+      <div  class="infotop" [style.top]="top" [style.fontSize]="fontSize">
 
-        <span class="material-symbols-outlined" style="font-size: 4rem; margin-bottom: 2rem; color: var(--color-primary);" >
+        <span class="material-symbols-outlined" [style.fontSize]="fontSizeSpan" style=" color: #fec007ee" >
        {{svgName}}
         </span> <br>
           {{title}}
 <br>
-<div class="name"> {{subtitle_1}} <br> {{subtitle_2}} <br> {{subtitle_3}}  </div>
+<div [style.fontSize]="fontSizeText" class="name"> {{subtitle_1}} <br> {{subtitle_2}} <br> {{subtitle_3}}  </div>
   </div>
 </div>
 
