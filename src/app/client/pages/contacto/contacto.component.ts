@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -19,10 +19,10 @@ export class ContactoComponent {
 
   ngOnInit() {
     this.formGroup = this.formBuilder.group({
-      nombre: new FormControl(null, Validators.required),
-      apellido: new FormControl(null, Validators.required),
+      nombre: new FormControl(null, [Validators.required, this.noNumerosNiEspecialesValidator]),
+      apellido: new FormControl(null, [Validators.required, this.noNumerosNiEspecialesValidator]),
       email: new FormControl(null, [Validators.required, Validators.email]),
-      telefono: new FormControl(null, [Validators.required, Validators.pattern("^[0-9]*$")]),
+      telefono: new FormControl(null, [Validators.required, this.telefonoValidator]),
       asunto: new FormControl(null, Validators.required),
       otros: new FormControl(null),
       mensaje: new FormControl(null),
@@ -80,6 +80,25 @@ export class ContactoComponent {
       this.formGroup.patchValue({ otros: null });
     }
   }
+
+  noNumerosNiEspecialesValidator(control: AbstractControl): { [key: string]: boolean } | null {
+    if (control.value && /[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]/.test(control.value)) {
+      return { 'noNumerosNiEspeciales': true };
+    }
+    return null;
+  }
+
+  telefonoValidator(control: AbstractControl): { [key: string]: boolean } | null {
+    const telefono = control.value;
+    if (telefono && !/^\d+$/.test(telefono)) {
+      return { 'soloNumeros': true };
+    }
+    return Validators.minLength(7)(control);
+  }
+
+
+
+
 
 
 }

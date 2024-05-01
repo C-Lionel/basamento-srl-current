@@ -47,11 +47,13 @@
         <input type="text" pInputText formControlName="nombre" placeholder="Nombre" />
         <div class="text-validators" *ngIf="formGroup.get('nombre')!.invalid && (formGroup.get('nombre')!.dirty || formGroup.get('nombre')!.touched)">
           <small *ngIf="formGroup.get('nombre')!.errors?.['required']">El nombre es obligatorio</small>
+          <small *ngIf="formGroup.get('nombre')!.errors?.['noNumerosNiEspeciales']">El nombre no es válido</small>
         </div>
 
         <input type="text" pInputText formControlName="apellido" placeholder="Apellido" />
         <div class="text-validators" *ngIf="formGroup.get('apellido')!.invalid && (formGroup.get('apellido')!.dirty || formGroup.get('apellido')!.touched)">
           <small *ngIf="formGroup.get('apellido')!.errors?.['required']">El apellido es obligatorio</small>
+          <small *ngIf="formGroup.get('apellido')!.errors?.['noNumerosNiEspeciales']">El apellido no es válido</small>
         </div>
 
         <input type="email" pInputText formControlName="email" placeholder="E-Mail" />
@@ -64,6 +66,8 @@
         <div class="text-validators" *ngIf="formGroup.get('telefono')!.invalid && (formGroup.get('telefono')!.dirty || formGroup.get('telefono')!.touched)">
           <small *ngIf="formGroup.get('telefono')!.errors?.['required']">El teléfono es obligatorio</small>
           <small *ngIf="formGroup.get('telefono')!.errors?.['pattern']">El teléfono debe contener solo números</small>
+          <small *ngIf="formGroup.get('telefono')!.errors?.['minlength'] && !formGroup.get('telefono')!.errors?.['pattern']">El teléfono debe tener al menos 7 números</small>
+          <small *ngIf="formGroup.get('telefono')!.errors?.['soloNumeros']">Solo se pueden ingresar números</small>
         </div>
 
         <input *ngIf="asunto === 'Otros'" type="text" pInputText formControlName="otros" placeholder="Especificar otro asunto" />
