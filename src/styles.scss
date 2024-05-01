@@ -141,17 +141,16 @@ h1 {
   --btn-bg-color: #ffff;
   --radii: 0.5em;
   cursor: pointer;
-  letter-spacing: 0.2rem;
-  padding: 0.9em 1.4em;
+  font-family: kanit-regular;
+  padding: 0.5em 1em;
   margin-right: 2rem;
   margin-left: 2rem;
-  min-width: 120px;
-  min-height: 44px;
-  font-size: var(--size, 1rem);
+  font-size: var(--size, 1.5rem);
   font-weight: 500;
   transition: 0.8s;
   background-size: 280% auto;
   background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border-radius: 0.3rem;
   border: none;
   color: var(--btn-bg-color);
 }
