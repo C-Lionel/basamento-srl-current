@@ -5,11 +5,6 @@
 
 // FUENTES
 
-// @font-face {
-//   font-family: montserrat-regular-400;
-//   src: url('./assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
-// }
-
 @font-face {
   font-family: kanit-light;
   src: url('./assets/fonts/Kanit/Kanit-Light.ttf');
@@ -27,6 +22,7 @@
 
 
 //COLORES
+
 :root {
   --color-background: #FFFFFF;
   --color-background-light: #F6F6F6;
@@ -110,30 +106,6 @@ h1 {
   }
 }
 
-// .sub-title-proyectos {
-//   border: none;
-//   padding: 0.5rem;
-//   letter-spacing: 0.15rem;
-//   font-size: 1rem;
-//   margin-right: 1rem;
-//   color: white;
-//   font-weight: bold;;
-//   width: 10rem;
-//   text-align: center;
-//   background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
-//   cursor: pointer;
-//   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-
-//   @media screen and (max-width: 1400px) {
-//     font-size: 1rem;
-//     padding: 1rem;
-//   }
-// }
-
-// .sub-title-proyectos:hover {
-//   background: var(--color-secondary-light);
-// }
-
 .sub-title-proyectos {
   --clr-font-main: hsla(0 0% 20% / 100);
   --btn-bg-1: #0076B4;
@@ -198,7 +170,6 @@ h1 {
 
 // ANIMACIONES GENERALES DE MI APLICACIÓN
 
-
 .focus-in-contract-bck {
 	animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
@@ -206,12 +177,12 @@ h1 {
  @keyframes focus-in-contract-bck {
   0% {
     letter-spacing: 0.35em;
-    transform: translateZ(300px);
+    transform: translateZ(18.75rem);
     filter: blur(12px);
     opacity: 0;
   }
   100% {
-    transform: translateZ(12px);
+    transform: translateZ(0.75rem);
     filter: blur(0);
     opacity: 1;
   }
@@ -224,8 +195,8 @@ h1 {
 
  @-webkit-keyframes text-focus-in {
   0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
+    -webkit-filter: blur(0.75rem);
+            filter: blur(0.75rem);
     opacity: 0;
   }
   100% {
@@ -236,8 +207,8 @@ h1 {
 }
 @keyframes text-focus-in {
   0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
+    -webkit-filter: blur(0.75rem);
+            filter: blur(0.75rem);
     opacity: 0;
   }
   100% {
@@ -258,7 +229,6 @@ h1 {
   width: 100%;
   z-index: 1000;
   background-color: var(--color-primary) ;
-  // color: #FFC107;
   font-size: 1.3rem;
   height: 6.5rem;
   border-radius: 0;
@@ -290,12 +260,6 @@ h1 {
     transform: scale(1.035);
     transition: all 0.2s ease;
   }
-
-  // .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
-  //   color: #FEBF07 !important;
-  //   opacity: 0.8;
-  //   transition: 0.1s all ease;
-  // }
 
   .p-menuitem-link-active .p-menuitem-text {
     color: #fec007ee !important;
@@ -476,8 +440,6 @@ h1 {
       color: var(--color-terciary);
     }
   }
-
-
 
 
   // ESTILOS DE SWALL-ALERT2
