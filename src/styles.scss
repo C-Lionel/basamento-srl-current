@@ -283,7 +283,12 @@ h1 {
     color: white;
     font-family: kanit-light;
     font-size: 1.4rem;
+    transform-origin: center;
+  }
 
+  .p-menuitem > .p-menuitem-content .p-menuitem-link:hover {
+    transform: scale(1.035);
+    transition: all 0.2s ease;
   }
 
   // .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text:hover {
