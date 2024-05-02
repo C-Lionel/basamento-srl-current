@@ -115,8 +115,9 @@
     }
     iframe {
       display: flex;
-      width: 100vh;
-      height: 50vh;
+      align-items: center;
+      width: 70rem;
+      height: 35rem;
       margin-top: 5rem;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.3s;
