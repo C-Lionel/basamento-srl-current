@@ -73,9 +73,10 @@
         <input *ngIf="asunto === 'Otros'" type="text" pInputText formControlName="otros" placeholder="Especificar otro asunto" />
         <div class="text-validators" *ngIf="formGroup.get('otros')!.invalid && (formGroup.get('otros')!.dirty || formGroup.get('otros')!.touched)">
           <small *ngIf="formGroup.get('otros')!.errors?.['required']">El asunto "Otros" es obligatorio</small>
+          <small *ngIf="formGroup.get('otros')!.errors?.['noNumerosNiEspeciales']">El asunto "Otros" no es válido</small>
         </div>
 
-        <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje" placeholder="Escribe aquí tu mensaje.."></textarea>
+        <textarea rows="5" cols="30" pInputTextarea formControlName="mensaje" placeholder="Escribe aquí tu mensaje..."></textarea>
 
         <button type="submit" pButton label="Enviar"></button>
       </form>

@@ -31,7 +31,7 @@ export class ContactoComponent {
     // Validación dinámica para hacer el campo "otros" requerido si el asunto es "Otros"
     this.formGroup.get('asunto')!.valueChanges.subscribe((value) => {
       if (value === 'Otros') {
-        this.formGroup.get('otros')!.setValidators(Validators.required);
+        this.formGroup.get('otros')!.setValidators([Validators.required, this.noNumerosNiEspecialesValidator]);
       } else {
         this.formGroup.get('otros')!.clearValidators();
       }
@@ -95,10 +95,6 @@ export class ContactoComponent {
     }
     return Validators.minLength(7)(control);
   }
-
-
-
-
 
 
 }
