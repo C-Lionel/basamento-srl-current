@@ -28,12 +28,18 @@
         letter-spacing: 0.3rem;
         color:#ffff;
         text-shadow: 2px 2px 4px #000000;
+        @media screen and (max-width: 1700px) {
+          font-size: 3.5rem;
+        }
     }
     &__title-2 {
           font-size: 5rem;
           letter-spacing: 0.3rem;
           color:#ffff;
           text-shadow: 2px 2px 4px #000000;
+          @media screen and (max-width: 1700px) {
+            font-size: 4.5rem;
+          }
     }
     &__subtitle {
         font-size: 2rem;

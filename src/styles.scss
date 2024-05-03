@@ -52,17 +52,22 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol {
 html {
   font-size: 100%;
 
-  @media screen and (max-width: 1400px) {
-    font-size: 85%;
+  @media screen and (max-width: 1700px) {
+    font-size: 90%;
   }
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1600px) {
     font-size: 80%;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     font-size: 70%;
   }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 60%;
+  }
+
 
 }
 
