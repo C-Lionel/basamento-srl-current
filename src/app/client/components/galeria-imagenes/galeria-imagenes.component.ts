@@ -98,7 +98,7 @@ openPreviewFullScreen() {
       elem.classList.remove('animate__animated', 'animate__fadeIn'); // Eliminar la clase antes de agregarla
       setTimeout(() => {
         elem.classList.add('animate__animated', 'animate__fadeIn'); // Agregar la clase después de un breve retraso
-      }, 10);
+      }, 5);
     } catch (error) {
       console.error('Error al intentar activar el modo de pantalla completa:', error);
     }
@@ -108,12 +108,17 @@ openPreviewFullScreen() {
 
   onFullScreenChange() {
     console.log('Cambio en el estado de pantalla completa');
+    let elem = document.querySelector('.imgs-' + this.indexProject) as any;
     this.fullscreen = !!(
       document.fullscreenElement ||
       (document as any).mozFullScreenElement ||
       (document as any).webkitFullscreenElement ||
       (document as any).msFullscreenElement
     );
+    elem.classList.remove('animate__animated', 'animate__fadeIn'); // Eliminar la clase antes de agregarla
+    setTimeout(() => {
+      elem.classList.add('animate__animated', 'animate__fadeIn'); // Agregar la clase después de un breve retraso
+    }, 5);
   }
 
   closePreviewFullScreen() {
@@ -127,7 +132,9 @@ openPreviewFullScreen() {
     } else if ((document as any).msExitFullscreen) {
       (document as any).msExitFullscreen();
     }
+
   }
+
   bindDocumentListeners() {
     this.onFullScreenListener = this.onFullScreenChange.bind(this);
     document.addEventListener('fullscreenchange', this.onFullScreenListener);
