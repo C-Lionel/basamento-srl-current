@@ -24,7 +24,7 @@
   </div>
 
   <!-- Contenido específico para cada servicio -->
-<div class="proyectos__content animate__animated animate__fadeIn last-content container"  *ngFor="let proyecto of proyectos">
+<div class="proyectos__content animate__animated animate__fadeIn last-content container"  *ngFor="let proyecto of proyectos; let i = index">
 
   <p-card  [header]="proyecto.nombre">
       <div style="margin-bottom: 0.3rem" *ngFor="let opcion of getDescripcionOpciones(proyecto.descripcion.opciones)">
@@ -32,7 +32,7 @@
       </div>
   </p-card>
     <!-- GALERIA DE IMAGENES -->
-    <app-galeria-imagenes [imagenes]="proyecto.imagenes" [showThumbnails]="false" [activeIndex]="0"></app-galeria-imagenes>
+    <app-galeria-imagenes [imagenes]="proyecto.imagenes" [indexProject]="i" [showThumbnails]="false" [activeIndex]="0"></app-galeria-imagenes>
 
   </div>
 

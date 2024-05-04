@@ -7,6 +7,8 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 })
 export class GaleriaImagenesComponent implements OnDestroy, OnInit {
 
+  @Input() indexProject!: number;
+
   @Input() imagenes: any[] = [];
 
   @Input() showThumbnails: boolean = false;
@@ -71,6 +73,7 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
 
 
   toggleFullScreen() {
+    console.log(this.indexProject);
     if (this.fullscreen) {
         this.closePreviewFullScreen();
     } else {
@@ -80,7 +83,7 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
 
   openPreviewFullScreen() {
     console.log('Abriendo pantalla completa...');
-    let elem = document.querySelector('.p-galleria') as any;
+    let elem = document.querySelector('.imgs-' + this.indexProject) as any;
     if (elem) {
       try {
         if (elem.requestFullscreen) {

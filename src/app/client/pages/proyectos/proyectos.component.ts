@@ -54,6 +54,7 @@ export class ProyectosComponent implements OnInit {
         }
       }
     });
+
   }
 
   toggleFullScreen() {
