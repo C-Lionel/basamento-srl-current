@@ -81,25 +81,30 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
     }
 }
 
-  openPreviewFullScreen() {
-    console.log('Abriendo pantalla completa...');
-    let elem = document.querySelector('.imgs-' + this.indexProject) as any;
-    if (elem) {
-      try {
-        if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) { /* Firefox */
-          elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-          elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE/Edge */
-          elem.msRequestFullscreen();
-        }
-      } catch (error) {
-        console.error('Error al intentar activar el modo de pantalla completa:', error);
+openPreviewFullScreen() {
+  console.log('Abriendo pantalla completa...');
+  let elem = document.querySelector('.imgs-' + this.indexProject) as any;
+  if (elem) {
+    try {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
       }
+      elem.classList.remove('animate__animated', 'animate__fadeIn'); // Eliminar la clase antes de agregarla
+      setTimeout(() => {
+        elem.classList.add('animate__animated', 'animate__fadeIn'); // Agregar la clase después de un breve retraso
+      }, 10);
+    } catch (error) {
+      console.error('Error al intentar activar el modo de pantalla completa:', error);
     }
   }
+}
+
 
   onFullScreenChange() {
     console.log('Cambio en el estado de pantalla completa');
