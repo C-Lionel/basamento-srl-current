@@ -54,7 +54,6 @@
           p {
             font-size: 1rem;
             @media screen and (max-width: 1200px) {
-              font-size: 0.9rem;
               width: 12rem;
             }
           }
@@ -98,14 +97,18 @@
         background-color: #0077B5;
         height: 25rem;
         width: 68.75rem;
+        @media screen and (max-width: 700px) {
+          width: 60rem;
+        }
+
 
         h2 {
-          font-size: 1.8rem;
+          font-size: 2.5rem;
         }
 
         p {
           width: 85%;
-          text-align: justify;
+          text-align: center;
         }
       }
 
@@ -115,7 +118,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-
     }
   }
 

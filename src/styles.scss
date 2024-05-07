@@ -345,6 +345,18 @@ h1 {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 800px) {
+  .logo-footer {
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .p-galleria-img {
+    width: 60rem !important;
+  }
+}
+
  // NOSOTROS
 
   //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
@@ -491,6 +503,11 @@ h1 {
   .p-radiobutton .p-radiobutton-box {
     margin-top: -0.13rem;
 }
+
+
+
+
+
 
 
 
