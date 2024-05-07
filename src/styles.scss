@@ -235,6 +235,8 @@ h1 {
 
 // NAVBAR
 
+
+
 .p-menubar {
   transition: height 0.4s ease;
   position: fixed;
@@ -246,12 +248,60 @@ h1 {
   height: 6.5rem;
   border-radius: 0;
 
+  @media screen and (max-width: 960px) {
+
+    .p-menubar-button {
+      margin-left: 75%;
+      .p-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+    }
+    @media screen and (max-width: 850px) {
+      .p-menubar-button {
+        margin-left: 70%;
+      }
+    }
+    @media screen and (max-width: 750px) {
+      .p-menubar-button {
+        margin-left: 65%;
+      }
+    }
+    @media screen and (max-width: 650px) {
+      .p-menubar-button {
+        margin-left: 60%;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      .p-menubar-button {
+        margin-left: 55%;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .p-menubar-button {
+        margin-left: 45%;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .p-menubar-button {
+        margin-left: 40%;
+      }
+    }
+    @media screen and (max-width: 350px) {
+      .p-menubar-button {
+        margin-left: 30%;
+      }
+    }
+
+  }
+
   @media screen and (max-width: 1400px) {
     font-size: 1rem;
   }
 
   img {
-    margin-right: 3rem;
+    margin-right: 5rem;
+    margin-left: 1rem;
   }
 
   .search {
@@ -272,6 +322,10 @@ h1 {
   .p-menuitem > .p-menuitem-content .p-menuitem-link:hover {
     transform: scale(1.035);
     transition: all 0.2s ease;
+    @media screen and (max-width: 960px) {
+      transform: none;
+      transition: none;
+    }
   }
 
   .p-menuitem-link-active .p-menuitem-text {
@@ -301,6 +355,13 @@ h1 {
 .home-class {
 
   .p-menubar  {
+
+    background-color: transparent;
+
+    @media screen and (max-width: 960px) {
+      background-color: var(--color-primary)
+    }
+
     .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-submenu-icon {
       color: var(--color-secondary);
     }
@@ -308,7 +369,6 @@ h1 {
       color: var(--color-secondary) !important;
     }
 
-    background-color: transparent;
 
     .p-menuitem.p-highlight > .p-menuitem-content {
       background: #3E5F91;
