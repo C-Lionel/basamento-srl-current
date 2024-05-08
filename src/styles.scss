@@ -236,6 +236,7 @@ h1 {
 // NAVBAR
 
 @media screen and (max-width: 960px) {
+
   .p-menubar.p-menubar-mobile-active .p-menubar-root-list {
     display: flex;
     flex-direction: column;
@@ -248,10 +249,14 @@ h1 {
   .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link {
     // padding: 3rem;
     margin-left: 1rem;
-    margin-top: 2rem;
+    margin-top: 2.2rem;
     -webkit-user-select: none;
     user-select: none;
 
+}
+
+.p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
+  margin-right: 1rem;
 }
 
 }
