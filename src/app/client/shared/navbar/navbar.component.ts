@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   isHome: boolean = false;
   currentRouteClass = '';
   isScrolled = false;
+  isMobile = false;
 
 
   constructor(
@@ -26,6 +27,9 @@ export class NavbarComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.items = (navbarConfig as any).default.items;
 
+    // Verificar si la pantalla es móvil (ancho menor a 960px)
+    this.isMobile = window.innerWidth < 960;
+
     if (this.router.url === '/') {
       this.isHome = true;
       this.currentRouteClass = 'ruta-activa';
@@ -33,6 +37,19 @@ export class NavbarComponent implements OnInit, OnDestroy {
       this.isHome = false;
       this.currentRouteClass = '';
     }
+
+
+    // Funcionalidad para que no aparezcan los submenus de proyectos en resoluciones inferiores a 960px
+
+    if (this.isMobile) {
+      const indexNosotros = this.items?.findIndex(item => item.label === 'Nosotros');
+      if (indexNosotros !== -1 && indexNosotros !== undefined) {
+        this.items = this.items?.filter(item => item.label !== 'Proyectos'); // Filtrar por si ya existe 'Proyectos'
+        this.items?.splice(indexNosotros + 1, 0, { label: 'Proyectos', icon: 'pi pi-wallet', routerLink: '/proyectos' });
+      }
+    }
+
+
   }
 
   search() {
