@@ -1,16 +1,9 @@
 .home {
   &__content {
 
-    .colored-line {
-      width: 15rem;
-      height: 0.2rem;
-      background-color: var(--color-secondary);
-      border: none;
-    }
-
     display: flex;
     flex-direction: column;
-
+  
     &__info__primary {
 
       display: flex;
