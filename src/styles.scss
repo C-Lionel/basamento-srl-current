@@ -235,9 +235,29 @@ h1 {
 
 // NAVBAR
 
+@media screen and (max-width: 960px) {
+  .p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    height: 25rem;
+  }
 
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link {
+    // padding: 3rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+}
 
 .p-menubar {
+
   transition: height 0.4s ease;
   position: fixed;
   top: 0;
@@ -250,6 +270,8 @@ h1 {
 
   @media screen and (max-width: 960px) {
 
+    // TODO ESTE BLOQUE DEBERIA DE REFACTORIZARLO
+
     .p-menubar-button {
       margin-left: 75%;
       .p-icon {
@@ -257,6 +279,7 @@ h1 {
         height: 1.3rem;
       }
     }
+
     @media screen and (max-width: 850px) {
       .p-menubar-button {
         margin-left: 70%;
@@ -335,6 +358,8 @@ h1 {
 }
 
 
+
+
 // PARA EL NGCLASS DEL P-MENUBAR
 
  .scrolled .p-menubar  {
@@ -359,7 +384,7 @@ h1 {
     background-color: transparent;
 
     @media screen and (max-width: 960px) {
-      background-color: var(--color-primary)
+      background-color: var(--color-primary);
     }
 
     .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-submenu-icon {
@@ -368,7 +393,6 @@ h1 {
     .p-menuitem > .p-menuitem-content .p-menuitem-link .p-submenu-icon {
       color: var(--color-secondary) !important;
     }
-
 
     .p-menuitem.p-highlight > .p-menuitem-content {
       background: #3E5F91;
