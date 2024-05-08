@@ -275,49 +275,18 @@ h1 {
 
   @media screen and (max-width: 960px) {
 
-    // TODO ESTE BLOQUE DEBERIA DE REFACTORIZARLO
-
     .p-menubar-button {
-      margin-left: 75%;
+     position: absolute;
+     left: 95%;
+     @media screen and (max-width: 700px) {
+      left: 93%;
+     }
+     @media screen and (max-width: 500px) {
+      left: 90%;
+     }
       .p-icon {
-        width: 1.3rem;
-        height: 1.3rem;
-      }
-    }
-
-    @media screen and (max-width: 850px) {
-      .p-menubar-button {
-        margin-left: 70%;
-      }
-    }
-    @media screen and (max-width: 750px) {
-      .p-menubar-button {
-        margin-left: 65%;
-      }
-    }
-    @media screen and (max-width: 650px) {
-      .p-menubar-button {
-        margin-left: 60%;
-      }
-    }
-    @media screen and (max-width: 550px) {
-      .p-menubar-button {
-        margin-left: 55%;
-      }
-    }
-    @media screen and (max-width: 450px) {
-      .p-menubar-button {
-        margin-left: 45%;
-      }
-    }
-    @media screen and (max-width: 400px) {
-      .p-menubar-button {
-        margin-left: 40%;
-      }
-    }
-    @media screen and (max-width: 350px) {
-      .p-menubar-button {
-        margin-left: 30%;
+        width: 1.7rem;
+        height: 1.7rem;
       }
     }
 
