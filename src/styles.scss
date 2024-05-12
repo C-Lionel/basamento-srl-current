@@ -269,11 +269,11 @@ h1 {
     -webkit-user-select: none;
     user-select: none;
 
-}
+  }
 
-.p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
-  margin-right: 2rem;
-}
+  .p-menubar .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
+    margin-right: 2rem;
+  }
 
 }
 
@@ -294,13 +294,8 @@ h1 {
 
     .p-menubar-button {
      position: absolute;
-     left: 95%;
-     @media screen and (max-width: 700px) {
-      left: 93%;
-     }
-     @media screen and (max-width: 500px) {
-      left: 90%;
-     }
+     left: calc(100% - 4.5rem);
+
       .p-icon {
         width: 1.7rem;
         height: 1.7rem;
