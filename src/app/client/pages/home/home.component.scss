@@ -3,7 +3,7 @@
 
     display: flex;
     flex-direction: column;
-  
+
     &__info__primary {
 
       display: flex;
@@ -45,7 +45,9 @@
             margin-bottom: 2rem;
           }
           p {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            width: 25rem;
             @media screen and (max-width: 1200px) {
               width: 12rem;
             }
@@ -90,6 +92,7 @@
         background-color: #0077B5;
         height: 25rem;
         width: 68.75rem;
+        border-radius: 0 0 0.7rem 0.7rem;
         @media screen and (max-width: 700px) {
           width: 60rem;
         }
@@ -102,6 +105,7 @@
         p {
           width: 85%;
           text-align: center;
+          font-size: 1.2rem;
         }
       }
 
