@@ -4,6 +4,7 @@ import { GaleriaImagenesComponent } from './galeria-imagenes/galeria-imagenes.co
 import { LoadingComponent } from './loading/loading.component';
 import { CardAnimatedComponent } from './card-animated/card-animated.component';
 import { ButtonInfoCardComponent } from './button-info-card/button-info-card.component';
+import { WhatsappButtonComponent } from './whatsapp-button/whatsapp-button.component';
 import { PrimengModule } from 'src/app/shared/primeng/primeng.module';
 
 
@@ -15,6 +16,7 @@ import { PrimengModule } from 'src/app/shared/primeng/primeng.module';
     LoadingComponent,
     CardAnimatedComponent,
     ButtonInfoCardComponent,
+    WhatsappButtonComponent
 
   ],
   imports: [
@@ -26,6 +28,7 @@ import { PrimengModule } from 'src/app/shared/primeng/primeng.module';
     LoadingComponent,
     CardAnimatedComponent,
     ButtonInfoCardComponent,
+    WhatsappButtonComponent
   ]
 })
 export class ComponentsModule { }
