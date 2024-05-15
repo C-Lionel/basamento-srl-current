@@ -279,8 +279,7 @@ h1 {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: var(--color-primary) ;
-  font-size: 1.3rem;
+  background-color: var(--color-primary);
   height: 6.5rem;
   border-radius: 0;
 
@@ -298,10 +297,6 @@ h1 {
       }
     }
 
-  }
-
-  @media screen and (max-width: 1400px) {
-    font-size: 1rem;
   }
 
   img {
