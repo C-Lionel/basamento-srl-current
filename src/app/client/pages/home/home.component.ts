@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { HomeService } from '../../services/home.service';
 
 @Component({
@@ -14,24 +14,38 @@ export class HomeComponent {
 
   constructor(private homeService: HomeService) {}
 
-  scrollEvent = () => {
-    if (window.scrollY > 375) {
-        this.showWhatsAppButton = true;
-    } else {
-        this.showWhatsAppButton = false;
-    }
-}
-    ngOnInit() {
-        this.homeService.getImages().then((images) => {
-            this.images = images;
-        });
-        window.addEventListener('scroll', this.scrollEvent, true);
-    }
 
-    ngOnDestroy() {
-      window.removeEventListener('scroll', this.scrollEvent, true);
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    if (window.innerWidth > 960 && window.scrollY > 360) {
+      this.showWhatsAppButton = true;
+    } else if (window.innerWidth <= 960) {
+      this.showWhatsAppButton = true;
+    } else {
+      this.showWhatsAppButton = false;
+    }
   }
 
+  @HostListener('window:resize', [])
+  onWindowResize() {
+    this.setWhatsAppButtonVisibility();
+  }
 
+  setWhatsAppButtonVisibility() {
+    if (window.innerWidth <= 960) {
+      this.showWhatsAppButton = true;
+    } else {
+      this.showWhatsAppButton = false;
+    }
+  }
+
+  ngOnInit() {
+
+    this.homeService.getImages().then((images) => {
+      this.images = images;
+    });
+
+    this.setWhatsAppButtonVisibility();
+  }
 
 }
