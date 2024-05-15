@@ -112,11 +112,6 @@ h1 {
   width: 18rem;
   text-align: center;
   background: linear-gradient(to right, var(--color-secondary), var(--color-secondary-light));
-
-  @media screen and (max-width: 1400px) {
-    font-size: 1rem;
-    padding: 1rem;
-  }
 }
 
 .sub-title-proyectos {
@@ -428,6 +423,18 @@ h1 {
 @media screen and (max-width: 700px) {
   .p-galleria-img {
     width: 60rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .p-galleria-img {
+    width: 45rem !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .p-galleria-img {
+    width: 35rem !important;
   }
 }
 
