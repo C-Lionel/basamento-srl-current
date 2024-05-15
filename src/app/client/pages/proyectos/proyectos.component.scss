@@ -2,9 +2,17 @@
 // IGUAL DEJAMOS LA LÓGICA POR SI NECESITAMOS APLICAR OTROS ESTILOS.
 
 
+
+
+
 .proyectos {
 
   background-color: #ffffff00;
+
+  .active {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
 
   &__categorias{
     display: flex;
@@ -33,6 +41,7 @@
     .botones {
       display: none;
     }
+
 
   }
 

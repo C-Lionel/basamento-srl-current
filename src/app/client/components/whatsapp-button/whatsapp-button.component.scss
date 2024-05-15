@@ -14,6 +14,7 @@
 .card svg {
   width: 3.2rem;
   height: 3.2rem;
+
 }
 
 .card .social-wsp {
@@ -26,6 +27,7 @@
   opacity: 0.6;
   transition: 0.5s ease;
   border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .card .social-wsp:hover {
