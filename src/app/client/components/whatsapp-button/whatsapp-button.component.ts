@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './whatsapp-button.component.scss'
 })
 export class WhatsappButtonComponent {
-
 }

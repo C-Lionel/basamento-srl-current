@@ -74,7 +74,8 @@
 
   </div>
 
-  <p-scrollTop />
+  <p-scrollTop *ngIf="showWhatsAppButton" />
+  <app-whatsapp-button *ngIf="showWhatsAppButton" />
 
 
 </div>
