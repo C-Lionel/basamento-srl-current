@@ -31,6 +31,9 @@ $transition-duration: 0.3s;
 
   .footer__section--contact p:hover {
     transform: scale(1.1);
+    @media screen and (max-width: 960px) {
+      transform: none;
+    }
   }
 
   &__social-container {
@@ -42,6 +45,7 @@ $transition-duration: 0.3s;
       .footer__social-link {
         i {
           font-size: 2.2rem;
+          margin-top: 2rem;
         }
         margin-right: 2rem;
         color: #0096C2;
@@ -63,12 +67,22 @@ $transition-duration: 0.3s;
     max-width: 75rem;
     margin: 0 auto;
     @media screen and (max-width: 800px) {
-      max-width: 65rem;
-    }
-    @media screen and (max-width: 700px) {
       max-width: 55rem;
     }
- 
+    @media screen and (max-width: 700px) {
+      max-width: 50rem;
+    }
+    @media screen and (max-width: 520px) {
+      max-width: 45rem;
+    }
+    @media screen and (max-width: 470px) {
+      max-width: 40rem;
+    }
+    @media screen and (max-width: 430px) {
+      max-width: 35rem;
+    }
+
+
   }
 
   &__content {
@@ -99,14 +113,28 @@ $transition-duration: 0.3s;
 
       i {
         color: #0096C2;
-        margin-right: 0.3rem;
+        margin-right: 0.7rem;
         margin-bottom: 1.7rem;
       }
     }
 
     &--desarrollador {
-      p {
-        margin-bottom: 1.1rem;
+      margin-bottom: 3.2rem;
+      width: 20rem;
+      text-align: left;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      @media screen and (max-width: 800px) {
+        width: 15rem;
+        margin-bottom: 2.8rem;
+        img {
+          height: 3rem;
+        }
+        p {
+          font-size: 0.8rem;
+
+        }
       }
     }
 
