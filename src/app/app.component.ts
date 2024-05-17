@@ -21,8 +21,6 @@ export class AppComponent implements OnInit {
     public loadingService: LoadingService
     ) { }
 
-
-
     ngOnInit() {
 
       window.addEventListener('load', () => {
@@ -39,18 +37,13 @@ export class AppComponent implements OnInit {
         }, 350);
       });
 
-
       this.primengConfig.ripple = true;
 
       AOS.init({
         once: true
       });
 
-
-
     }
-
-    
 
 }
 
