@@ -13,6 +13,13 @@ $color-background: #5ad8fe46;
     &--destacado {
       background-color: $color-background;
     }
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+    }
   }
 
   &__info {
@@ -20,6 +27,12 @@ $color-background: #5ad8fe46;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    @media screen and (max-width: 700px) {
+      order: 1;
+      padding-left: calc(100% - 92.5% );
+    }
+
   }
 
   &__title {
@@ -36,7 +49,15 @@ $color-background: #5ad8fe46;
     width: 30rem;
     border-radius: 0.3rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 700px) {
+      order: 2;
+      width: 85%;
+      margin: 0 auto;
+      margin-top: 1.5rem;
+    }
   }
+
 
 
 }
