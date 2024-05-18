@@ -22,7 +22,7 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
   responsiveOptions = [
     {
       breakpoint: '1024px',
-      numVisible: 5
+      numVisible: 3
     },
     {
       breakpoint: '768px',
@@ -30,7 +30,7 @@ export class GaleriaImagenesComponent implements OnDestroy, OnInit {
     },
     {
       breakpoint: '560px',
-      numVisible: 1
+      numVisible: 2
     }
   ];
 
