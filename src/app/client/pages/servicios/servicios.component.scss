@@ -36,8 +36,11 @@ $color-background: #5ad8fe46;
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
+    @media screen and (max-width: 700px) {
+      font-size: 1.85rem;
+    }
   }
 
   &__description {
