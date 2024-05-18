@@ -451,6 +451,18 @@ h1 {
     }
   }
 
+  @media screen and (max-width: 700px) {
+    html .cards-responsive .p-card {
+      width: 25rem !important;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    html .cards-responsive .p-card {
+      width: 20.5rem !important;
+    }
+  }
+
 
 // PROYECTOS
 
