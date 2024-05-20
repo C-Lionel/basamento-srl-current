@@ -14,6 +14,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimengModule } from '../shared/primeng/primeng.module';
 import { ComponentsModule } from './components/components.module';
+import { HeaderResponsiveComponent } from './shared/header-responsive/header-responsive.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ComponentsModule } from './components/components.module';
     ContactoComponent,
     FooterComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    HeaderResponsiveComponent
   ],
   imports: [
     CommonModule,

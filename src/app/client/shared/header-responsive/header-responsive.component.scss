@@ -1,0 +1,67 @@
+
+.header_responsive {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+    img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+  }
+
+  &__content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+    &__title-1 {
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
+        color:#ffff;
+        text-shadow: 2px 2px 4px #000000;
+        @media screen and (max-width: 385px) {
+          font-size: 3rem;
+        }
+    }
+    &__title-2 {
+          font-size: 5rem;
+          letter-spacing: 0.3rem;
+          color:#ffff;
+          text-shadow: 2px 2px 4px #000000;
+
+          @media screen and (max-width: 425px) {
+            font-size: 4.5rem;
+          }
+
+          @media screen and (max-width: 385px) {
+            font-size: 4rem;
+          }
+
+    }
+    &__subtitle {
+        font-size: 2rem;
+        color: #FEBF07;
+        text-shadow: 2px 2px 4px #000000;
+        margin-bottom: 3rem;
+    }
+
+  }
+
+
+  &__btn-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
