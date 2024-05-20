@@ -285,8 +285,6 @@ h1 {
 
   @media screen and (max-width: 960px) {
 
-    position: sticky;
-
     .p-menubar-button {
      position: absolute;
      left: calc(100% - 4.5rem);
@@ -298,6 +296,11 @@ h1 {
     }
 
   }
+
+  @media screen and (max-width: 600px) {
+    position: sticky;
+  }
+
 
   img {
     margin-right: 5rem;

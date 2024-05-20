@@ -10,6 +10,7 @@ export class HomeComponent {
 
   images: any[] | undefined;
   showWhatsAppButton: boolean = false;
+  showFragment = false;
 
 
   constructor(private homeService: HomeService) {}
@@ -17,9 +18,9 @@ export class HomeComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    if (window.innerWidth > 960 && window.scrollY > 360) {
+    if (window.innerWidth > 600 && window.scrollY > 360) {
       this.showWhatsAppButton = true;
-    } else if (window.innerWidth <= 960) {
+    } else if (window.innerWidth <= 600) {
       this.showWhatsAppButton = true;
     } else {
       this.showWhatsAppButton = false;
@@ -31,11 +32,25 @@ export class HomeComponent {
     this.setWhatsAppButtonVisibility();
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenWidth(event.target.innerWidth);
+  }
+
   setWhatsAppButtonVisibility() {
-    if (window.innerWidth <= 960) {
+    if (window.innerWidth <= 600) {
       this.showWhatsAppButton = true;
     } else {
       this.showWhatsAppButton = false;
+    }
+  }
+
+  private checkScreenWidth(width: number) {
+    // Define el rango de resoluciones en las que deseas mostrar el fragmento de código
+    if (width <= 600) {
+      this.showFragment = true;
+    } else {
+      this.showFragment = false;
     }
   }
 
@@ -46,6 +61,10 @@ export class HomeComponent {
     });
 
     this.setWhatsAppButtonVisibility();
+
+    this.checkScreenWidth(window.innerWidth);
   }
+
+
 
 }
