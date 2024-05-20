@@ -150,7 +150,7 @@ h1 {
   width: 13rem;
   height: auto;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 600px) {
   margin-top: -6.5rem;
   width: 10rem;
   }
@@ -163,7 +163,6 @@ h1 {
   height: auto;
 
   @media screen and (max-width: 960px) {
-  // margin-top: 6.5rem;
   width: 10rem;
   }
 }
