@@ -9,6 +9,10 @@
 
   background-color: #ffffff00;
 
+  @media screen and (max-width: 600px) {
+    margin-top: 6.5rem;
+  }
+
   .active {
     color: var(--color-primary);
     font-weight: bold;
