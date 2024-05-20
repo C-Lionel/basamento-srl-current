@@ -21,6 +21,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
+    width: 100%;
     text-align: center;
 
     &__title-1 {
@@ -36,7 +37,7 @@
         @media screen and (max-width: 1200px) {
           font-size: 2.8rem;
         }
-        @media screen and (max-width: 960px) {
+        @media screen and (max-width: 768px) {
           font-size: 1.7rem;
         }
     }
@@ -52,7 +53,7 @@
           @media screen and (max-width: 1200px) {
             font-size: 3.8rem;
           }
-          @media screen and (max-width: 960px) {
+          @media screen and (max-width: 768px) {
             font-size: 2.7rem;
           }
 
