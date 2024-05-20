@@ -16,7 +16,7 @@
 
     <ng-template pTemplate="footer" let-item>
       <div class="custom-galleria-footer">
-          <button type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"></button>
+          <button class="button_view_images" type="button" pButton icon="pi pi-list" (click)="onThumbnailButtonClick()"></button>
           <span *ngIf="imagenes" class="title-container">
               <span>Imagen {{ activeIndex + 1 }} de {{ imagenes.length }}</span>
               <span class="title">{{ imagenes[activeIndex]?.title }}</span>

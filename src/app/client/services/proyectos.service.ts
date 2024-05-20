@@ -8,7 +8,7 @@ import { Proyecto } from '../models/proyecto.model';
 })
 export class ProyectosService {
 
-  private alt_description = 'Venado Tuerto - Provincia de Santa Fe';
+  private alt_description = 'Venado Tuerto - Santa Fe';
   private alt_description_2 = 'Arias - Provincia de Córdoba';
   private alt_description_3 = ' Virrey del Pino - Provincia de Buenos Aires';
   private selectedProjectSource = new BehaviorSubject<string | null>(null);
@@ -19,7 +19,7 @@ export class ProyectosService {
   private proyectos: any[] = [
 
     {
-      nombre: 'Estación de Servicio Axion - Roma',
+      nombre: 'Estación de Servicio Axion',
       ruta: 'axion-roma',
       descripcion: {
         opciones: {

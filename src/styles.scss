@@ -487,7 +487,7 @@ h1 {
                     width: 60%;
                     height: 60%;
                   }
-                  @media screen and (max-width: 500px) {
+                  @media screen and (max-width: 600px) {
                     margin: 0 auto;
                     width: 100%;
                     height: 100%;
@@ -540,17 +540,33 @@ h1 {
           .title-container {
               > span {
                   font-size: .9rem;
-                  padding-left: .829rem;
-
+                  padding-left: 1rem;
 
                   &.title {
                       font-weight: bold;
                   }
+                  @media screen and (max-width: 600px) {
+                    font-size: .7rem;
+                  }
+              }
+              @media screen and (max-width: 960px) {
+                padding-left: 1.1rem;
               }
           }
       }
 
   }
+
+  @media screen and (max-width: 960px) {
+
+    .button_view_images {
+      display: none;
+    }
+    .fullscreen-button {
+      padding-right: 1.6rem !important;
+    }
+  }
+
 
   .p-scrolltop  {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
