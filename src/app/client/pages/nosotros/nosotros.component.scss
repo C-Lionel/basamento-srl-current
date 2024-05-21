@@ -140,6 +140,9 @@
     &__accordion {
       margin-top: 8rem;
       margin-bottom: 8rem;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 0;
+      }
 
     }
 
