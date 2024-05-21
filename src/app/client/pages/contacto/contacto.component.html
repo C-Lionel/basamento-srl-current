@@ -83,7 +83,7 @@
 
     </div>
 
-  <div class="contacto contacto__contact">
+  <div *ngIf="!showFragment" class="contacto contacto__contact">
 
     <section>
       <app-card-animated [top]="'4em'" svgName="phone_in_talk" title="Hablá con nosotros" subtitle_1="+54 9 (3462) 553824" subtitle_2="537066"/>
@@ -95,6 +95,25 @@
 
     <section>
       <app-card-animated [top]="'4em'" svgName="timer" title="Nuestras oficinas" subtitle_1="Lunes a Viernes" subtitle_2="8:00 a 17:00"/>
+    </section>
+
+    <div class="background"></div>
+
+
+  </div>
+
+  <div *ngIf="showFragment" class="contacto contacto__contact">
+
+    <section>
+      <app-card-animated [fontSizeText]="'1.5rem'" [fontSizeSpan]="'6rem'" [width]="'21rem'" [height]="'33rem'" [fontSize]="'2.5rem'" svgName="phone_in_talk" title="Hablá con nosotros" subtitle_1="+54 9 (3462) 553824" subtitle_2="537066"/>
+    </section>
+
+    <section>
+      <app-card-animated [fontSizeText]="'1.5rem'" [fontSizeSpan]="'6rem'" [width]="'21rem'" [height]="'33rem'" [fontSize]="'2.5rem'" svgName="pin_drop" title="¡Visitanos!" subtitle_1="Tucuman 555" subtitle_2="Venado Tuerto" subtitle_3="Santa Fe"/>
+    </section>
+
+    <section>
+      <app-card-animated [fontSizeText]="'1.5rem'" [fontSizeSpan]="'6rem'" [width]="'21rem'" [height]="'33rem'" [fontSize]="'2.5rem'" svgName="timer" title="Nuestras oficinas" subtitle_1="Lunes a Viernes" subtitle_2="8:00 a 17:00"/>
     </section>
 
     <div class="background"></div>

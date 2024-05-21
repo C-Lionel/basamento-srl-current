@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
@@ -14,6 +14,7 @@ export class ContactoComponent {
   value!: string;
   public asunto: string = '';
   public arroba = '@';
+  showFragment = false;
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -37,6 +38,8 @@ export class ContactoComponent {
       }
       this.formGroup.get('otros')!.updateValueAndValidity();
     });
+
+    this.checkScreenWidth(window.innerWidth);
 
   }
 
@@ -94,6 +97,20 @@ export class ContactoComponent {
       return { 'soloNumeros': true };
     }
     return Validators.minLength(7)(control);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenWidth(event.target.innerWidth);
+  }
+
+  private checkScreenWidth(width: number) {
+
+    if (width <= 600) {
+      this.showFragment = true;
+    } else {
+      this.showFragment = false;
+    }
   }
 
 
