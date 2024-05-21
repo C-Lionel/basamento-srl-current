@@ -1,5 +1,5 @@
 <shared-header></shared-header>
-<shared-header-responsive *ngIf="showFragment"></shared-header-responsive>
+<shared-header-responsive class="animate__animated animate__fadeIn" *ngIf="showFragment"></shared-header-responsive>
 
 <div class="home animate__animated animate__fadeIn">
 
@@ -69,7 +69,7 @@
           Buscamos siempre soluciones innovadoras y brindamos asesoramiento integral en cada proyecto, garantizando la
           satisfacción de nuestros clientes.</p>
         <app-button-info-card *ngIf="!showFragment"></app-button-info-card>
-        <app-button-info-card-responsive (click)="navigateWithDelay('/contacto')" *ngIf="showFragment"></app-button-info-card-responsive>
+        <app-button-info-card-responsive (click)="navigateWithDelay('/nosotros')" *ngIf="showFragment"></app-button-info-card-responsive>
       </div>
 
     </div>

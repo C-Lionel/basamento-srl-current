@@ -10,6 +10,4 @@ export class NosotrosComponent {
     videoPlayer.currentTime = 0;
   }
 
-  
-
 }

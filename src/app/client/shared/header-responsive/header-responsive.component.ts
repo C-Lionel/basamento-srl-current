@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'shared-header-responsive',
@@ -20,5 +21,13 @@ export class HeaderResponsiveComponent {
       behavior: 'smooth'
     });
   }
+
+  WithDelay() {
+    setTimeout(() => {
+      this.scrollToImagen();
+    }, 300);
+  }
+
+
 
 }
