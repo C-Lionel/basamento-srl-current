@@ -1,6 +1,6 @@
 <div class="header_responsive">
 
-  <img #imagenElement class="img_home_responsive"  src="../../../../assets/imagenes/home/header-responsive.jpg">
+  <img #imagenElement  src="../../../../assets/imagenes/home/header-responsive.jpg">
 
   <div class="header_responsive__content">
 
@@ -12,11 +12,12 @@
 
     <div>
 
-     <!-- <button (click)="scrollToImagen()"> BOTON </button> -->
-
-     <button (click)="scrollToImagen()" class="btn">
-       <div class="scroll"></div>
-     </button>
+      <div (click)="scrollToImagen()" class="scrolldown" style="--color: white; margin-bottom: 5rem;">
+        <div class="chevrons">
+            <div class="chevrondown"></div>
+            <div class="chevrondown"></div>
+        </div>
+    </div>
 
     </div>
 
