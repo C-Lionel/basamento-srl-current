@@ -68,7 +68,8 @@
           sólida trayectoria en el sector, nos esforzamos por ofrecer un servicio personalizado y de alta calidad.
           Buscamos siempre soluciones innovadoras y brindamos asesoramiento integral en cada proyecto, garantizando la
           satisfacción de nuestros clientes.</p>
-        <app-button-info-card></app-button-info-card>
+        <app-button-info-card *ngIf="!showFragment"></app-button-info-card>
+        <app-button-info-card-responsive (click)="navigateWithDelay('/contacto')" *ngIf="showFragment"></app-button-info-card-responsive>
       </div>
 
     </div>

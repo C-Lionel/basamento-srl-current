@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { HomeService } from '../../services/home.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,10 @@ export class HomeComponent {
   showFragment = false;
 
 
-  constructor(private homeService: HomeService) {}
+  constructor(
+    private homeService: HomeService,
+    private router: Router
+  ) {}
 
 
   @HostListener('window:scroll', [])
@@ -40,13 +44,17 @@ export class HomeComponent {
     }
   }
 
+  navigateWithDelay(url: string) {
+    setTimeout(() => {
+      this.router.navigate([url]);
+    }, 300);
+  }
+
   ngOnInit() {
 
     this.homeService.getImages().then((images) => {
       this.images = images;
     });
-
-    // this.setWhatsAppButtonVisibility();
 
     this.checkScreenWidth(window.innerWidth);
   }
