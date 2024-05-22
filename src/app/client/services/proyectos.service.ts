@@ -23,7 +23,10 @@ export class ProyectosService {
       ruta: 'axion-roma',
       descripcion: {
         opciones: {
-          option1: 'Estación de servicio AXION',
+          option1: 'Cambio tanques de combustible',
+          option2: 'Piso de hormigón llaneado en playa',
+          option3: 'Ampliación en 2 plantas de oficias',
+          option4: 'Ampliación de servicios shop',
         },
       },
       imagenes: [
@@ -157,7 +160,7 @@ export class ProyectosService {
       ruta: 'barzola-gruas',
       descripcion: {
         opciones: {
-          option1: '',
+          option1: 'Ejecución de galpón',
         },
       },
       imagenes: [
@@ -216,7 +219,7 @@ export class ProyectosService {
       ruta: 'jockey-club',
       descripcion: {
         opciones: {
-          option1: 'Jockey Club',
+          option1: 'Colocación fachada de hormigón',
         },
       },
       imagenes: [
@@ -356,7 +359,7 @@ export class ProyectosService {
       ruta: 'los-molles',
       descripcion: {
         opciones: {
-          option1: 'Los Molles - Arias',
+          option1: 'Ampliación sector de servicios',
         },
       },
       imagenes: [
@@ -416,7 +419,7 @@ export class ProyectosService {
       ruta: 'roma-parador',
       descripcion: {
         opciones: {
-          option1: 'Roma Parador'
+          option1: 'Colocación base para conos de protección'
         },
       },
       imagenes: [
