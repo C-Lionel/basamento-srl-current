@@ -133,6 +133,16 @@ h1 {
   border-radius: 0.3rem;
   border: none;
   color: var(--btn-bg-color);
+
+  @media screen and (max-width: 600px) {
+    font-size: var(--size, 1.4rem);
+  }
+  @media screen and (max-width: 400px) {
+    font-size: var(--size, 1.2rem);
+  }
+  @media screen and (max-width: 350px) {
+    font-size: var(--size, 1rem);
+  }
 }
 
 .sub-title-proyectos:hover {
@@ -417,6 +427,8 @@ h1 {
   }
 }
 
+
+
 @media screen and (max-width: 700px) {
   .p-galleria-img {
     width: 60rem !important;
@@ -432,6 +444,12 @@ h1 {
 @media screen and (max-width: 460px) {
   .p-galleria-img {
     width: 35rem !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .p-galleria-img {
+    width: 30rem !important;
   }
 }
 

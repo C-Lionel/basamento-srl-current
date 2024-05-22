@@ -28,8 +28,9 @@
 <div class="proyectos__content animate__animated animate__fadeIn last-content container" *ngFor="let proyecto of proyectos; let i = index">
 
   <p-card  [header]="proyecto.nombre">
-      <div style="margin-bottom: 0.3rem" *ngFor="let opcion of getDescripcionOpciones(proyecto.descripcion.opciones)">
-        <i class="pi pi-chevron-circle-right" style="color: #FFC107; font-size: 0.8rem; margin-right: 0.3rem;"></i> {{ opcion }}
+
+      <div style="display: flex; align-items: center; margin-bottom: 1rem; text-align: left;" *ngFor="let opcion of getDescripcionOpciones(proyecto.descripcion.opciones)">
+        <i class="pi pi-chevron-circle-right" style="color: #FFC107; font-size: 0.8rem; margin-right: 0.5rem; margin-bottom: -0.2rem;"></i> {{ opcion }}
       </div>
   </p-card>
     <!-- GALERIA DE IMAGENES -->

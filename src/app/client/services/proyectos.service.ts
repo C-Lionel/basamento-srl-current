@@ -8,9 +8,9 @@ import { Proyecto } from '../models/proyecto.model';
 })
 export class ProyectosService {
 
-  private alt_description = 'Venado Tuerto - Santa Fe';
-  private alt_description_2 = 'Arias - Provincia de Córdoba';
-  private alt_description_3 = ' Virrey del Pino - Provincia de Buenos Aires';
+  private alt_description = 'V. Tuerto - Sta. Fe';
+  private alt_description_2 = 'Arias - Córdoba';
+  private alt_description_3 = ' Virrey del Pino - Bs. As';
   private selectedProjectSource = new BehaviorSubject<string | null>(null);
   selectedProject$ = this.selectedProjectSource.asObservable();
 
@@ -176,7 +176,7 @@ export class ProyectosService {
       categoria: "Previos"
     },
     {
-      nombre: 'Cementerio Privado Otoñal',
+      nombre: 'Cementerio Otoñal',
       ruta: 'cementerio-otoñal',
       descripcion: {
         opciones: {
