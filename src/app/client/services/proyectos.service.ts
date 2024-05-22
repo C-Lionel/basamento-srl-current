@@ -180,8 +180,9 @@ export class ProyectosService {
       ruta: 'cementerio-otoñal',
       descripcion: {
         opciones: {
-          option1: 'Restauración interior y exterior de capilla, sala velatoria y oficina',
-          option2: 'Ejecución de Nichos',
+          option1: 'Restauración interior y exterior de capilla',
+          option2: 'Restauración sala velatoria y oficina',
+          option3: 'Ejecución de Nichos',
         },
       },
       imagenes: [
