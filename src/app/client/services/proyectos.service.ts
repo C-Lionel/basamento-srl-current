@@ -133,7 +133,7 @@ export class ProyectosService {
       ruta: 'sarmiento-249',
       descripcion: {
         opciones: {
-          option1: 'Sarmiento 249',
+          option1: 'Remodelación de vivienda',
         },
       },
       imagenes: [
@@ -157,7 +157,7 @@ export class ProyectosService {
       ruta: 'barzola-gruas',
       descripcion: {
         opciones: {
-          option1: 'Sarmiento 249',
+          option1: '',
         },
       },
       imagenes: [
@@ -286,7 +286,7 @@ export class ProyectosService {
       ruta: 'super-alem',
       descripcion: {
         opciones: {
-          option1: 'Ejecución futuro supermercado Alem',
+          option1: 'Ejecución futuro supermercado',
         },
       },
       imagenes: [
