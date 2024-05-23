@@ -455,6 +455,10 @@ h1 {
 
   //Le pongo de background el mismo color porque por defecto me hace un background blanco por el mismo tema definido de primeng
 
+  .p-accordion-header-text {
+    line-height: 1.5rem;
+  }
+
   .p-accordion .p-accordion-header .p-accordion-header-link:hover {
     background-color: #39414e;
   }
