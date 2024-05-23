@@ -1,5 +1,4 @@
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'shared-header-responsive',
@@ -13,7 +12,7 @@ export class HeaderResponsiveComponent {
   scrollToImagen() {
     const imagenHeight = this.imagenElement.nativeElement.offsetHeight;
     const remInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    const offset = 5.5 * remInPixels;
+    const offset = -5.5 * remInPixels;
     const scrollToValue = imagenHeight - offset;
 
     window.scrollTo({

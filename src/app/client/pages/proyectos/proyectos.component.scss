@@ -1,17 +1,9 @@
 // APLICAMOS DOS TIPOS DE ESTILOS, UNA PARA PROYECTOS Y OTRA PARA PROYECTOS/:PROYECTO PERO DEJAMOS LOS MISMOS ESTILOS POR EL PRIMENG,
 // IGUAL DEJAMOS LA LÓGICA POR SI NECESITAMOS APLICAR OTROS ESTILOS.
 
-
-
-
-
 .proyectos {
 
   background-color: #ffffff00;
-
-  @media screen and (max-width: 600px) {
-    margin-top: 6.5rem;
-  }
 
   .active {
     color: #054f8bc5;

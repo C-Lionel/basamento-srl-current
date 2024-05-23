@@ -308,6 +308,10 @@ h1 {
 
   }
 
+  @media screen and (max-width: 600px) {
+    position: sticky;
+  }
+
   img {
     margin-right: 5rem;
     margin-left: 1rem;
@@ -347,17 +351,12 @@ h1 {
 }
 
 
-
-
 // PARA EL NGCLASS DEL P-MENUBAR
 
  .scrolled .p-menubar  {
   background: linear-gradient(to right, var(--color-primary), var(--color-primary-light)) !important;
   transition: height 0.4s ease;
   height: 5.5rem;
-  @media screen and (max-width: 600px) {
-    height: 6.5rem;
-  }
 
   .p-submenu-list {
     background-color: var(--color-primary) !important;
