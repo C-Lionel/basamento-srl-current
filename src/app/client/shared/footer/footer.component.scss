@@ -11,6 +11,7 @@ $transition-duration: 0.3s;
   width: 100%;
   transition: background-color $transition-duration;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
 
   &:hover {
     background-color: darken($color-background, 3%);

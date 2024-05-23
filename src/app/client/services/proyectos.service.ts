@@ -121,13 +121,13 @@ export class ProyectosService {
       },
       imagenes: [
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-1.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-1.jpg'},
+          // { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-2.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-2.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-2.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-3.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-3.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-4.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-4.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-5.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-5.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-6.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-6.jpg'},
           { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-7.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-7.jpg'},
-          { itemImageSrc: 'assets/imagenes/proyectos/perillo-1125/galeria/img-8.jpg', thumbnailImageSrc: 'assets/imagenes/proyectos/perillo-1125/small/img-8.jpg'},
       ],
       categoria: "Actuales"
     },
