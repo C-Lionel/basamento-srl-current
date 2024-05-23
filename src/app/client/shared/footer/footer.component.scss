@@ -19,7 +19,7 @@ $transition-duration: 0.3s;
 
   .footer__section--contact {
     h2 {
-      color: rgba(255, 255, 255, 0.645);
+      color: rgba(255, 255, 255, 0.532);
     }
     .footer__link {
       color: var(--color-text);
@@ -99,7 +99,7 @@ $transition-duration: 0.3s;
   &__section {
     display: flex;
     flex-direction: column;
-    
+
     h2 {
       margin-bottom: 1rem;
     }
@@ -107,7 +107,7 @@ $transition-duration: 0.3s;
     &--about {
 
       h2 {
-        color: rgba(255, 255, 255, 0.645);
+        color: rgba(255, 255, 255, 0.532);
       }
 
       i {
