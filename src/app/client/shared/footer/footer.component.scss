@@ -17,6 +17,9 @@ $transition-duration: 0.3s;
   }
 
   .footer__section--contact {
+    h2 {
+      color: rgba(255, 255, 255, 0.645);
+    }
     .footer__link {
       color: var(--color-text);
       text-decoration: none;
@@ -72,7 +75,7 @@ $transition-duration: 0.3s;
     @media screen and (max-width: 700px) {
       width: calc(100% - 15%);
     }
- 
+
   }
 
   &__content {
@@ -100,6 +103,10 @@ $transition-duration: 0.3s;
     }
 
     &--about {
+
+      h2 {
+        color: rgba(255, 255, 255, 0.645);
+      }
 
       i {
         color: #0096C2;
