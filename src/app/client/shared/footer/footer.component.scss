@@ -99,9 +99,7 @@ $transition-duration: 0.3s;
   &__section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
+    
     h2 {
       margin-bottom: 1rem;
     }
