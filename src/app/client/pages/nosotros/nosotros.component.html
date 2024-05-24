@@ -126,7 +126,7 @@
 
       <section class="nosotros__content-2__section__2">
 
-        <video data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" #videoPlayer
+        <video data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" #videoPlayer
           (ended)="restartVideo(videoPlayer)" controls>
           <source src="assets/videos/home/video_presentacion.mp4" type="video/mp4">
           Tu navegador no soporta el elemento de video.
@@ -198,7 +198,7 @@
   <div class="nosotros nosotros__contact">
     <p class="nosotros__contact__subtitle_1"> Explora de que manera podemos colaborar en la ejecución </p>
     <p class="nosotros__contact__subtitle_2 last-content"> y mejora de tus proyectos de infraestructura </p>
-    <button class="last-content" data-aos="flip-up" data-aos-duration="3000" (click)="navigateWithDelay('/contacto')">Contacto</button>
+    <button class="last-content" (click)="navigateWithDelay('/contacto')">Contacto</button>
   </div>
 
 
