@@ -1,5 +1,4 @@
 import { Component, ElementRef, HostListener, Input } from '@angular/core';
-import * as Aos from 'aos';
 
 @Component({
   selector: 'app-card-animated',
@@ -19,30 +18,4 @@ export class CardAnimatedComponent {
   @Input() top: string = '2.6em';
   @Input() fontSizeText: string = '1.3rem';
 
-  constructor(private el: ElementRef) {}
-
-  ngAfterViewInit() {
-    Aos.init();
-    this.toggleAOS();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    this.toggleAOS();
-  }
-
-  toggleAOS() {
-    const element = this.el.nativeElement.querySelector('.e-card.playing');
-
-    if (window.innerWidth <= 600) {
-      element.removeAttribute('data-aos');
-      element.removeAttribute('data-aos-easing');
-      element.removeAttribute('data-aos-duration');
-    } else {
-      element.setAttribute('data-aos', 'flip-left');
-      element.setAttribute('data-aos-easing', 'ease-out-cubic');
-      element.setAttribute('data-aos-duration', '3000');
-    }
-    Aos.refresh();
-  }
 }

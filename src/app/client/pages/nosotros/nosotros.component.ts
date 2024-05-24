@@ -1,6 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import * as Aos from 'aos';
+
 
 @Component({
   templateUrl: './nosotros.component.html',
@@ -12,10 +12,6 @@ export class NosotrosComponent {
     private router: Router
   ) {}
 
-  ngAfterViewInit() {
-    Aos.init();
-    this.toggleAOS();
-  }
 
   restartVideo(videoPlayer: HTMLVideoElement) {
     videoPlayer.currentTime = 0;
@@ -31,24 +27,5 @@ export class NosotrosComponent {
     }
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    this.toggleAOS();
-  }
-
-
-  toggleAOS() {
-    const videoElement = document.querySelector('video');
-    if (window.innerWidth <= 600) {
-      videoElement?.removeAttribute('data-aos');
-      videoElement?.removeAttribute('data-aos-offset');
-      videoElement?.removeAttribute('data-aos-easing');
-    } else {
-      videoElement?.setAttribute('data-aos', 'fade-left');
-      videoElement?.setAttribute('data-aos-offset', '300');
-      videoElement?.setAttribute('data-aos-easing', 'ease-in-sine');
-    }
-    Aos.refresh();
-  }
 
 }
