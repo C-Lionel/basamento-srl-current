@@ -23,9 +23,9 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
 
-      window.addEventListener('load', () => {
-        this.loadingService.setLoading(false);
-      });
+      // window.addEventListener('load', () => {
+      //   this.loadingService.setLoading(false);
+      // });
 
       this.router.events.pipe(
         filter(event => event instanceof NavigationEnd || event instanceof RouteConfigLoadEnd)
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         setTimeout(() => {
           AOS.refresh();
           this.loadingService.setLoading(false);
-        }, 350);
+        }, 500);
       });
 
       this.primengConfig.ripple = true;
